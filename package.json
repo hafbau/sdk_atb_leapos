@@ -1,0 +1,18 @@
+{
+  "name": "sdk_atb_leapos",
+  "version": "1.0.0",
+  "description": "2020 Open Banking Hackathon ATB/LEAPOS Javascript SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["sdk", "open banking", "hackathon", "atb"],
+  "author": "Hafiz Suara",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
