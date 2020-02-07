@@ -23,3 +23,18 @@ const sdkFunks = resource_docs.reduce((sdk, doc) => {
     }
     return sdk;
 }, {});
+
+// This algorithm feels somehow; splitting and then joining. Where is String#replace with regex and callback when you need them
+const putParamsInUrl = (url, params = {}) => {
+    if (!url.includes('_ID')) return url;
+    return url.split('/')
+        .map(urlPart => {
+            if (urlPart.includes('_ID')) {
+                const paramValue = params[urlPart];
+                if(!paramValue) throw new Error(`${urlPart} is required in params object.`)
+                return paramValue;
+            }
+            return urlPart;
+        })
+        .join('/')
+}
