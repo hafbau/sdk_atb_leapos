@@ -1,14 +1,15 @@
 const qs = require('querystring');
 
 module.exports = (resource_docs, axios) => resource_docs.reduce((sdk, doc) => {
-    sdk[doc.implemented_by.function] = ({ params, body, filter }) => {
-        const url = `${doc.request_url}?${qs.stringify(filter)}`;
+    sdk[doc.implemented_by.function] = ({ params, body, query, token } = {}) => {
+        const url = `${doc.request_url}?${qs.stringify(query)}`;
         return axios({
             method: doc.request_verb,
             url: putParamsInUrl(url, params),
             data: body,
             headers: {
                 'Content-Type': 'application/json'
+                // TODO: ability to add explicit tokens
             }
         })
     }

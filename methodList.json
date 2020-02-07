@@ -1,0 +1,778 @@
+{
+  "getAccountApplication": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID"
+  },
+  "deleteCounterpartyImageUrl": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url"
+  },
+  "updateSystemView": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/system-views/VIEW_ID"
+  },
+  "publicAccountsAllBanks": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/accounts/public"
+  },
+  "getTaxResidence": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residences"
+  },
+  "getEntitlements": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/users/USER_ID/entitlements"
+  },
+  "addPermissionForUserForBankAccountForMultipleViews": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views"
+  },
+  "revokeConsent": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/my/consents/CONSENT_ID/revoke"
+  },
+  "answerConsentChallenge": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/consents/CONSENT_ID/challenge"
+  },
+  "deleteSystemView": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/system-views/VIEW_ID"
+  },
+  "getCurrentUser": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/users/current"
+  },
+  "getCustomerAddresses": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses"
+  },
+  "addSocialMediaHandle": {
+    "method": "POST",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles"
+  },
+  "updateAccountAttribute": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID"
+  },
+  "createProductAttribute": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attribute"
+  },
+  "updateCounterpartyPublicAlias": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias"
+  },
+  "createCounterparty": {
+    "method": "POST",
+    "url": "/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties"
+  },
+  "updateCustomerData": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/data"
+  },
+  "deleteUserAuthContexts": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/users/USER_ID/auth-context"
+  },
+  "getCrmEvents": {
+    "method": "GET",
+    "url": "/obp/v1.4.0/banks/BANK_ID/crm-events"
+  },
+  "deleteUserAuthContextById": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/users/USER_ID/auth-context/USER_AUTH_CONTEXT_ID"
+  },
+  "getCreditLimitRequests": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests"
+  },
+  "addCounterpartyOpenCorporatesUrl": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url"
+  },
+  "deleteViewForBankAccount": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID"
+  },
+  "getAccountApplications": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-applications"
+  },
+  "getTransactionByIdForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction"
+  },
+  "getCustomerByCustomerNumber": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/customer-number"
+  },
+  "createCustomerAddress": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/address"
+  },
+  "deleteTaxResidence": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID"
+  },
+  "getOtherAccountsForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts"
+  },
+  "getBankAccountsBalances": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/balances"
+  },
+  "addCommentForViewOnTransaction": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments"
+  },
+  "getProduct": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE"
+  },
+  "unlockUser": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/users/USERNAME/lock-status"
+  },
+  "updateCounterpartyPrivateAlias": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias"
+  },
+  "deleteCounterpartyCorporateLocation": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location"
+  },
+  "addKycStatus": {
+    "method": "PUT",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_statuses"
+  },
+  "updateWhereTagForViewOnTransaction": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where"
+  },
+  "updateAccountLabel": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID"
+  },
+  "getOtherAccountMetadata": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata"
+  },
+  "updateCustomerEmail": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/email"
+  },
+  "createTransactionRequestAccountOtp": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests"
+  },
+  "getConsents": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/my/consents"
+  },
+  "getKycMedia": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/customers/CUSTOMER_ID/kyc_media"
+  },
+  "deleteWhereTagForViewOnTransaction": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where"
+  },
+  "addCounterpartyMoreInfo": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info"
+  },
+  "deleteCounterpartyPublicAlias": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias"
+  },
+  "updateCounterpartyPhysicalLocation": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location"
+  },
+  "createUserAuthContextUpdate": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/users/current/auth-context-updates/SCA_METHOD"
+  },
+  "createUserCustomerLinks": {
+    "method": "POST",
+    "url": "/obp/v2.0.0/banks/BANK_ID/user_customer_links"
+  },
+  "getOtherAccountForTransaction": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account"
+  },
+  "createProductCollection": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/product-collections/COLLECTION_CODE"
+  },
+  "getEntitlementsForCurrentUser": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/my/entitlements"
+  },
+  "getSocialMediaHandles": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles"
+  },
+  "addImageForViewOnTransaction": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images"
+  },
+  "getWhereTagForViewOnTransaction": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where"
+  },
+  "getKycDocuments": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/customers/CUSTOMER_ID/kyc_documents"
+  },
+  "privateAccountsAtOneBank": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/private"
+  },
+  "createAccountApplication": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-applications"
+  },
+  "updateCustomerCreditLimit": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-limit"
+  },
+  "publicAccountsAtOneBank": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/banks/BANK_ID/accounts/public"
+  },
+  "updateProductAttribute": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID"
+  },
+  "deleteCustomerAddress": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID"
+  },
+  "addCounterpartyImageUrl": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url"
+  },
+  "createTransactionType": {
+    "method": "PUT",
+    "url": "/obp/v2.1.0/banks/BANK_ID/transaction-types"
+  },
+  "deleteBranch": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/banks/BANK_ID/branches/BRANCH_ID"
+  },
+  "enableDisableAccountWebhook": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-web-hooks"
+  },
+  "getTransactionRequestTypesSupportedByBank": {
+    "method": "GET",
+    "url": "/obp/v2.1.0/banks/BANK_ID/transaction-request-types"
+  },
+  "deleteCardForBank": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID"
+  },
+  "createProduct": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE"
+  },
+  "getProductAttribute": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID"
+  },
+  "createFx": {
+    "method": "PUT",
+    "url": "/obp/v2.2.0/banks/BANK_ID/fx"
+  },
+  "deleteCommentForViewOnTransaction": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID"
+  },
+  "deleteEntitlement": {
+    "method": "DELETE",
+    "url": "/obp/v2.0.0/users/USER_ID/entitlement/ENTITLEMENT_ID"
+  },
+  "updateCounterpartyImageUrl": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url"
+  },
+  "updateAccount": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/accounts/ACCOUNT_ID"
+  },
+  "getPrivateAccountIdsbyBankId": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/account_ids/private"
+  },
+  "getAtm": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/atms/ATM_ID"
+  },
+  "getKycStatuses": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/customers/CUSTOMER_ID/kyc_statuses"
+  },
+  "getAccountWebhooks": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/account-web-hooks"
+  },
+  "getEntitlementRequests": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/users/USER_ID/entitlement-requests"
+  },
+  "deleteCounterpartyUrl": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url"
+  },
+  "createAccount": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID"
+  },
+  "getCustomersForCurrentUserAtBank": {
+    "method": "GET",
+    "url": "/obp/v2.1.0/banks/BANK_ID/customers"
+  },
+  "createConsentEmail": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/my/consents/EMAIL"
+  },
+  "getExplictCounterpartiesForAccount": {
+    "method": "GET",
+    "url": "/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties"
+  },
+  "updateCounterpartyMoreInfo": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info"
+  },
+  "createAtm": {
+    "method": "POST",
+    "url": "/obp/v3.0.0/banks/BANK_ID/atms"
+  },
+  "getPrivateAccountByIdFull": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/account"
+  },
+  "getCurrentFxRate": {
+    "method": "GET",
+    "url": "/obp/v2.2.0/banks/BANK_ID/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE"
+  },
+  "getTransactionRequestTypes": {
+    "method": "GET",
+    "url": "/obp/v1.4.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types"
+  },
+  "getPermissionForUserForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID"
+  },
+  "getBranch": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/branches/BRANCH_ID"
+  },
+  "getCreditLimitRequestByRequestId": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID"
+  },
+  "answerUserAuthContextUpdateChallenge": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/users/current/auth-context-updates/AUTH_CONTEXT_UPDATE_ID/challenge"
+  },
+  "getProductCollection": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/product-collections/COLLECTION_CODE"
+  },
+  "getOtherAccountPrivateAlias": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias"
+  },
+  "addCounterpartyUrl": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url"
+  },
+  "checkFundsAvailable": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available"
+  },
+  "deleteTagForViewOnTransaction": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID"
+  },
+  "createUserAuthContext": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/users/USER_ID/auth-context"
+  },
+  "createTransactionRequestCounterparty": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests"
+  },
+  "getCards": {
+    "method": "GET",
+    "url": "/obp/v1.3.0/cards"
+  },
+  "addKycDocument": {
+    "method": "PUT",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID"
+  },
+  "getUserAuthContexts": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/users/USER_ID/auth-context"
+  },
+  "removePermissionForUserForBankAccountForAllViews": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views"
+  },
+  "getOtherAccountByIdForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID"
+  },
+  "createUser": {
+    "method": "POST",
+    "url": "/obp/v2.0.0/users"
+  },
+  "addCounterpartyPublicAlias": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias"
+  },
+  "updateCounterpartyUrl": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url"
+  },
+  "deleteProductAttribute": {
+    "method": "DELETE",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID"
+  },
+  "updateCustomerCreditRatingAndSource": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-rating-and-source"
+  },
+  "removePermissionForUserForBankAccountForOneView": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID"
+  },
+  "updateCustomerNumber": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/number"
+  },
+  "saveHistoricalTransaction": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/management/historical/transactions "
+  },
+  "createTransactionRequestAccount": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests"
+  },
+  "getBadLoginStatus": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/users/USERNAME/lock-status"
+  },
+  "getPermissionsForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions"
+  },
+  "getAccountsHeld": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts-held"
+  },
+  "getImagesForViewOnTransaction": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images"
+  },
+  "createAccountWebhook": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-web-hooks"
+  },
+  "addCounterpartyCorporateLocation": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location"
+  },
+  "getAllEntitlements": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/entitlements"
+  },
+  "getEntitlementsByBankAndUser": {
+    "method": "GET",
+    "url": "/obp/v2.1.0/banks/BANK_ID/users/USER_ID/entitlements"
+  },
+  "updateCustomerIdentity": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/identity"
+  },
+  "refreshUser": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/users/USER_ID/refresh"
+  },
+  "createCardAttribute": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID/attribute"
+  },
+  "getStatusOfCreditCardOrder": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders"
+  },
+  "addEntitlementRequest": {
+    "method": "POST",
+    "url": "/obp/v3.0.0/entitlement-requests"
+  },
+  "createTransactionRequestSepa": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests"
+  },
+  "createCreditLimitRequest": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests"
+  },
+  "getRoles": {
+    "method": "GET",
+    "url": "/obp/v2.1.0/roles"
+  },
+  "getTransactionsForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions"
+  },
+  "addWhereTagForViewOnTransaction": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where"
+  },
+  "createSystemView": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/system-views"
+  },
+  "updateCustomerAddress": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID"
+  },
+  "getViewsForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views"
+  },
+  "updateTransactionNarrative": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative"
+  },
+  "answerTransactionRequestChallenge": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge"
+  },
+  "createCustomer": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers"
+  },
+  "addOtherAccountPrivateAlias": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias"
+  },
+  "addPermissionForUserForBankAccountForOneView": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID"
+  },
+  "bankById": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID"
+  },
+  "addTransactionNarrative": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative"
+  },
+  "addKycCheck": {
+    "method": "PUT",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID"
+  },
+  "updateCounterpartyCorporateLocation": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location"
+  },
+  "createConsentSms": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/my/consents/SMS"
+  },
+  "getPublicAccountById": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/public/accounts/ACCOUNT_ID/VIEW_ID/account"
+  },
+  "getEntitlementRequestsForCurrentUser": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/my/entitlement-requests"
+  },
+  "addKycMedia": {
+    "method": "PUT",
+    "url": "/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID"
+  },
+  "addCounterpartyPhysicalLocation": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location"
+  },
+  "updatedCardForBank": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID"
+  },
+  "getCheckbookOrders": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders"
+  },
+  "deleteImageForViewOnTransaction": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID"
+  },
+  "updateCustomerMobileNumber": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/mobile-number"
+  },
+  "getTransactionRequests": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests"
+  },
+  "getBranches": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/branches"
+  },
+  "createTaxResidence": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residence"
+  },
+  "getCoreAccountById": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/account"
+  },
+  "addTagForViewOnTransaction": {
+    "method": "POST",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags"
+  },
+  "getKycChecks": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/customers/CUSTOMER_ID/kyc_checks"
+  },
+  "getProducts": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/products"
+  },
+  "getCardForBank": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID"
+  },
+  "deleteCounterpartyOpenCorporatesUrl": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url"
+  },
+  "deleteTransactionNarrative": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative"
+  },
+  "addCardForBank": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards"
+  },
+  "updateCardAttribute": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID"
+  },
+  "createTransactionRequestFreeForm": {
+    "method": "POST",
+    "url": "/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests"
+  },
+  "updateCustomerBranch": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/branch"
+  },
+  "createAccountAttribute": {
+    "method": "POST",
+    "url": "/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute"
+  },
+  "getProductTree": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/product-tree/PRODUCT_CODE"
+  },
+  "deleteCounterpartyMoreInfo": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info"
+  },
+  "getTagsForViewOnTransaction": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags"
+  },
+  "getSystemView": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/system-views/VIEW_ID"
+  },
+  "getTransactionNarrative": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative"
+  },
+  "getAtms": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/banks/BANK_ID/atms"
+  },
+  "getExplictCounterpartyById": {
+    "method": "GET",
+    "url": "/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID"
+  },
+  "getPrivateAccountsAtOneBank": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/banks/BANK_ID/accounts"
+  },
+  "createViewForBankAccount": {
+    "method": "POST",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views"
+  },
+  "updateViewForBankAccount": {
+    "method": "PUT",
+    "url": "/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID"
+  },
+  "getCoreTransactionsForBankAccount": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/transactions"
+  },
+  "deleteCounterpartyPhysicalLocation": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location"
+  },
+  "addEntitlement": {
+    "method": "POST",
+    "url": "/obp/v2.0.0/users/USER_ID/entitlements"
+  },
+  "getCommentsForViewOnTransaction": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments"
+  },
+  "getTransactionTypes": {
+    "method": "GET",
+    "url": "/obp/v2.0.0/banks/BANK_ID/transaction-types"
+  },
+  "getCounterpartyPublicAlias": {
+    "method": "GET",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias"
+  },
+  "getCustomersForUser": {
+    "method": "GET",
+    "url": "/obp/v3.0.0/users/current/customers"
+  },
+  "createBranch": {
+    "method": "POST",
+    "url": "/obp/v3.0.0/banks/BANK_ID/branches"
+  },
+  "getCustomerByCustomerId": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID"
+  },
+  "getCardsForBank": {
+    "method": "GET",
+    "url": "/obp/v3.1.0/management/banks/BANK_ID/cards"
+  },
+  "updateAccountApplicationStatus": {
+    "method": "PUT",
+    "url": "/obp/v3.1.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID"
+  },
+  "updateCounterpartyOpenCorporatesUrl": {
+    "method": "PUT",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url"
+  },
+  "deleteCounterpartyPrivateAlias": {
+    "method": "DELETE",
+    "url": "/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias"
+  },
+  "updateBranch": {
+    "method": "PUT",
+    "url": "/obp/v2.1.0/banks/BANK_ID/branches/BRANCH_ID"
+  }
+}
