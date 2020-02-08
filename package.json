@@ -6,7 +6,12 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["sdk", "open banking", "hackathon", "atb"],
+  "keywords": [
+    "sdk",
+    "open banking",
+    "hackathon",
+    "atb"
+  ],
   "author": "Hafiz Suara",
   "dependencies": {
     "axios": "^0.19.2",

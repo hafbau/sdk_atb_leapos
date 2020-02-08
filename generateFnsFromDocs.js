@@ -8,8 +8,8 @@ module.exports = (resource_docs, axios) => resource_docs.reduce((sdk, doc) => {
             url: putParamsInUrl(url, params),
             data: body,
             headers: {
-                'Content-Type': 'application/json'
-                // TODO: ability to add explicit tokens
+              'Content-Type': 'application/json'
+              // TODO: ability to add explicit tokens
             }
         })
     }
@@ -23,7 +23,7 @@ const putParamsInUrl = (url, params = {}) => {
   return url.split('/')
     .map(urlPart => {
       if (urlPart.includes('_ID')) {
-        const paramValue = params[urlPart];
+        const paramValue = params[urlPart] || params[urlPart.toLowerCase()];// case insensitivity
         if (!paramValue) throw new Error(`${urlPart} is required in params object.`)
         return paramValue;
       }

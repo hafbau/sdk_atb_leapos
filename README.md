@@ -34,7 +34,7 @@ const { token } = await sdk.login({
   consumer_key: '<your consumer key>'
 });
 
-const accounts = await sdk.getBankAccounts({
+const accounts = await sdk.getBankAccountsBalances({
   params: { BANK_ID: 'theBankId' }
 });
 ```
