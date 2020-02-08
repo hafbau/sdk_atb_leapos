@@ -10,7 +10,7 @@ module.exports = {
 						'function': 'getAccountApplication'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 					summary: 'Get Account Application by Id',
 					description: '<p>Get the Account Application.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get the Account Application.\n\n\nAuthentication is Mandatory\n\n',
@@ -220,7 +220,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyImageUrl',
@@ -229,7 +229,7 @@ module.exports = {
 						'function': 'deleteCounterpartyImageUrl'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					summary: 'Delete Counterparty Image URL',
 					description: '<p>Delete image url of other bank account.</p>\n',
 					description_markdown: 'Delete image url of other bank account.',
@@ -267,7 +267,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateSystemView',
@@ -825,7 +825,7 @@ module.exports = {
 						'function': 'getTaxResidence'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residences',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residences',
 					summary: 'Get Tax Residences of Customer',
 					description: '<p>Get the Tax Residences of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get the Tax Residences of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -884,7 +884,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residences'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residences'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getEntitlements',
@@ -965,7 +965,7 @@ module.exports = {
 						'function': 'addPermissionForUserForBankAccountForMultipleViews'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 					summary: 'Grant User access to a list of views.',
 					description: '<p>Grants the user identified by PROVIDER_ID at their provider PROVIDER access to a list of views at BANK_ID for account ACCOUNT_ID.</p>\n<p>All url parameters must be <a href="http://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>, which is often especially relevant for PROVIDER_ID and PROVIDER.</p>\n<p>Authentication is Mandatory</p>\n<p>The User needs to have access to the owner view.</p>\n',
 					description_markdown: 'Grants the user identified by PROVIDER_ID at their provider PROVIDER access to a list of views at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe User needs to have access to the owner view.',
@@ -1282,7 +1282,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views'
 				},
 				{
 					operation_id: 'OBPv3.1.0-revokeConsent',
@@ -1291,7 +1291,7 @@ module.exports = {
 						'function': 'revokeConsent'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/my/consents/CONSENT_ID/revoke',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/CONSENT_ID/revoke',
 					summary: 'Revoke Consent',
 					description: '<p>An OBP Consent allows the holder of the Consent to call one or more endpoints.</p>\n<p>Consents must be created and authorisied using SCA (Strong Customer Authentication).</p>\n<p>That is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.</p>\n<p>Each Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.</p>\n<p>Revoke Consent for current user specified by CONSENT_ID</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nRevoke Consent for current user specified by CONSENT_ID\n\n\nAuthentication is Mandatory\n\n      ',
@@ -1340,7 +1340,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/my/consents/CONSENT_ID/revoke'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/CONSENT_ID/revoke'
 				},
 				{
 					operation_id: 'OBPv3.1.0-answerConsentChallenge',
@@ -1349,7 +1349,7 @@ module.exports = {
 						'function': 'answerConsentChallenge'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/consents/CONSENT_ID/challenge',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/consents/CONSENT_ID/challenge',
 					summary: 'Answer Consent Challenge',
 					description: '<p>An OBP Consent allows the holder of the Consent to call one or more endpoints.</p>\n<p>Consents must be created and authorisied using SCA (Strong Customer Authentication).</p>\n<p>That is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.</p>\n<p>Each Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.</p>\n<p>This endpoint is used to confirm a Consent previously created.</p>\n<p>The User must supply a code that was sent out of band (OOB) for example via an SMS.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nThis endpoint is used to confirm a Consent previously created.\n\nThe User must supply a code that was sent out of band (OOB) for example via an SMS.\n\nAuthentication is Mandatory\n\n',
@@ -1400,7 +1400,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/consents/CONSENT_ID/challenge'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/consents/CONSENT_ID/challenge'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteSystemView',
@@ -1556,7 +1556,7 @@ module.exports = {
 						'function': 'getCustomerAddresses'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses',
 					summary: 'Get Customer Addresses',
 					description: '<p>Get the Addresses of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get the Addresses of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -1666,7 +1666,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses'
 				},
 				{
 					operation_id: 'OBPv2.0.0-addSocialMediaHandle',
@@ -1675,7 +1675,7 @@ module.exports = {
 						'function': 'addSocialMediaHandle'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 					summary: 'Add Social Media Handle',
 					description: '<p>Add a social media handle for the customer specified by CUSTOMER_ID.</p>\n',
 					description_markdown: 'Add a social media handle for the customer specified by CUSTOMER_ID.',
@@ -1739,7 +1739,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateAccountAttribute',
@@ -1748,7 +1748,7 @@ module.exports = {
 						'function': 'updateAccountAttribute'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
 					summary: 'Update Account Attribute',
 					description: '<p>Update Account Attribute</p>\n<p>Account Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Account Attribute is linked to its Account by ACCOUNT_ID</p>\n<p>Typical account attributes might be:</p>\n<p>ISIN (for International bonds)<br />\nVKN (for German bonds)<br />\nREDCODE (markit short code for credit derivative)<br />\nLOAN_ID (e.g. used for Anacredit reporting)</p>\n<p>ISSUE_DATE (When the bond was issued in the market)<br />\nMATURITY_DATE (End of life time of a product)<br />\nTRADABLE</p>\n<p>See <a href="http://www.fpml.org/">FPML</a> for more examples.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Update Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nAuthentication is Mandatory\n\n',
@@ -1812,7 +1812,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createProductAttribute',
@@ -1821,7 +1821,7 @@ module.exports = {
 						'function': 'createProductAttribute'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attribute',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attribute',
 					summary: 'Create Product Attribute',
 					description: '<p>Create Product Attribute</p>\n<p>Product Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Product Attribute is linked to its Product by PRODUCT_CODE</p>\n<p>Typical product attributes might be:</p>\n<p>ISIN (for International bonds)<br />\nVKN (for German bonds)<br />\nREDCODE (markit short code for credit derivative)<br />\nLOAN_ID (e.g. used for Anacredit reporting)</p>\n<p>ISSUE_DATE (When the bond was issued in the market)<br />\nMATURITY_DATE (End of life time of a product)<br />\nTRADABLE</p>\n<p>See <a href="http://www.fpml.org/">FPML</a> for more examples.</p>\n<p>The type field must be one of &quot;STRING&quot;, &quot;INTEGER&quot;, &quot;DOUBLE&quot; or DATE_WITH_DAY&quot;</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Create Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nTypical product attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\n\n\nAuthentication is Mandatory\n\n',
@@ -1888,7 +1888,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attribute'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attribute'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyPublicAlias',
@@ -1897,7 +1897,7 @@ module.exports = {
 						'function': 'updateCounterpartyPublicAlias'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					summary: 'Update public alias of other bank account.',
 					description: '<p>Updates the public alias of the other account / counterparty OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Updates the public alias of the other account / counterparty OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -1941,7 +1941,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
 				},
 				{
 					operation_id: 'OBPv2.2.0-createCounterparty',
@@ -1950,7 +1950,7 @@ module.exports = {
 						'function': 'createCounterparty'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+					request_url: '/obp/v2.2.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 					summary: 'Create Counterparty (Explicit)',
 					description: '<p>Create Counterparty (Explicit) for an Account.</p>\n<p>In OBP, there are two types of Counterparty.</p>\n<ul>\n<li>\n<p>Explicit Counterparties (those here) which we create explicitly and are used in COUNTERPARTY Transaction Requests</p>\n</li>\n<li>\n<p>Implicit Counterparties (AKA Other Accounts) which are generated automatically from the other sides of Transactions.</p>\n</li>\n</ul>\n<p>Explicit Counterparties are created for the account / view<br />\nThey are how the user of the view (e.g. account owner) refers to the other side of the transaction</p>\n<p>name : the human readable name (e.g. Piano teacher, Miss Nipa)</p>\n<p>description : the human readable name (e.g. Piano teacher, Miss Nipa)</p>\n<p>bank_routing_scheme : eg: bankId or bankCode or any other strings</p>\n<p>bank_routing_address : eg: <code>gh.29.uk</code>, must be valid sandbox bankIds</p>\n<p>account_routing_scheme : eg: AccountId or AccountNumber or any other strings</p>\n<p>account_routing_address : eg: <code>1d65db7c-a7b2-4839-af41-95</code>, must be valid accountIds</p>\n<p>other_account_secondary_routing_scheme : eg: IBan or any other strings</p>\n<p>other_account_secondary_routing_address : if it is IBan, it should be unique for each counterparty.</p>\n<p>other_branch_routing_scheme : eg: branchId or any other strings or you can leave it empty, not useful in sandbox mode.</p>\n<p>other_branch_routing_address : eg: <code>branch-id-123</code> or you can leave it empty, not useful in sandbox mode.</p>\n<p>is_beneficiary : must be set to <code>true</code> in order to send payments to this counterparty</p>\n<p>bespoke: It support list of key-value, you can add it to the counterarty.</p>\n<p>bespoke.key : any info-key you want to add to this counerparty</p>\n<p>bespoke.value : any info-value you want to add to this counerparty</p>\n<p>The view specified by VIEW_ID must have the canAddCounterparty permission</p>\n<p>A minimal example for TransactionRequestType == COUNTERPARTY<br />\n{<br />\n&quot;name&quot;: &quot;Tesobe1&quot;,<br />\n&quot;description&quot;: &quot;Good Company&quot;,<br />\n&quot;other_bank_routing_scheme&quot;: &quot;bankId&quot;,<br />\n&quot;other_bank_routing_address&quot;: &quot;gh.29.uk&quot;,<br />\n&quot;other_account_routing_scheme&quot;: &quot;accountId&quot;,<br />\n&quot;other_account_routing_address&quot;: &quot;8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0&quot;,<br />\n&quot;is_beneficiary&quot;: true,<br />\n&quot;other_account_secondary_routing_scheme&quot;: &quot;&quot;,<br />\n&quot;other_account_secondary_routing_address&quot;: &quot;&quot;,<br />\n&quot;other_branch_routing_scheme&quot;: &quot;&quot;,<br />\n&quot;other_branch_routing_address&quot;: &quot;&quot;,<br />\n&quot;bespoke&quot;: []<br />\n}</p>\n<p>A minimal example for TransactionRequestType == SEPA</p>\n<p>{<br />\n&quot;name&quot;: &quot;Tesobe2&quot;,<br />\n&quot;description&quot;: &quot;Good Company&quot;,<br />\n&quot;other_bank_routing_scheme&quot;: &quot;bankId&quot;,<br />\n&quot;other_bank_routing_address&quot;: &quot;gh.29.uk&quot;,<br />\n&quot;other_account_routing_scheme&quot;: &quot;accountId&quot;,<br />\n&quot;other_account_routing_address&quot;: &quot;8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0&quot;,<br />\n&quot;other_account_secondary_routing_scheme&quot;: &quot;IBAN&quot;,<br />\n&quot;other_account_secondary_routing_address&quot;: &quot;DE89 3704 0044 0532 0130 00&quot;,<br />\n&quot;is_beneficiary&quot;: true,<br />\n&quot;other_branch_routing_scheme&quot;: &quot;&quot;,<br />\n&quot;other_branch_routing_address&quot;: &quot;&quot;,<br />\n&quot;bespoke&quot;: []<br />\n}</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create Counterparty (Explicit) for an Account.\n\nIn OBP, there are two types of Counterparty.\n\n* Explicit Counterparties (those here) which we create explicitly and are used in COUNTERPARTY Transaction Requests\n\n* Implicit Counterparties (AKA Other Accounts) which are generated automatically from the other sides of Transactions.\n\nExplicit Counterparties are created for the account / view\nThey are how the user of the view (e.g. account owner) refers to the other side of the transaction\n\nname : the human readable name (e.g. Piano teacher, Miss Nipa)\n\ndescription : the human readable name (e.g. Piano teacher, Miss Nipa)\n\nbank_routing_scheme : eg: bankId or bankCode or any other strings\n\nbank_routing_address : eg: `gh.29.uk`, must be valid sandbox bankIds\n\naccount_routing_scheme : eg: AccountId or AccountNumber or any other strings\n\naccount_routing_address : eg: `1d65db7c-a7b2-4839-af41-95`, must be valid accountIds\n\nother_account_secondary_routing_scheme : eg: IBan or any other strings\n\nother_account_secondary_routing_address : if it is IBan, it should be unique for each counterparty. \n\nother_branch_routing_scheme : eg: branchId or any other strings or you can leave it empty, not useful in sandbox mode.\n\nother_branch_routing_address : eg: `branch-id-123` or you can leave it empty, not useful in sandbox mode.\n\nis_beneficiary : must be set to `true` in order to send payments to this counterparty\n\nbespoke: It support list of key-value, you can add it to the counterarty.\n\nbespoke.key : any info-key you want to add to this counerparty\n \nbespoke.value : any info-value you want to add to this counerparty\n\nThe view specified by VIEW_ID must have the canAddCounterparty permission\n\nA minimal example for TransactionRequestType == COUNTERPARTY\n {\n  "name": "Tesobe1",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "other_account_secondary_routing_scheme": "",\n  "other_account_secondary_routing_address": "",\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\n \nA minimal example for TransactionRequestType == SEPA\n \n {\n  "name": "Tesobe2",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "other_account_secondary_routing_scheme": "IBAN",\n  "other_account_secondary_routing_address": "DE89 3704 0044 0532 0130 00",\n  "is_beneficiary": true,\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\nAuthentication is Mandatory\n\n',
@@ -2241,7 +2241,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerData',
@@ -2250,7 +2250,7 @@ module.exports = {
 						'function': 'updateCustomerData'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/data',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/data',
 					summary: 'Update the other data of a Customer',
 					description: '<p>Update the other data of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the other data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -2441,7 +2441,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/data'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/data'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteUserAuthContexts',
@@ -2499,7 +2499,7 @@ module.exports = {
 						'function': 'getCrmEvents'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.4.0/banks/BANK_ID/crm-events',
+					request_url: '/obp/v1.4.0/banks/d833731bfb92ee40d5b2da9aa66cef9/crm-events',
 					summary: 'Get CRM Events',
 					description: '',
 					description_markdown: '',
@@ -2587,7 +2587,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/crm-events'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/crm-events'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteUserAuthContextById',
@@ -2645,7 +2645,7 @@ module.exports = {
 						'function': 'getCreditLimitRequests'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 					summary: 'Get Credit Limit Order Requests ',
 					description: '<p><strong>NOTE: This endpoint currently only returns example data.</strong></p>\n<p>Get Credit Limit Order Requests</p>\n',
 					description_markdown: '**NOTE: This endpoint currently only returns example data.**\n\n      \nGet Credit Limit Order Requests \n',
@@ -2694,7 +2694,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyOpenCorporatesUrl',
@@ -2703,7 +2703,7 @@ module.exports = {
 						'function': 'addCounterpartyOpenCorporatesUrl'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					summary: 'Add Open Corporates URL to Counterparty',
 					description: '<p>Add open corporates url to other bank account.</p>\n',
 					description_markdown: 'Add open corporates url to other bank account.',
@@ -2746,7 +2746,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteViewForBankAccount',
@@ -2755,7 +2755,7 @@ module.exports = {
 						'function': 'deleteViewForBankAccount'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 					summary: 'Delete View',
 					description: '<p>Deletes the view specified by VIEW_ID on the bank account specified by ACCOUNT_ID at bank BANK_ID.</p>\n',
 					description_markdown: 'Deletes the view specified by VIEW_ID on the bank account specified by ACCOUNT_ID at bank BANK_ID.',
@@ -2796,7 +2796,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getAccountApplications',
@@ -2805,7 +2805,7 @@ module.exports = {
 						'function': 'getAccountApplications'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-applications',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 					summary: 'Get Account Applications',
 					description: '<p>Get the Account Applications.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get the Account Applications.\n\n\nAuthentication is Mandatory\n\n',
@@ -3025,7 +3025,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-applications'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getTransactionByIdForBankAccount',
@@ -3034,7 +3034,7 @@ module.exports = {
 						'function': 'getTransactionByIdForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
 					summary: 'Get Transaction by Id.',
 					description: '<p>Returns one transaction specified by TRANSACTION_ID of the account ACCOUNT_ID and <a href="#1_2_1-getViewsForBankAccount">moderated</a> by the view (VIEW_ID).</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Returns one transaction specified by TRANSACTION_ID of the account ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\n\n',
@@ -3537,7 +3537,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCustomerByCustomerNumber',
@@ -3546,7 +3546,7 @@ module.exports = {
 						'function': 'getCustomerByCustomerNumber'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/customer-number',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/customer-number',
 					summary: 'Get Customer by CUSTOMER_NUMBER',
 					description: '<p>Gets the Customer specified by CUSTOMER_NUMBER.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Gets the Customer specified by CUSTOMER_NUMBER.\n\n\nAuthentication is Mandatory\n\n',
@@ -3705,7 +3705,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/customer-number'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/customer-number'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createCustomerAddress',
@@ -3714,7 +3714,7 @@ module.exports = {
 						'function': 'createCustomerAddress'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/address',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/address',
 					summary: 'Add Address to Customer',
 					description: '<p>Add an Address to the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Add an Address to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -3856,7 +3856,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/address'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/address'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteTaxResidence',
@@ -3865,7 +3865,7 @@ module.exports = {
 						'function': 'deleteTaxResidence'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
 					summary: 'Delete Tax Residence',
 					description: '<p>Delete a Tax Residence of the Customer specified by TAX_RESIDENCE_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Delete a Tax Residence of the Customer specified by TAX_RESIDENCE_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -3906,7 +3906,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getOtherAccountsForBankAccount',
@@ -3915,7 +3915,7 @@ module.exports = {
 						'function': 'getOtherAccountsForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
 					summary: 'Get Other Accounts of one Account.',
 					description: '<p>Returns data about all the other accounts that have shared at least one transaction with the ACCOUNT_ID at BANK_ID.<br />\nAuthentication is Optional</p>\n<p>Authentication is required if the view VIEW_ID is not public.</p>\n',
 					description_markdown: 'Returns data about all the other accounts that have shared at least one transaction with the ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view VIEW_ID is not public.',
@@ -4125,7 +4125,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getBankAccountsBalances',
@@ -4134,7 +4134,7 @@ module.exports = {
 						'function': 'getBankAccountsBalances'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/balances',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/balances',
 					summary: 'Get Accounts Balances',
 					description: '<p>Get the Balances for the Accounts of the current User at one bank.</p>\n',
 					description_markdown: 'Get the Balances for the Accounts of the current User at one bank.',
@@ -4244,7 +4244,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/balances'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/balances'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCommentForViewOnTransaction',
@@ -4253,7 +4253,7 @@ module.exports = {
 						'function': 'addCommentForViewOnTransaction'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 					summary: 'Add comment.',
 					description: '<p>Posts a comment about a transaction TRANSACTION_ID on a <a href="#1_2_1-getViewsForBankAccount">view</a> VIEW_ID.</p>\n<p>${authenticationRequiredMessage(false)}</p>\n<p>Authentication is required since the comment is linked with the user.</p>\n',
 					description_markdown: 'Posts a comment about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\n${authenticationRequiredMessage(false)}\n\nAuthentication is required since the comment is linked with the user.',
@@ -4324,7 +4324,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getProduct',
@@ -4333,7 +4333,7 @@ module.exports = {
 						'function': 'getProduct'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 					summary: 'Get Bank Product',
 					description: '<p>Returns information about a financial Product offered by the bank specified by BANK_ID and PRODUCT_CODE including:</p>\n<ul>\n<li>Name</li>\n<li>Code</li>\n<li>Parent Product Code</li>\n<li>Category</li>\n<li>Family</li>\n<li>Super Family</li>\n<li>More info URL</li>\n<li>Description</li>\n<li>Terms and Conditions</li>\n<li>License the data under this endpoint is released under</li>\n</ul>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about a financial Product offered by the bank specified by BANK_ID and PRODUCT_CODE including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\n\nAuthentication is Optional',
@@ -4460,7 +4460,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE'
 				},
 				{
 					operation_id: 'OBPv3.1.0-unlockUser',
@@ -4532,7 +4532,7 @@ module.exports = {
 						'function': 'updateCounterpartyPrivateAlias'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					summary: 'Update Counterparty Private Alias',
 					description: '<p>Updates the private alias of the counterparty (AKA other account) OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Updates the private alias of the counterparty (AKA other account) OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -4576,7 +4576,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyCorporateLocation',
@@ -4585,7 +4585,7 @@ module.exports = {
 						'function': 'deleteCounterpartyCorporateLocation'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					summary: 'Delete Counterparty Corporate Location.',
 					description: '<p>Delete corporate location of other bank account. Delete the geolocation of the counterparty\'s registered address</p>\n',
 					description_markdown: 'Delete corporate location of other bank account. Delete the geolocation of the counterparty\'s registered address',
@@ -4628,7 +4628,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
 				},
 				{
 					operation_id: 'OBPv2.0.0-addKycStatus',
@@ -4637,7 +4637,7 @@ module.exports = {
 						'function': 'addKycStatus'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_statuses',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_statuses',
 					summary: 'Add KYC Status',
 					description: '<p>Add a kyc_status for the customer specified by CUSTOMER_ID. KYC Status is a timeline of the KYC status of the customer</p>\n',
 					description_markdown: 'Add a kyc_status for the customer specified by CUSTOMER_ID. KYC Status is a timeline of the KYC status of the customer',
@@ -4703,7 +4703,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_statuses'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_statuses'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateWhereTagForViewOnTransaction',
@@ -4712,7 +4712,7 @@ module.exports = {
 						'function': 'updateWhereTagForViewOnTransaction'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					summary: 'Update where tag.',
 					description: '<p>Updates the &quot;where&quot; Geo tag on a transaction TRANSACTION_ID in a <a href="#1_2_1-getViewsForBankAccount">view</a>.</p>\n<p>Authentication is Mandatory</p>\n<p>The geo tag is linked with the user.</p>\n',
 					description_markdown: 'Updates the "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
@@ -4767,7 +4767,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateAccountLabel',
@@ -4776,7 +4776,7 @@ module.exports = {
 						'function': 'updateAccountLabel'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					summary: 'Update Account Label.',
 					description: '<p>Update the label for the account. The label is how the account is known to the account owner e.g. \'My savings account\'</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the label for the account. The label is how the account is known to the account owner e.g. \'My savings account\'\n\n\nAuthentication is Mandatory\n\n       ',
@@ -4825,7 +4825,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getOtherAccountMetadata',
@@ -4834,7 +4834,7 @@ module.exports = {
 						'function': 'getOtherAccountMetadata'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
 					summary: 'Get Other Account Metadata.',
 					description: '<p>Get metadata of one other account.<br />\nReturns only the metadata about one other bank account (OTHER_ACCOUNT_ID) that had shared at least one transaction with ACCOUNT_ID at BANK_ID.</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Get metadata of one other account.\nReturns only the metadata about one other bank account (OTHER_ACCOUNT_ID) that had shared at least one transaction with ACCOUNT_ID at BANK_ID.\n\nAuthentication via OAuth is required if the view is not public.',
@@ -4972,7 +4972,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerEmail',
@@ -4981,7 +4981,7 @@ module.exports = {
 						'function': 'updateCustomerEmail'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/email',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/email',
 					summary: 'Update the email of a Customer',
 					description: '<p>Update an email of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update an email of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -5144,7 +5144,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/email'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/email'
 				},
 				{
 					operation_id: 'OBPv4.0.0-createTransactionRequestAccountOtp',
@@ -5153,7 +5153,7 @@ module.exports = {
 						'function': 'createTransactionRequestAccountOtp'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
 					summary: 'Create Transaction Request (ACCOUNT_OTP)',
 					description: '<p>When using ACCOUNT, the payee is set in the request body.</p>\n<p>Money goes into the BANK_ID and ACCOUNT_ID specified in the request body.</p>\n<p>Initiate a Payment via creating a Transaction Request.</p>\n<p>In OBP, a <code>transaction request</code> may or may not result in a <code>transaction</code>. However, a <code>transaction</code> only has one possible state: completed.</p>\n<p>A <code>Transaction Request</code> can have one of several states.</p>\n<p><code>Transactions</code> are modeled on items in a bank statement that represent the movement of money.</p>\n<p><code>Transaction Requests</code> are requests to move money which may or may not succeeed and thus result in a <code>Transaction</code>.</p>\n<p>A <code>Transaction Request</code> might create a security challenge that needs to be answered before the <code>Transaction Request</code> proceeds.</p>\n<p>Transaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).</p>\n<p>Transaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.<br />\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.</p>\n<p>The payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.</p>\n<p>In sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.</p>\n<p>In sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.</p>\n<p>If a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.</p>\n<p>You can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.</p>\n<p>The following static FX rates are available in sandbox mode:</p>\n<p><a href="http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate">http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate</a></p>\n<p>Transaction Requests satisfy PSD2 requirements thus:</p>\n<p>1) A transaction can be initiated by a third party application.</p>\n<p>2) The customer is informed of the charge that will incurred.</p>\n<p>3) The call supports delegated authentication (OAuth)</p>\n<p>See <a href="https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py">this python code</a> for a complete example of this flow.</p>\n<p>There is further documentation <a href="https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests">here</a></p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
@@ -5639,7 +5639,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getConsents',
@@ -5648,7 +5648,7 @@ module.exports = {
 						'function': 'getConsents'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/my/consents',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents',
 					summary: 'Get Consents',
 					description: '<p>An OBP Consent allows the holder of the Consent to call one or more endpoints.</p>\n<p>Consents must be created and authorisied using SCA (Strong Customer Authentication).</p>\n<p>That is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.</p>\n<p>Each Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.</p>\n<p>This endpoint gets the Consents that the current User created.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\n\nThis endpoint gets the Consents that the current User created.\n\nAuthentication is Mandatory\n\n      ',
@@ -5707,7 +5707,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/my/consents'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getKycMedia',
@@ -5808,7 +5808,7 @@ module.exports = {
 						'function': 'deleteWhereTagForViewOnTransaction'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					summary: 'Delete where tag.',
 					description: '<p>Deletes the where tag of the transaction TRANSACTION_ID made on <a href="#1_2_1-getViewsForBankAccount">view</a>.</p>\n<p>Authentication is Mandatory</p>\n<p>The user must either have owner privileges for this account, or must be the user that posted the geo tag.</p>\n',
 					description_markdown: 'Deletes the where tag of the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe user must either have owner privileges for this account, or must be the user that posted the geo tag.',
@@ -5853,7 +5853,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyMoreInfo',
@@ -5862,7 +5862,7 @@ module.exports = {
 						'function': 'addCounterpartyMoreInfo'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					summary: 'Add Counterparty More Info',
 					description: '<p>Add a description of the counter party from the perpestive of the account e.g. My dentist.</p>\n',
 					description_markdown: 'Add a description of the counter party from the perpestive of the account e.g. My dentist.',
@@ -5906,7 +5906,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyPublicAlias',
@@ -5915,7 +5915,7 @@ module.exports = {
 						'function': 'deleteCounterpartyPublicAlias'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					summary: 'Delete Counterparty Public Alias',
 					description: '<p>Deletes the public alias of the other account OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Deletes the public alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -5957,7 +5957,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyPhysicalLocation',
@@ -5966,7 +5966,7 @@ module.exports = {
 						'function': 'updateCounterpartyPhysicalLocation'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					summary: 'Update Counterparty Physical Location',
 					description: '<p>Update geocoordinates of the counterparty\'s main location</p>\n',
 					description_markdown: 'Update geocoordinates of the counterparty\'s main location',
@@ -6022,7 +6022,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createUserAuthContextUpdate',
@@ -6031,7 +6031,7 @@ module.exports = {
 						'function': 'createUserAuthContextUpdate'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/users/current/auth-context-updates/SCA_METHOD',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/current/auth-context-updates/SCA_METHOD',
 					summary: 'Create User Auth Context Update',
 					description: '<p>Create User Auth Context Update.<br />\nAuthentication is Mandatory</p>\n<p>A One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD<br />\nSCA_METHOD is typically &quot;SMS&quot; or &quot;EMAIL&quot;. &quot;EMAIL&quot; is used for testing purposes.</p>\n',
 					description_markdown: 'Create User Auth Context Update.\nAuthentication is Mandatory\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\n',
@@ -6097,7 +6097,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/users/current/auth-context-updates/SCA_METHOD'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/current/auth-context-updates/SCA_METHOD'
 				},
 				{
 					operation_id: 'OBPv2.0.0-createUserCustomerLinks',
@@ -6106,7 +6106,7 @@ module.exports = {
 						'function': 'createUserCustomerLinks'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/user_customer_links',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/user_customer_links',
 					summary: 'Create User Customer Link.',
 					description: '<p>Link a User to a Customer</p>\n<p>Authentication is Mandatory</p>\n<p>CanCreateUserCustomerLink OR CanCreateUserCustomerLinkAtAnyBank entitlements are required.</p>\n',
 					description_markdown: 'Link a User to a Customer\n\nAuthentication is Mandatory\n\nCanCreateUserCustomerLink OR CanCreateUserCustomerLinkAtAnyBank entitlements are required.\n',
@@ -6182,7 +6182,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/user_customer_links'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/user_customer_links'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getOtherAccountForTransaction',
@@ -6191,7 +6191,7 @@ module.exports = {
 						'function': 'getOtherAccountForTransaction'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
 					summary: 'Get Other Account of Transaction',
 					description: '<p>Get other account of a transaction.<br />\nReturns details of the other party involved in the transaction, moderated by the <a href="#1_2_1-getViewsForBankAccount">view</a> (VIEW_ID).<br />\nAuthentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Get other account of a transaction.\nReturns details of the other party involved in the transaction, moderated by the [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n          Authentication via OAuth is required if the view is not public.',
@@ -6385,7 +6385,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createProductCollection',
@@ -6394,7 +6394,7 @@ module.exports = {
 						'function': 'createProductCollection'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 					summary: 'Create Product Collection',
 					description: '<p>Create or Update a Product Collection at the Bank.</p>\n<p>Use Product Collections to create Product &quot;Baskets&quot;, &quot;Portfolios&quot;, &quot;Indices&quot;, &quot;Collections&quot;, &quot;Underlyings-lists&quot;, &quot;Buckets&quot; etc. etc.</p>\n<p>There is a many to many relationship between Products and Product Collections:</p>\n<ul>\n<li>\n<p>A Product can exist in many Collections</p>\n</li>\n<li>\n<p>A Collection can contain many Products.</p>\n</li>\n</ul>\n<p>A collection has collection code, one parent Product and one or more child Products.</p>\n<p>Product hiearchy vs Product Collections:</p>\n<ul>\n<li>\n<p>You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.</p>\n</li>\n<li>\n<p>You can define a collection (also known as baskets or buckets) of products using Product Collections.</p>\n</li>\n</ul>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create or Update a Product Collection at the Bank.\n\nUse Product Collections to create Product "Baskets", "Portfolios", "Indices", "Collections", "Underlyings-lists", "Buckets" etc. etc.\n\nThere is a many to many relationship between Products and Product Collections:\n\n* A Product can exist in many Collections\n\n* A Collection can contain many Products.\n\nA collection has collection code, one parent Product and one or more child Products.\n\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\nAuthentication is Mandatory\n\n\n',
@@ -6482,7 +6482,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getEntitlementsForCurrentUser',
@@ -6561,7 +6561,7 @@ module.exports = {
 						'function': 'getSocialMediaHandles'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 					summary: 'Get Customer Social Media Handles',
 					description: '<p>Get social media handles for a customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get social media handles for a customer specified by CUSTOMER_ID.\n\nAuthentication is Mandatory',
@@ -6633,7 +6633,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addImageForViewOnTransaction',
@@ -6642,7 +6642,7 @@ module.exports = {
 						'function': 'addImageForViewOnTransaction'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 					summary: 'Add an image.',
 					description: '<p>Posts an image about a transaction TRANSACTION_ID on a <a href="#1_2_1-getViewsForBankAccount">view</a> VIEW_ID.</p>\n<p>Authentication is Mandatory</p>\n<p>The image is linked with the user.</p>\n',
 					description_markdown: 'Posts an image about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nThe image is linked with the user.',
@@ -6721,7 +6721,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getWhereTagForViewOnTransaction',
@@ -6730,7 +6730,7 @@ module.exports = {
 						'function': 'getWhereTagForViewOnTransaction'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					summary: 'Get where tag.',
 					description: '<p>Returns the &quot;where&quot; Geo tag added to the transaction TRANSACTION_ID made on a <a href="#1_2_1-getViewsForBankAccount">view</a> (VIEW_ID).<br />\nIt represents the location where the transaction has been initiated.</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the "where" Geo tag added to the transaction TRANSACTION_ID made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\nIt represents the location where the transaction has been initiated.\n\nAuthentication via OAuth is required if the view is not public.',
@@ -6806,7 +6806,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getKycDocuments',
@@ -6908,10 +6908,10 @@ module.exports = {
 						'function': 'privateAccountsAtOneBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/private',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private',
 					summary: 'Get Accounts at Bank (Minimal).',
-					description: '<p>Returns the minimal list of private accounts at BANK_ID that the user has access to.<br />\nFor each account, the API returns the ID, routing addresses and the views available to the current user.</p>\n<p>If you want to see more information on the Views, use the Account Detail call.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/BANK_ID/accounts/private?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
-					description_markdown: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+					description: '<p>Returns the minimal list of private accounts at BANK_ID that the user has access to.<br />\nFor each account, the API returns the ID, routing addresses and the views available to the current user.</p>\n<p>If you want to see more information on the Views, use the Account Detail call.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
+					description_markdown: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
 					example_request_body: {
 						jsonString: '{}'
 					},
@@ -7015,7 +7015,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/private'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createAccountApplication',
@@ -7024,7 +7024,7 @@ module.exports = {
 						'function': 'createAccountApplication'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-applications',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 					summary: 'Create Account Application',
 					description: '<p>Create Account Application</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Create Account Application\n\nAuthentication is Mandatory\n\n',
@@ -7241,7 +7241,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-applications'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerCreditLimit',
@@ -7250,7 +7250,7 @@ module.exports = {
 						'function': 'updateCustomerCreditLimit'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-limit',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-limit',
 					summary: 'Update the credit limit of a Customer',
 					description: '<p>Update the credit limit of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the credit limit of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -7424,7 +7424,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-limit'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-limit'
 				},
 				{
 					operation_id: 'OBPv2.0.0-publicAccountsAtOneBank',
@@ -7433,7 +7433,7 @@ module.exports = {
 						'function': 'publicAccountsAtOneBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/accounts/public',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/public',
 					summary: 'Get Public Accounts at Bank',
 					description: '<p>Returns a list of the public accounts (Anonymous access) at BANK_ID. For each account the API returns the ID and the available views.</p>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns a list of the public accounts (Anonymous access) at BANK_ID. For each account the API returns the ID and the available views.\n\nAuthentication is Optional\n\n',
@@ -7513,7 +7513,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/public'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/public'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateProductAttribute',
@@ -7522,7 +7522,7 @@ module.exports = {
 						'function': 'updateProductAttribute'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					summary: 'Update Product Attribute',
 					description: '<p>Update Product Attribute.</p>\n<p>Product Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Product Attribute is linked to its Product by PRODUCT_CODE</p>\n<p>Update one Product Attribute by its id.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Update Product Attribute. \n\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nUpdate one Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
@@ -7585,7 +7585,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteCustomerAddress',
@@ -7594,7 +7594,7 @@ module.exports = {
 						'function': 'deleteCustomerAddress'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 					summary: 'Delete Customer Address',
 					description: '<p>Delete an Address of the Customer specified by CUSTOMER_ADDRESS_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Delete an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -7639,7 +7639,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyImageUrl',
@@ -7648,7 +7648,7 @@ module.exports = {
 						'function': 'addCounterpartyImageUrl'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					summary: 'Add image url to other bank account.',
 					description: '<p>Add a url that points to the logo of the counterparty</p>\n',
 					description_markdown: 'Add a url that points to the logo of the counterparty',
@@ -7692,7 +7692,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
 				},
 				{
 					operation_id: 'OBPv2.1.0-createTransactionType',
@@ -7701,7 +7701,7 @@ module.exports = {
 						'function': 'createTransactionType'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.1.0/banks/BANK_ID/transaction-types',
+					request_url: '/obp/v2.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 					summary: 'Create Transaction Type at bank',
 					description: '<p>Create Transaction Types for the bank specified by BANK_ID:</p>\n<ul>\n<li>id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.</li>\n<li>bank_id : The bank that supports this TransactionType</li>\n<li>short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here</li>\n<li>summary : A succinct summary</li>\n<li>description : A longer description</li>\n<li>charge : The charge to the customer for each one of these</li>\n</ul>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create Transaction Types for the bank specified by BANK_ID:\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Mandatory',
@@ -7829,7 +7829,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/transaction-types'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteBranch',
@@ -7838,7 +7838,7 @@ module.exports = {
 						'function': 'deleteBranch'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/branches/BRANCH_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					summary: 'Delete Branch',
 					description: '<p>Delete Branch from given Bank.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Delete Branch from given Bank.\n\nAuthentication is Mandatory\n\n',
@@ -7887,7 +7887,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-enableDisableAccountWebhook',
@@ -7896,7 +7896,7 @@ module.exports = {
 						'function': 'enableDisableAccountWebhook'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-web-hooks',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					summary: 'Enable/Disable an Account Webhook',
 					description: '<p>Enable/Disable an Account Webhook</p>\n<p>Webhooks are used to call external URLs when certain events happen.</p>\n<p>Account Webhooks focus on events around accounts.</p>\n<p>For instance, a webhook could be used to notify an external service if a balance changes on an account.</p>\n<p>This functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange</p>\n',
 					description_markdown: 'Enable/Disable an Account Webhook\n\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
@@ -7975,7 +7975,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks'
 				},
 				{
 					operation_id: 'OBPv2.1.0-getTransactionRequestTypesSupportedByBank',
@@ -7984,7 +7984,7 @@ module.exports = {
 						'function': 'getTransactionRequestTypesSupportedByBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.1.0/banks/BANK_ID/transaction-request-types',
+					request_url: '/obp/v2.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-request-types',
 					summary: 'Get supported Transaction Request Types',
 					description: '<p>Get the list of the Transaction Request Types supported by the bank.</p>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Get the list of the Transaction Request Types supported by the bank.\n\nAuthentication is Optional\n',
@@ -8033,7 +8033,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/transaction-request-types'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-request-types'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteCardForBank',
@@ -8042,7 +8042,7 @@ module.exports = {
 						'function': 'deleteCardForBank'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					summary: 'Delete Card',
 					description: '<p>Delete a Card at bank specified by CARD_ID .</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Delete a Card at bank specified by CARD_ID .\n\nAuthentication is Mandatory\n',
@@ -8086,7 +8086,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createProduct',
@@ -8095,7 +8095,7 @@ module.exports = {
 						'function': 'createProduct'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 					summary: 'Create Product',
 					description: '<p>Create or Update Product for the Bank.</p>\n<p>Typical Super Family values / Asset classes are:</p>\n<p>Debt<br />\nEquity<br />\nFX<br />\nCommodity<br />\nDerivative</p>\n<p>Product hiearchy vs Product Collections:</p>\n<ul>\n<li>\n<p>You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.</p>\n</li>\n<li>\n<p>You can define a collection (also known as baskets or buckets) of products using Product Collections.</p>\n</li>\n</ul>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create or Update Product for the Bank.\n\n\nTypical Super Family values / Asset classes are:\n\nDebt\nEquity\nFX\nCommodity\nDerivative\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\n\nAuthentication is Mandatory\n\n\n',
@@ -8286,7 +8286,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getProductAttribute',
@@ -8295,7 +8295,7 @@ module.exports = {
 						'function': 'getProductAttribute'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					summary: 'Get Product Attribute',
 					description: '<p>Get Product Attribute</p>\n<p>Product Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Product Attribute is linked to its Product by PRODUCT_CODE</p>\n<p>Get one product attribute by its id.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Get Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nGet one product attribute by its id.\n\nAuthentication is Mandatory\n\n',
@@ -8350,7 +8350,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
 				},
 				{
 					operation_id: 'OBPv2.2.0-createFx',
@@ -8359,7 +8359,7 @@ module.exports = {
 						'function': 'createFx'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.2.0/banks/BANK_ID/fx',
+					request_url: '/obp/v2.2.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx',
 					summary: 'Create Fx',
 					description: '<p>Create or Update Fx for the Bank.</p>\n<p>Example:</p>\n<p>“from_currency_code”:“EUR”,<br />\n“to_currency_code”:“USD”,<br />\n“conversion_value”: 1.136305,<br />\n“inverse_conversion_value”: 1 / 1.136305 = 0.8800454103431737,</p>\n<p>Thus 1 Euro = 1.136305 US Dollar<br />\nand<br />\n1 US Dollar = 0.8800 Euro</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create or Update Fx for the Bank.\n\nExample:\n\n“from_currency_code”:“EUR”,\n“to_currency_code”:“USD”,\n“conversion_value”: 1.136305,\n“inverse_conversion_value”: 1 / 1.136305 = 0.8800454103431737,\n\n Thus 1 Euro = 1.136305 US Dollar\n and\n 1 US Dollar = 0.8800 Euro\n\n\nAuthentication is Mandatory\n\n',
@@ -8450,7 +8450,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/fx'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCommentForViewOnTransaction',
@@ -8459,7 +8459,7 @@ module.exports = {
 						'function': 'deleteCommentForViewOnTransaction'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
 					summary: 'Delete comment.',
 					description: '<p>Delete the comment COMMENT_ID about the transaction TRANSACTION_ID made on <a href="#1_2_1-getViewsForBankAccount">view</a>.</p>\n<p>Authentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the comment.</p>\n',
 					description_markdown: 'Delete the comment COMMENT_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the comment.',
@@ -8501,7 +8501,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID'
 				},
 				{
 					operation_id: 'OBPv2.0.0-deleteEntitlement',
@@ -8561,7 +8561,7 @@ module.exports = {
 						'function': 'updateCounterpartyImageUrl'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					summary: 'Update Counterparty Image Url',
 					description: '<p>Update the url that points to the logo of the counterparty</p>\n',
 					description_markdown: 'Update the url that points to the logo of the counterparty',
@@ -8604,7 +8604,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateAccount',
@@ -8613,7 +8613,7 @@ module.exports = {
 						'function': 'updateAccount'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/accounts/ACCOUNT_ID',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					summary: 'Update Account.',
 					description: '<p>Update the account.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the account. \n\nAuthentication is Mandatory\n\n       ',
@@ -8711,7 +8711,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/accounts/ACCOUNT_ID'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getPrivateAccountIdsbyBankId',
@@ -8720,10 +8720,10 @@ module.exports = {
 						'function': 'getPrivateAccountIdsbyBankId'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/account_ids/private',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private',
 					summary: 'Get Accounts at Bank (IDs only).',
-					description: '<p>Returns only the list of accounts ids at BANK_ID that the user has access to.</p>\n<p>Each account must have at least one private View.</p>\n<p>For each account the API returns its account ID.</p>\n<p>If you want to see more information on the Views, use the Account Detail call.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/BANK_ID/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
-					description_markdown: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+					description: '<p>Returns only the list of accounts ids at BANK_ID that the user has access to.</p>\n<p>Each account must have at least one private View.</p>\n<p>For each account the API returns its account ID.</p>\n<p>If you want to see more information on the Views, use the Account Detail call.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
+					description_markdown: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
 					example_request_body: {
 						jsonString: '{}'
 					},
@@ -8771,7 +8771,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/account_ids/private'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getAtm',
@@ -8780,7 +8780,7 @@ module.exports = {
 						'function': 'getAtm'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/atms/ATM_ID',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms/ATM_ID',
 					summary: 'Get Bank ATM',
 					description: '<p>Returns information about ATM for a single bank specified by BANK_ID and ATM_ID including:</p>\n<ul>\n<li>Address</li>\n<li>Geo Location</li>\n<li>License the data under this endpoint is released under</li>\n</ul>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about ATM for a single bank specified by BANK_ID and ATM_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\n\n\nAuthentication is Optional',
@@ -9026,7 +9026,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/atms/ATM_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms/ATM_ID'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getKycStatuses',
@@ -9107,7 +9107,7 @@ module.exports = {
 						'function': 'getAccountWebhooks'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/account-web-hooks',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					summary: 'Get Account Webhooks',
 					description: '<p>Get Account Webhooks.</p>\n<p>Possible custom URL parameters for pagination:</p>\n<ul>\n<li>limit=NUMBER</li>\n<li>offset=NUMBER</li>\n<li>account_id=STRING</li>\n<li>user_id=STRING</li>\n</ul>\n',
 					description_markdown: 'Get Account Webhooks.\n\nPossible custom URL parameters for pagination:\n\n* limit=NUMBER\n* offset=NUMBER\n* account_id=STRING\n* user_id=STRING\n\n\n',
@@ -9194,7 +9194,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/account-web-hooks'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getEntitlementRequests',
@@ -9338,7 +9338,7 @@ module.exports = {
 						'function': 'deleteCounterpartyUrl'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					summary: 'Delete url of other bank account.',
 					description: '',
 					description_markdown: '',
@@ -9381,7 +9381,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createAccount',
@@ -9390,7 +9390,7 @@ module.exports = {
 						'function': 'createAccount'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					summary: 'Create Account',
 					description: '<p>Create Account at bank specified by BANK_ID with Id specified by ACCOUNT_ID.</p>\n<p>The User can create an Account for themself  - or -  the User that has the USER_ID specified in the POST body.</p>\n<p>If the PUT body USER_ID <em>is</em> specified, the logged in user must have the Role canCreateAccount. Once created, the Account will be owned by the User specified by USER_ID.</p>\n<p>If the PUT body USER_ID is <em>not</em> specified, the account will be owned by the logged in User.</p>\n<p>The \'type\' field SHOULD be a product_code from Product.<br />\nIf the type matches a product_code from Product, account attributes will be created that match the Product Attributes.</p>\n<p>Note: The Amount MUST be zero.</p>\n',
 					description_markdown: 'Create Account at bank specified by BANK_ID with Id specified by ACCOUNT_ID.\n\nThe User can create an Account for themself  - or -  the User that has the USER_ID specified in the POST body.\n\nIf the PUT body USER_ID *is* specified, the logged in user must have the Role canCreateAccount. Once created, the Account will be owned by the User specified by USER_ID.\n\nIf the PUT body USER_ID is *not* specified, the account will be owned by the logged in User.\n\nThe \'type\' field SHOULD be a product_code from Product.\nIf the type matches a product_code from Product, account attributes will be created that match the Product Attributes.\n\nNote: The Amount MUST be zero.',
@@ -9559,7 +9559,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID'
 				},
 				{
 					operation_id: 'OBPv2.1.0-getCustomersForCurrentUserAtBank',
@@ -9568,7 +9568,7 @@ module.exports = {
 						'function': 'getCustomersForCurrentUserAtBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.1.0/banks/BANK_ID/customers',
+					request_url: '/obp/v2.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 					summary: 'Get Customers for current User at Bank',
 					description: '<p>Retuns a list of Customers at the Bank that are linked to the currently authenticated User.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Retuns a list of Customers at the Bank that are linked to the currently authenticated User.\n\n\nAuthentication is Mandatory',
@@ -9716,7 +9716,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createConsentEmail',
@@ -9725,7 +9725,7 @@ module.exports = {
 						'function': 'createConsentEmail'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/my/consents/EMAIL',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/EMAIL',
 					summary: 'Create Consent (EMAIL)',
 					description: '<p>An OBP Consent allows the holder of the Consent to call one or more endpoints.</p>\n<p>Consents must be created and authorisied using SCA (Strong Customer Authentication).</p>\n<p>That is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.</p>\n<p>Each Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.</p>\n<p>This endpoint starts the process of creating a Consent.</p>\n<p>The Consent is created in an INITIATED state.</p>\n<p>A One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD<br />\nSCA_METHOD is typically &quot;SMS&quot; or &quot;EMAIL&quot;. &quot;EMAIL&quot; is used for testing purposes.</p>\n<p>When the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
@@ -9784,7 +9784,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/my/consents/EMAIL'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/EMAIL'
 				},
 				{
 					operation_id: 'OBPv2.2.0-getExplictCounterpartiesForAccount',
@@ -9793,7 +9793,7 @@ module.exports = {
 						'function': 'getExplictCounterpartiesForAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+					request_url: '/obp/v2.2.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 					summary: 'Get Counterparties (Explicit).',
 					description: '<p>Get the Counterparties (Explicit) for the account / view.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Get the Counterparties (Explicit) for the account / view.\n\nAuthentication is Mandatory\n',
@@ -9925,7 +9925,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyMoreInfo',
@@ -9934,7 +9934,7 @@ module.exports = {
 						'function': 'updateCounterpartyMoreInfo'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					summary: 'Update Counterparty More Info',
 					description: '<p>Update the more info description of the counter party from the perpestive of the account e.g. My dentist.</p>\n',
 					description_markdown: 'Update the more info description of the counter party from the perpestive of the account e.g. My dentist.',
@@ -9978,7 +9978,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
 				},
 				{
 					operation_id: 'OBPv3.0.0-createAtm',
@@ -9987,7 +9987,7 @@ module.exports = {
 						'function': 'createAtm'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/atms',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 					summary: 'Create ATM',
 					description: '<p>Create ATM for the Bank.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create ATM for the Bank.\n\nAuthentication is Mandatory\n\n',
@@ -10446,7 +10446,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/atms'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getPrivateAccountByIdFull',
@@ -10455,7 +10455,7 @@ module.exports = {
 						'function': 'getPrivateAccountByIdFull'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/account',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/account',
 					summary: 'Get Account by Id (Full)',
 					description: '<p>Information returned about an account specified by ACCOUNT_ID as moderated by the view (VIEW_ID):</p>\n<ul>\n<li>Number</li>\n<li>Owners</li>\n<li>Type</li>\n<li>Balance</li>\n<li>IBAN</li>\n<li>Available views (sorted by short_name)</li>\n</ul>\n<p>More details about the data moderation by the view <a href="#1_2_1-getViewsForBankAccount">here</a>.</p>\n<p>PSD2 Context: PSD2 requires customers to have access to their account information via third party applications.<br />\nThis call provides balance and other account information via delegated authentication using OAuth.</p>\n<p>Authentication is required if the \'is_public\' field in view (VIEW_ID) is not set to <code>true</code>.</p>\n',
 					description_markdown: 'Information returned about an account specified by ACCOUNT_ID as moderated by the view (VIEW_ID):\n\n* Number\n* Owners\n* Type\n* Balance\n* IBAN\n* Available views (sorted by short_name)\n\nMore details about the data moderation by the view [here](#1_2_1-getViewsForBankAccount).\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is required if the \'is_public\' field in view (VIEW_ID) is not set to `true`.\n',
@@ -10865,7 +10865,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/account'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/account'
 				},
 				{
 					operation_id: 'OBPv2.2.0-getCurrentFxRate',
@@ -10874,7 +10874,7 @@ module.exports = {
 						'function': 'getCurrentFxRate'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.2.0/banks/BANK_ID/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
+					request_url: '/obp/v2.2.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
 					summary: 'Get Current FxRate',
 					description: '<p>Get the latest FX rate specified by BANK_ID, FROM_CURRENCY_CODE and TO_CURRENCY_CODE</p>\n<p>OBP may try different sources of FX rate information depending on the Connector in operation.</p>\n<p>For example we want to convert EUR =&gt; USD:</p>\n<p>OBP will:<br />\n1st try - Connector (database, core banking system or external FX service)<br />\n2nd try part 1 - fallbackexchangerates/eur.json<br />\n2nd try part 2 - fallbackexchangerates/usd.json (the inverse rate is used)<br />\n3rd try - Hardcoded map of FX rates.</p>\n<p><img src="https://user-images.githubusercontent.com/485218/60005085-1eded600-966e-11e9-96fb-798b102d9ad0.png" alt="FX Flow" /></p>\n',
 					description_markdown: 'Get the latest FX rate specified by BANK_ID, FROM_CURRENCY_CODE and TO_CURRENCY_CODE\n\nOBP may try different sources of FX rate information depending on the Connector in operation.\n\nFor example we want to convert EUR => USD:\n\nOBP will:\n1st try - Connector (database, core banking system or external FX service)\n2nd try part 1 - fallbackexchangerates/eur.json\n2nd try part 2 - fallbackexchangerates/usd.json (the inverse rate is used)\n3rd try - Hardcoded map of FX rates.\n\n![FX Flow](https://user-images.githubusercontent.com/485218/60005085-1eded600-966e-11e9-96fb-798b102d9ad0.png)\n\n      ',
@@ -10936,7 +10936,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE'
 				},
 				{
 					operation_id: 'OBPv1.4.0-getTransactionRequestTypes',
@@ -10945,7 +10945,7 @@ module.exports = {
 						'function': 'getTransactionRequestTypes'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.4.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
+					request_url: '/obp/v1.4.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
 					summary: 'Get Transaction Request Types for Account',
 					description: '<p>Returns the Transation Request Types that the account specified by ACCOUNT_ID and view specified by VIEW_ID has access to.</p>\n<p>These are the ways this API Server can create a Transaction via a Transaction Request<br />\n(as opposed to Transaction Types which include external types too e.g. for Transactions created by core banking etc.)</p>\n<p>A Transaction Request Type internally determines:</p>\n<ul>\n<li>the required Transaction Request \'body\' i.e. fields that define the \'what\' and \'to\' of a Transaction Request,</li>\n<li>the type of security challenge that may be be raised before the Transaction Request proceeds, and</li>\n<li>the threshold of that challenge.</li>\n</ul>\n<p>For instance in a \'SANDBOX_TAN\' Transaction Request, for amounts over 1000 currency units, the user must supply a positive integer to complete the Transaction Request and create a Transaction.</p>\n<p>This approach aims to provide only one endpoint for initiating transactions, and one that handles challenges, whilst still allowing flexibility with the payload and internal logic.</p>\n',
 					description_markdown: 'Returns the Transation Request Types that the account specified by ACCOUNT_ID and view specified by VIEW_ID has access to.\n\nThese are the ways this API Server can create a Transaction via a Transaction Request\n(as opposed to Transaction Types which include external types too e.g. for Transactions created by core banking etc.)\n\n A Transaction Request Type internally determines:\n\n * the required Transaction Request \'body\' i.e. fields that define the \'what\' and \'to\' of a Transaction Request,\n * the type of security challenge that may be be raised before the Transaction Request proceeds, and\n * the threshold of that challenge.\n\n For instance in a \'SANDBOX_TAN\' Transaction Request, for amounts over 1000 currency units, the user must supply a positive integer to complete the Transaction Request and create a Transaction.\n\n This approach aims to provide only one endpoint for initiating transactions, and one that handles challenges, whilst still allowing flexibility with the payload and internal logic.\n \n      ',
@@ -11027,7 +11027,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getPermissionForUserForBankAccount',
@@ -11036,7 +11036,7 @@ module.exports = {
 						'function': 'getPermissionForUserForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
 					summary: 'Get Account access for User.',
 					description: '<p>Returns the list of the views at BANK_ID for account ACCOUNT_ID that a user identified by PROVIDER_ID at their provider PROVIDER has access to.<br />\nAll url parameters must be <a href="http://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>, which is often especially relevant for USER_ID and PROVIDER.</p>\n<p>Authentication is Mandatory</p>\n<p>The user needs to have access to the owner view.</p>\n',
 					description_markdown: 'Returns the list of the views at BANK_ID for account ACCOUNT_ID that a user identified by PROVIDER_ID at their provider PROVIDER has access to.\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for USER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe user needs to have access to the owner view.',
@@ -11401,7 +11401,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getBranch',
@@ -11410,7 +11410,7 @@ module.exports = {
 						'function': 'getBranch'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/branches/BRANCH_ID',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					summary: 'Get Branch',
 					description: '<p>Returns information about a single Branch specified by BANK_ID and BRANCH_ID including:</p>\n<ul>\n<li>Name</li>\n<li>Address</li>\n<li>Geo Location</li>\n<li>License the data under this endpoint is released under.</li>\n</ul>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about a single Branch specified by BANK_ID and BRANCH_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under.\n\nAuthentication is Optional',
@@ -11815,7 +11815,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCreditLimitRequestByRequestId',
@@ -11824,7 +11824,7 @@ module.exports = {
 						'function': 'getCreditLimitRequestByRequestId'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
 					summary: 'Get Credit Limit Order Request By Request Id',
 					description: '<p><strong>NOTE: This endpoint currently only returns example data.</strong></p>\n<pre><code>    Get Credit Limit Order Request By Request Id\n</code></pre>\n',
 					description_markdown: '**NOTE: This endpoint currently only returns example data.**\n\n      \n        Get Credit Limit Order Request By Request Id\n',
@@ -11874,7 +11874,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-answerUserAuthContextUpdateChallenge',
@@ -11951,7 +11951,7 @@ module.exports = {
 						'function': 'getProductCollection'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 					summary: 'Get Product Collection',
 					description: '<p>Returns information about the financial Product Collection specified by BANK_ID and COLLECTION_CODE:</p>\n',
 					description_markdown: 'Returns information about the financial Product Collection specified by BANK_ID and COLLECTION_CODE:\n\n          ',
@@ -12093,7 +12093,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getOtherAccountPrivateAlias',
@@ -12102,7 +12102,7 @@ module.exports = {
 						'function': 'getOtherAccountPrivateAlias'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					summary: 'Get Other Account Private Alias',
 					description: '<p>Returns the private alias of the other account OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -12144,7 +12144,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyUrl',
@@ -12153,7 +12153,7 @@ module.exports = {
 						'function': 'addCounterpartyUrl'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					summary: 'Add url to other bank account.',
 					description: '<p>A url which represents the counterparty (home page url etc.)</p>\n',
 					description_markdown: 'A url which represents the counterparty (home page url etc.)',
@@ -12197,7 +12197,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
 				},
 				{
 					operation_id: 'OBPv3.1.0-checkFundsAvailable',
@@ -12206,7 +12206,7 @@ module.exports = {
 						'function': 'checkFundsAvailable'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
 					summary: 'Check Available Funds',
 					description: '<p>Check Available Funds<br />\nMandatory URL parameters:</p>\n<ul>\n<li>amount=NUMBER</li>\n<li>currency=STRING</li>\n</ul>\n',
 					description_markdown: 'Check Available Funds\nMandatory URL parameters:\n\n* amount=NUMBER\n* currency=STRING\n\n      ',
@@ -12259,7 +12259,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/funds-available'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteTagForViewOnTransaction',
@@ -12268,7 +12268,7 @@ module.exports = {
 						'function': 'deleteTagForViewOnTransaction'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
 					summary: 'Delete a tag.',
 					description: '<p>Deletes the tag TAG_ID about the transaction TRANSACTION_ID made on <a href="#1_2_1-getViewsForBankAccount">view</a>.<br />\nAuthentication via OAuth is required. The user must either have owner privileges for this account,<br />\nor must be the user that posted the tag.</p>\n',
 					description_markdown: 'Deletes the tag TAG_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\nAuthentication via OAuth is required. The user must either have owner privileges for this account, \nor must be the user that posted the tag.\n',
@@ -12308,7 +12308,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createUserAuthContext',
@@ -12383,7 +12383,7 @@ module.exports = {
 						'function': 'createTransactionRequestCounterparty'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
 					summary: 'Create Transaction Request (COUNTERPARTY)',
 					description: '<p>Special instructions for COUNTERPARTY:</p>\n<p>When using a COUNTERPARTY to create a Transaction Request, specificy the counterparty_id in the body of the request.<br />\nThe routing details of the counterparty will be forwarded for the transfer.</p>\n<p>Initiate a Payment via creating a Transaction Request.</p>\n<p>In OBP, a <code>transaction request</code> may or may not result in a <code>transaction</code>. However, a <code>transaction</code> only has one possible state: completed.</p>\n<p>A <code>Transaction Request</code> can have one of several states.</p>\n<p><code>Transactions</code> are modeled on items in a bank statement that represent the movement of money.</p>\n<p><code>Transaction Requests</code> are requests to move money which may or may not succeeed and thus result in a <code>Transaction</code>.</p>\n<p>A <code>Transaction Request</code> might create a security challenge that needs to be answered before the <code>Transaction Request</code> proceeds.</p>\n<p>Transaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).</p>\n<p>Transaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.<br />\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.</p>\n<p>The payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.</p>\n<p>In sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.</p>\n<p>In sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.</p>\n<p>If a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.</p>\n<p>You can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.</p>\n<p>The following static FX rates are available in sandbox mode:</p>\n<p><a href="http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate">http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate</a></p>\n<p>Transaction Requests satisfy PSD2 requirements thus:</p>\n<p>1) A transaction can be initiated by a third party application.</p>\n<p>2) The customer is informed of the charge that will incurred.</p>\n<p>3) The call supports delegated authentication (OAuth)</p>\n<p>See <a href="https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py">this python code</a> for a complete example of this flow.</p>\n<p>There is further documentation <a href="https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests">here</a></p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\nSpecial instructions for COUNTERPARTY:\n\nWhen using a COUNTERPARTY to create a Transaction Request, specificy the counterparty_id in the body of the request.\nThe routing details of the counterparty will be forwarded for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
@@ -12873,7 +12873,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv1.3.0-getCards',
@@ -13334,7 +13334,7 @@ module.exports = {
 						'function': 'addKycDocument'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
 					summary: 'Add KYC Document.',
 					description: '<p>Add a KYC document for the customer specified by CUSTOMER_ID. KYC Documents contain the document type (e.g. passport), place of issue, expiry etc.</p>\n',
 					description_markdown: 'Add a KYC document for the customer specified by CUSTOMER_ID. KYC Documents contain the document type (e.g. passport), place of issue, expiry etc. ',
@@ -13433,7 +13433,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getUserAuthContexts',
@@ -13518,7 +13518,7 @@ module.exports = {
 						'function': 'removePermissionForUserForBankAccountForAllViews'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 					summary: 'Revoke access to all Views on Account',
 					description: '<p>&quot;Revokes access to all Views on an Account for a certain User.</p>\n<p>The User is identified by PROVIDER_ID at their PROVIDER.</p>\n<p>The Account is specified by BANK_ID and ACCOUNT_ID.</p>\n<p>The View is specified by VIEW_ID.</p>\n<p>PROVIDER (may be a URL so) must be URL Encoded.</p>\n<p>PROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.</p>\n<p>Attempting to revoke access to a public view will return an error message.</p>\n<p>An Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.</p>\n',
 					description_markdown: '"Revokes access to all Views on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
@@ -13561,7 +13561,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getOtherAccountByIdForBankAccount',
@@ -13570,7 +13570,7 @@ module.exports = {
 						'function': 'getOtherAccountByIdForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
 					summary: 'Get Other Account by Id.',
 					description: '<p>Returns data about the Other Account that has shared at least one transaction with ACCOUNT_ID at BANK_ID.<br />\nAuthentication is Optional</p>\n<p>Authentication is required if the view is not public.</p>\n',
 					description_markdown: 'Returns data about the Other Account that has shared at least one transaction with ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view is not public.',
@@ -13770,7 +13770,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID'
 				},
 				{
 					operation_id: 'OBPv2.0.0-createUser',
@@ -13892,7 +13892,7 @@ module.exports = {
 						'function': 'addCounterpartyPublicAlias'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					summary: 'Add public alias to other bank account.',
 					description: '<p>Creates the public alias for the other account OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n<p>Note: Public aliases are automatically generated for new \'other accounts / counterparties\', so this call should only be used if<br />\nthe public alias was deleted.</p>\n<p>The VIEW_ID parameter should be a view the caller is permitted to access to and that has permission to create public aliases.</p>\n',
 					description_markdown: 'Creates the public alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\nNote: Public aliases are automatically generated for new \'other accounts / counterparties\', so this call should only be used if\nthe public alias was deleted.\n\nThe VIEW_ID parameter should be a view the caller is permitted to access to and that has permission to create public aliases.',
@@ -13936,7 +13936,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyUrl',
@@ -13945,7 +13945,7 @@ module.exports = {
 						'function': 'updateCounterpartyUrl'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					summary: 'Update url of other bank account.',
 					description: '<p>A url which represents the counterparty (home page url etc.)</p>\n',
 					description_markdown: 'A url which represents the counterparty (home page url etc.)',
@@ -13989,7 +13989,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url'
 				},
 				{
 					operation_id: 'OBPv3.1.0-deleteProductAttribute',
@@ -13998,7 +13998,7 @@ module.exports = {
 						'function': 'deleteProductAttribute'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					summary: 'Delete Product Attribute',
 					description: '<p>Delete Product Attribute</p>\n<p>Product Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Product Attribute is linked to its Product by PRODUCT_CODE</p>\n<p>Delete a Product Attribute by its id.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Delete Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nDelete a Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
@@ -14037,7 +14037,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerCreditRatingAndSource',
@@ -14046,7 +14046,7 @@ module.exports = {
 						'function': 'updateCustomerCreditRatingAndSource'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-rating-and-source',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-rating-and-source',
 					summary: 'Update the credit rating and source of a Customer',
 					description: '<p>Update the credit rating and source of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the credit rating and source of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -14213,7 +14213,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-rating-and-source'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-rating-and-source'
 				},
 				{
 					operation_id: 'OBPv1.2.1-removePermissionForUserForBankAccountForOneView',
@@ -14222,7 +14222,7 @@ module.exports = {
 						'function': 'removePermissionForUserForBankAccountForOneView'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 					summary: 'Revoke access to one View.',
 					description: '<p>Revokes access to a View on an Account for a certain User.</p>\n<p>The User is identified by PROVIDER_ID at their PROVIDER.</p>\n<p>The Account is specified by BANK_ID and ACCOUNT_ID.</p>\n<p>The View is specified by VIEW_ID.</p>\n<p>PROVIDER (may be a URL so) must be URL Encoded.</p>\n<p>PROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.</p>\n<p>Attempting to revoke access to a public view will return an error message.</p>\n<p>An Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.</p>\n',
 					description_markdown: 'Revokes access to a View on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
@@ -14267,7 +14267,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerNumber',
@@ -14276,7 +14276,7 @@ module.exports = {
 						'function': 'updateCustomerNumber'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/number',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/number',
 					summary: 'Update the number of a Customer',
 					description: '<p>Update the number of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -14439,7 +14439,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/number'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/number'
 				},
 				{
 					operation_id: 'OBPv3.1.0-saveHistoricalTransaction',
@@ -14635,7 +14635,7 @@ module.exports = {
 						'function': 'createTransactionRequestAccount'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
 					summary: 'Create Transaction Request (ACCOUNT)',
 					description: '<p>When using ACCOUNT, the payee is set in the request body.</p>\n<p>Money goes into the BANK_ID and ACCOUNT_ID specified in the request body.</p>\n<p>Initiate a Payment via creating a Transaction Request.</p>\n<p>In OBP, a <code>transaction request</code> may or may not result in a <code>transaction</code>. However, a <code>transaction</code> only has one possible state: completed.</p>\n<p>A <code>Transaction Request</code> can have one of several states.</p>\n<p><code>Transactions</code> are modeled on items in a bank statement that represent the movement of money.</p>\n<p><code>Transaction Requests</code> are requests to move money which may or may not succeeed and thus result in a <code>Transaction</code>.</p>\n<p>A <code>Transaction Request</code> might create a security challenge that needs to be answered before the <code>Transaction Request</code> proceeds.</p>\n<p>Transaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).</p>\n<p>Transaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.<br />\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.</p>\n<p>The payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.</p>\n<p>In sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.</p>\n<p>In sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.</p>\n<p>If a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.</p>\n<p>You can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.</p>\n<p>The following static FX rates are available in sandbox mode:</p>\n<p><a href="http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate">http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate</a></p>\n<p>Transaction Requests satisfy PSD2 requirements thus:</p>\n<p>1) A transaction can be initiated by a third party application.</p>\n<p>2) The customer is informed of the charge that will incurred.</p>\n<p>3) The call supports delegated authentication (OAuth)</p>\n<p>See <a href="https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py">this python code</a> for a complete example of this flow.</p>\n<p>There is further documentation <a href="https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests">here</a></p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
@@ -15121,7 +15121,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getBadLoginStatus',
@@ -15193,7 +15193,7 @@ module.exports = {
 						'function': 'getPermissionsForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions',
 					summary: 'Get access.',
 					description: '<p>Returns the list of the permissions at BANK_ID for account ACCOUNT_ID, with each time a pair composed of the user and the views that he has access to.</p>\n<p>Authentication is Mandatory<br />\nand the user needs to have access to the owner view.</p>\n',
 					description_markdown: 'Returns the list of the permissions at BANK_ID for account ACCOUNT_ID, with each time a pair composed of the user and the views that he has access to.\n\nAuthentication is Mandatory\nand the user needs to have access to the owner view.\n\n',
@@ -15531,7 +15531,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getAccountsHeld',
@@ -15540,10 +15540,10 @@ module.exports = {
 						'function': 'getAccountsHeld'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts-held',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held',
 					summary: 'Get Accounts Held',
-					description: '<p>Get Accounts held by the current User if even the User has not been assigned the owner View yet.</p>\n<p>Can be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/BANK_ID/accounts-held?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
-					description_markdown: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+					description: '<p>Get Accounts held by the current User if even the User has not been assigned the owner View yet.</p>\n<p>Can be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
+					description_markdown: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
 					example_request_body: {
 						jsonString: '{}'
 					},
@@ -15616,7 +15616,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts-held'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getImagesForViewOnTransaction',
@@ -15625,7 +15625,7 @@ module.exports = {
 						'function': 'getImagesForViewOnTransaction'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 					summary: 'Get images.',
 					description: '<p>Returns the transaction TRANSACTION_ID images made on a <a href="#1_2_1-getViewsForBankAccount">view</a> (VIEW_ID).<br />\nAuthentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the transaction TRANSACTION_ID images made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
@@ -15709,7 +15709,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createAccountWebhook',
@@ -15718,7 +15718,7 @@ module.exports = {
 						'function': 'createAccountWebhook'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-web-hooks',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					summary: 'Create an Account Webhook',
 					description: '<p>Create an Account Webhook</p>\n<p>Webhooks are used to call external URLs when certain events happen.</p>\n<p>Account Webhooks focus on events around accounts.</p>\n<p>For instance, a webhook could be used to notify an external service if a balance changes on an account.</p>\n<p>This functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange</p>\n',
 					description_markdown: 'Create an Account Webhook\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
@@ -15813,7 +15813,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyCorporateLocation',
@@ -15822,7 +15822,7 @@ module.exports = {
 						'function': 'addCounterpartyCorporateLocation'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					summary: 'Add Corporate Location to Counterparty',
 					description: '<p>Add the geolocation of the counterparty\'s registered address</p>\n',
 					description_markdown: 'Add the geolocation of the counterparty\'s registered address',
@@ -15877,7 +15877,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getAllEntitlements',
@@ -15954,7 +15954,7 @@ module.exports = {
 						'function': 'getEntitlementsByBankAndUser'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.1.0/banks/BANK_ID/users/USER_ID/entitlements',
+					request_url: '/obp/v2.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/USER_ID/entitlements',
 					summary: 'Get Entitlements for User at Bank.',
 					description: '<p>Get Entitlements specified by BANK_ID and USER_ID</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\nGet Entitlements specified by BANK_ID and USER_ID\n\nAuthentication is Mandatory\n\n\n      ',
@@ -16022,7 +16022,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/users/USER_ID/entitlements'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/USER_ID/entitlements'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerIdentity',
@@ -16031,7 +16031,7 @@ module.exports = {
 						'function': 'updateCustomerIdentity'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/identity',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/identity',
 					summary: 'Update the identity data of a Customer',
 					description: '<p>Update the identity data of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the identity data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -16207,7 +16207,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/identity'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/identity'
 				},
 				{
 					operation_id: 'OBPv3.1.0-refreshUser',
@@ -16268,7 +16268,7 @@ module.exports = {
 						'function': 'createCardAttribute'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID/attribute',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attribute',
 					summary: 'Create Card Attribute',
 					description: '<p>Create Card Attribute</p>\n<p>Card Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Card Attribute is linked to its Card by CARD_ID</p>\n<p>The type field must be one of &quot;STRING&quot;, &quot;INTEGER&quot;, &quot;DOUBLE&quot; or DATE_WITH_DAY&quot;</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Create Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
@@ -16354,7 +16354,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attribute'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attribute'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getStatusOfCreditCardOrder',
@@ -16363,7 +16363,7 @@ module.exports = {
 						'function': 'getStatusOfCreditCardOrder'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
 					summary: 'Get status of Credit Card order ',
 					description: '<p><strong>NOTE: This endpoint currently only returns example data.</strong></p>\n<pre><code>  Get status of Credit Card orders\n</code></pre>\n<p>Get all orders</p>\n',
 					description_markdown: '**NOTE: This endpoint currently only returns example data.**\n\n      Get status of Credit Card orders\nGet all orders\n',
@@ -16423,7 +16423,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders'
 				},
 				{
 					operation_id: 'OBPv3.0.0-addEntitlementRequest',
@@ -16562,7 +16562,7 @@ module.exports = {
 						'function': 'createTransactionRequestSepa'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
 					summary: 'Create Transaction Request (SEPA)',
 					description: '<p>Special instructions for SEPA:</p>\n<p>When using a SEPA Transaction Request, you specify the IBAN of a Counterparty in the body of the request.<br />\nThe routing details (IBAN) of the counterparty will be forwarded to the core banking system for the transfer.</p>\n<p>Initiate a Payment via creating a Transaction Request.</p>\n<p>In OBP, a <code>transaction request</code> may or may not result in a <code>transaction</code>. However, a <code>transaction</code> only has one possible state: completed.</p>\n<p>A <code>Transaction Request</code> can have one of several states.</p>\n<p><code>Transactions</code> are modeled on items in a bank statement that represent the movement of money.</p>\n<p><code>Transaction Requests</code> are requests to move money which may or may not succeeed and thus result in a <code>Transaction</code>.</p>\n<p>A <code>Transaction Request</code> might create a security challenge that needs to be answered before the <code>Transaction Request</code> proceeds.</p>\n<p>Transaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).</p>\n<p>Transaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.<br />\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.</p>\n<p>The payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.</p>\n<p>In sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.</p>\n<p>In sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.</p>\n<p>If a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.</p>\n<p>You can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.</p>\n<p>The following static FX rates are available in sandbox mode:</p>\n<p><a href="http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate">http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate</a></p>\n<p>Transaction Requests satisfy PSD2 requirements thus:</p>\n<p>1) A transaction can be initiated by a third party application.</p>\n<p>2) The customer is informed of the charge that will incurred.</p>\n<p>3) The call supports delegated authentication (OAuth)</p>\n<p>See <a href="https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py">this python code</a> for a complete example of this flow.</p>\n<p>There is further documentation <a href="https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests">here</a></p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\nSpecial instructions for SEPA:\n\nWhen using a SEPA Transaction Request, you specify the IBAN of a Counterparty in the body of the request.\nThe routing details (IBAN) of the counterparty will be forwarded to the core banking system for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
@@ -17052,7 +17052,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createCreditLimitRequest',
@@ -17061,7 +17061,7 @@ module.exports = {
 						'function': 'createCreditLimitRequest'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 					summary: 'Create Credit Limit Order Request',
 					description: '<p><strong>NOTE: This endpoint currently only returns example data.</strong></p>\n<p>Create credit limit order request</p>\n',
 					description_markdown: '**NOTE: This endpoint currently only returns example data.**\n\n      \nCreate credit limit order request\n',
@@ -17138,7 +17138,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests'
 				},
 				{
 					operation_id: 'OBPv2.1.0-getRoles',
@@ -17209,7 +17209,7 @@ module.exports = {
 						'function': 'getTransactionsForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions',
 					summary: 'Get Transactions for Account (Full)',
 					description: '<p>Returns transactions list of the account specified by ACCOUNT_ID and <a href="#1_2_1-getViewsForBankAccount">moderated</a> by the view (VIEW_ID).</p>\n<p>Authentication is Optional</p>\n<p>Authentication is required if the view is not public.</p>\n<p>Possible custom headers for pagination:</p>\n<ul>\n<li>sort_direction=ASC/DESC ==&gt; default value: DESC. The sort field is the completed date.</li>\n<li>limit=NUMBER ==&gt; default value: 50</li>\n<li>offset=NUMBER ==&gt; default value: 0</li>\n<li>from_date=DATE =&gt; default value: 0000-00-00T00:00:00.000Z</li>\n<li>to_date=DATE =&gt; default value: 3049-01-01T00:00:00.000Z</li>\n</ul>\n<p><strong>Date format parameter</strong>: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==&gt; time zone is UTC.</p>\n',
 					description_markdown: 'Returns transactions list of the account specified by ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\n\nAuthentication is required if the view is not public.\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
@@ -17730,7 +17730,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addWhereTagForViewOnTransaction',
@@ -17739,7 +17739,7 @@ module.exports = {
 						'function': 'addWhereTagForViewOnTransaction'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					summary: 'Add where tag.',
 					description: '<p>Creates a &quot;where&quot; Geo tag on a transaction TRANSACTION_ID in a <a href="#1_2_1-getViewsForBankAccount">view</a>.</p>\n<p>Authentication is Mandatory</p>\n<p>The geo tag is linked with the user.</p>\n',
 					description_markdown: 'Creates a "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
@@ -17794,7 +17794,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createSystemView',
@@ -18265,7 +18265,7 @@ module.exports = {
 						'function': 'updateCustomerAddress'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 					summary: 'Update the Address of a Customer',
 					description: '<p>Update an Address of the Customer specified by CUSTOMER_ADDRESS_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -18403,7 +18403,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getViewsForBankAccount',
@@ -18412,7 +18412,7 @@ module.exports = {
 						'function': 'getViewsForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 					summary: 'Get Views for Account.',
 					description: '<h1><a href="#views" id="views">Views</a></h1>\n<p>Views in Open Bank Project provide a mechanism for fine grained access control and delegation to Accounts and Transactions. Account holders use the \'owner\' view by default. Delegated access is made through other views for example \'accountants\', \'share-holders\' or \'tagging-application\'. Views can be created via the API and each view has a list of entitlements.</p>\n<p>Views on accounts and transactions filter the underlying data to redact certain fields for certain users. For instance the balance on an account may be hidden from the public. The way to know what is possible on a view is determined in the following JSON.</p>\n<p><strong>Data:</strong> When a view moderates a set of data, some fields my contain the value <code>null</code> rather than the original value. This indicates either that the user is not allowed to see the original data or the field is empty.</p>\n<p>There is currently one exception to this rule; the \'holder\' field in the JSON contains always a value which is either an alias or the real name - indicated by the \'is_alias\' field.</p>\n<p><strong>Action:</strong> When a user performs an action like trying to post a comment (with POST API call), if he is not allowed, the body response will contain an error message.</p>\n<p><strong>Metadata:</strong><br />\nTransaction metadata (like images, tags, comments, etc.) will appears <em>ONLY</em> on the view where they have been created e.g. comments posted to the public view only appear on the public view.</p>\n<p>The other account metadata fields (like image_URL, more_info, etc.) are unique through all the views. Example, if a user edits the \'more_info\' field in the \'team\' view, then the view \'authorities\' will show the new value (if it is allowed to do it).</p>\n<h1><a href="#all" id="all">All</a></h1>\n<p><em>Optional</em></p>\n<p>Returns the list of the views created for account ACCOUNT_ID at BANK_ID.</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.</p>\n',
 					description_markdown: '#Views\n\n\nViews in Open Bank Project provide a mechanism for fine grained access control and delegation to Accounts and Transactions. Account holders use the \'owner\' view by default. Delegated access is made through other views for example \'accountants\', \'share-holders\' or \'tagging-application\'. Views can be created via the API and each view has a list of entitlements.\n\nViews on accounts and transactions filter the underlying data to redact certain fields for certain users. For instance the balance on an account may be hidden from the public. The way to know what is possible on a view is determined in the following JSON.\n\n**Data:** When a view moderates a set of data, some fields my contain the value `null` rather than the original value. This indicates either that the user is not allowed to see the original data or the field is empty.\n\nThere is currently one exception to this rule; the \'holder\' field in the JSON contains always a value which is either an alias or the real name - indicated by the \'is_alias\' field.\n\n**Action:** When a user performs an action like trying to post a comment (with POST API call), if he is not allowed, the body response will contain an error message.\n\n**Metadata:**\nTransaction metadata (like images, tags, comments, etc.) will appears *ONLY* on the view where they have been created e.g. comments posted to the public view only appear on the public view.\n\nThe other account metadata fields (like image_URL, more_info, etc.) are unique through all the views. Example, if a user edits the \'more_info\' field in the \'team\' view, then the view \'authorities\' will show the new value (if it is allowed to do it).\n\n# All\n*Optional*\n\nReturns the list of the views created for account ACCOUNT_ID at BANK_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
@@ -18775,7 +18775,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateTransactionNarrative',
@@ -18784,7 +18784,7 @@ module.exports = {
 						'function': 'updateTransactionNarrative'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					summary: 'Update narrative.',
 					description: '<p>Updates the description of the transaction TRANSACTION_ID.</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Updates the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
@@ -18826,7 +18826,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
 				},
 				{
 					operation_id: 'OBPv4.0.0-answerTransactionRequestChallenge',
@@ -18835,7 +18835,7 @@ module.exports = {
 						'function': 'answerTransactionRequestChallenge'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
 					summary: 'Answer Transaction Request Challenge.',
 					description: '<p>In Sandbox mode, any string that can be converted to a positive integer will be accepted as an answer.</p>\n<p>This endpoint totally depends on createTransactionRequest, it need get the following data from createTransactionRequest response body.</p>\n<p>1)<code>TRANSACTION_REQUEST_TYPE</code> : is the same as createTransactionRequest request URL .</p>\n<p>2)<code>TRANSACTION_REQUEST_ID</code> : is the <code>id</code> field in createTransactionRequest response body.</p>\n<p>3) <code>id</code> :  is <code>challenge.id</code> field in createTransactionRequest response body.</p>\n<p>4) <code>answer</code> : must be <code>123</code>. if it is in sandbox mode. If it kafka mode, the answer can be got by phone message or other security ways.</p>\n',
 					description_markdown: 'In Sandbox mode, any string that can be converted to a positive integer will be accepted as an answer.\n\nThis endpoint totally depends on createTransactionRequest, it need get the following data from createTransactionRequest response body.\n\n1)`TRANSACTION_REQUEST_TYPE` : is the same as createTransactionRequest request URL .\n\n2)`TRANSACTION_REQUEST_ID` : is the `id` field in createTransactionRequest response body.\n\n3) `id` :  is `challenge.id` field in createTransactionRequest response body.\n\n4) `answer` : must be `123`. if it is in sandbox mode. If it kafka mode, the answer can be got by phone message or other security ways.\n\n      ',
@@ -19012,7 +19012,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createCustomer',
@@ -19021,7 +19021,7 @@ module.exports = {
 						'function': 'createCustomer'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 					summary: 'Create Customer.',
 					description: '<p>The Customer resource stores the customer number, legal name, email, phone number, their date of birth, relationship status, education attained, a url for a profile image, KYC status etc.<br />\nDates need to be in the format 2013-01-21T23:08:00Z</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\nThe Customer resource stores the customer number, legal name, email, phone number, their date of birth, relationship status, education attained, a url for a profile image, KYC status etc.\nDates need to be in the format 2013-01-21T23:08:00Z\n\nAuthentication is Mandatory\n',
@@ -19308,7 +19308,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addOtherAccountPrivateAlias',
@@ -19317,7 +19317,7 @@ module.exports = {
 						'function': 'addOtherAccountPrivateAlias'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					summary: 'Create Other Account Private Alias',
 					description: '<p>Creates a private alias for the other account OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Creates a private alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -19361,7 +19361,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addPermissionForUserForBankAccountForOneView',
@@ -19370,7 +19370,7 @@ module.exports = {
 						'function': 'addPermissionForUserForBankAccountForOneView'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 					summary: 'Grant User access to View.',
 					description: '<p>Grants the User identified by PROVIDER_ID at PROVIDER access to the view VIEW_ID at BANK_ID for account ACCOUNT_ID.</p>\n<p>All url parameters must be <a href="http://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>, which is often especially relevant for PROVIDER and PROVIDER_ID.</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.</p>\n<p>Granting access to a public view will return an error message, as the user already has access.</p>\n',
 					description_markdown: 'Grants the User identified by PROVIDER_ID at PROVIDER access to the view VIEW_ID at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER and PROVIDER_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nGranting access to a public view will return an error message, as the user already has access.',
@@ -19670,7 +19670,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-bankById',
@@ -19760,7 +19760,7 @@ module.exports = {
 						'function': 'addTransactionNarrative'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					summary: 'Add narrative.',
 					description: '<p>Creates a description of the transaction TRANSACTION_ID.</p>\n<p>Note: Unlike other items of metadata, there is only one &quot;narrative&quot; per transaction accross all views.<br />\nIf you set narrative via a view e.g. view-x it will be seen via view-y (as long as view-y has permission to see the narrative).</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Creates a description of the transaction TRANSACTION_ID.\n\nNote: Unlike other items of metadata, there is only one "narrative" per transaction accross all views.\nIf you set narrative via a view e.g. view-x it will be seen via view-y (as long as view-y has permission to see the narrative).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n',
@@ -19802,7 +19802,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
 				},
 				{
 					operation_id: 'OBPv2.0.0-addKycCheck',
@@ -19811,7 +19811,7 @@ module.exports = {
 						'function': 'addKycCheck'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
 					summary: 'Add KYC Check',
 					description: '<p>Add a KYC check for the customer specified by CUSTOMER_ID. KYC Checks store details of checks on a customer made by the KYC team, their comments and a satisfied status.</p>\n',
 					description_markdown: 'Add a KYC check for the customer specified by CUSTOMER_ID. KYC Checks store details of checks on a customer made by the KYC team, their comments and a satisfied status.',
@@ -19916,7 +19916,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyCorporateLocation',
@@ -19925,7 +19925,7 @@ module.exports = {
 						'function': 'updateCounterpartyCorporateLocation'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					summary: 'Update Counterparty Corporate Location',
 					description: '<p>Update the geolocation of the counterparty\'s registered address</p>\n',
 					description_markdown: 'Update the geolocation of the counterparty\'s registered address',
@@ -19981,7 +19981,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createConsentSms',
@@ -19990,7 +19990,7 @@ module.exports = {
 						'function': 'createConsentSms'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/my/consents/SMS',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/SMS',
 					summary: 'Create Consent (SMS)',
 					description: '<p>An OBP Consent allows the holder of the Consent to call one or more endpoints.</p>\n<p>Consents must be created and authorisied using SCA (Strong Customer Authentication).</p>\n<p>That is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.</p>\n<p>Each Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.</p>\n<p>This endpoint starts the process of creating a Consent.</p>\n<p>The Consent is created in an INITIATED state.</p>\n<p>A One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD<br />\nSCA_METHOD is typically &quot;SMS&quot; or &quot;EMAIL&quot;. &quot;EMAIL&quot; is used for testing purposes.</p>\n<p>When the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
@@ -20049,7 +20049,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/my/consents/SMS'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/SMS'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getPublicAccountById',
@@ -20058,7 +20058,7 @@ module.exports = {
 						'function': 'getPublicAccountById'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/public/accounts/ACCOUNT_ID/VIEW_ID/account',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/public/accounts/ACCOUNT_ID/VIEW_ID/account',
 					summary: 'Get Public Account by Id',
 					description: '<p>Returns information about an account that has a public view.</p>\n<p>The account is specified by ACCOUNT_ID. The information is moderated by the view specified by VIEW_ID.</p>\n<ul>\n<li>Number</li>\n<li>Owners</li>\n<li>Type</li>\n<li>Balance</li>\n<li>Routing</li>\n</ul>\n<p>PSD2 Context: PSD2 requires customers to have access to their account information via third party applications.<br />\nThis call provides balance and other account information via delegated authentication using OAuth.</p>\n<p>Authentication is Optional</p>\n',
 					description_markdown: '\nReturns information about an account that has a public view.\n\nThe account is specified by ACCOUNT_ID. The information is moderated by the view specified by VIEW_ID.\n\n* Number\n* Owners\n* Type\n* Balance\n* Routing\n\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is Optional\n\n',
@@ -20189,7 +20189,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/public/accounts/ACCOUNT_ID/VIEW_ID/account'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/public/accounts/ACCOUNT_ID/VIEW_ID/account'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getEntitlementRequestsForCurrentUser',
@@ -20329,7 +20329,7 @@ module.exports = {
 						'function': 'addKycMedia'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
 					summary: 'Add KYC Media.',
 					description: '<p>Add some KYC media for the customer specified by CUSTOMER_ID. KYC Media resources relate to KYC Documents and KYC Checks and contain media urls for scans of passports, utility bills etc.</p>\n',
 					description_markdown: 'Add some KYC media for the customer specified by CUSTOMER_ID. KYC Media resources relate to KYC Documents and KYC Checks and contain media urls for scans of passports, utility bills etc.',
@@ -20425,7 +20425,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addCounterpartyPhysicalLocation',
@@ -20434,7 +20434,7 @@ module.exports = {
 						'function': 'addCounterpartyPhysicalLocation'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					summary: 'Add physical location to other bank account.',
 					description: '<p>Add geocoordinates of the counterparty\'s main location</p>\n',
 					description_markdown: 'Add geocoordinates of the counterparty\'s main location',
@@ -20490,7 +20490,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updatedCardForBank',
@@ -20499,7 +20499,7 @@ module.exports = {
 						'function': 'updatedCardForBank'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					summary: 'Update Card',
 					description: '<p>Update Card at bank specified by CARD_ID .<br />\nAuthentication is Mandatory</p>\n',
 					description_markdown: 'Update Card at bank specified by CARD_ID .\nAuthentication is Mandatory\n',
@@ -21058,7 +21058,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCheckbookOrders',
@@ -21067,7 +21067,7 @@ module.exports = {
 						'function': 'getCheckbookOrders'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
 					summary: 'Get Checkbook orders',
 					description: '<p><strong>NOTE: This endpoint currently only returns example data.</strong></p>\n<pre><code>  Get all checkbook orders\n</code></pre>\n',
 					description_markdown: '**NOTE: This endpoint currently only returns example data.**\n\n      Get all checkbook orders',
@@ -21205,7 +21205,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteImageForViewOnTransaction',
@@ -21214,7 +21214,7 @@ module.exports = {
 						'function': 'deleteImageForViewOnTransaction'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
 					summary: 'Delete an image',
 					description: '<p>Deletes the image IMAGE_ID about the transaction TRANSACTION_ID made on <a href="#1_2_1-getViewsForBankAccount">view</a>.</p>\n<p>Authentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the image.</p>\n',
 					description_markdown: 'Deletes the image IMAGE_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the image.',
@@ -21259,7 +21259,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerMobileNumber',
@@ -21268,7 +21268,7 @@ module.exports = {
 						'function': 'updateCustomerMobileNumber'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/mobile-number',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/mobile-number',
 					summary: 'Update the mobile number of a Customer',
 					description: '<p>Update the mobile number of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the mobile number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -21431,7 +21431,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/mobile-number'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/mobile-number'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getTransactionRequests',
@@ -21440,7 +21440,7 @@ module.exports = {
 						'function': 'getTransactionRequests'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
 					summary: 'Get Transaction Requests.',
 					description: '<p>Returns transaction requests for account specified by ACCOUNT_ID at bank specified by BANK_ID.</p>\n<p>The VIEW_ID specified must be \'owner\' and the user must have access to this view.</p>\n<p>Version 2.0.0 now returns charge information.</p>\n<p>Transaction Requests serve to initiate transactions that may or may not proceed. They contain information including:</p>\n<ul>\n<li>Transaction Request Id</li>\n<li>Type</li>\n<li>Status (INITIATED, COMPLETED)</li>\n<li>Challenge (in order to confirm the request)</li>\n<li>From Bank / Account</li>\n<li>Details including Currency, Value, Description and other initiation information specific to each type. (Could potentialy include a list of future transactions.)</li>\n<li>Related Transactions</li>\n</ul>\n<p>PSD2 Context: PSD2 requires transparency of charges to the customer.<br />\nThis endpoint provides the charge that would be applied if the Transaction Request proceeds - and a record of that charge there after.<br />\nThe customer can proceed with the Transaction by answering the security challenge.</p>\n',
 					description_markdown: 'Returns transaction requests for account specified by ACCOUNT_ID at bank specified by BANK_ID.\n\nThe VIEW_ID specified must be \'owner\' and the user must have access to this view.\n\nVersion 2.0.0 now returns charge information.\n\nTransaction Requests serve to initiate transactions that may or may not proceed. They contain information including:\n\n* Transaction Request Id\n* Type\n* Status (INITIATED, COMPLETED)\n* Challenge (in order to confirm the request)\n* From Bank / Account\n* Details including Currency, Value, Description and other initiation information specific to each type. (Could potentialy include a list of future transactions.)\n* Related Transactions\n\nPSD2 Context: PSD2 requires transparency of charges to the customer.\nThis endpoint provides the charge that would be applied if the Transaction Request proceeds - and a record of that charge there after.\nThe customer can proceed with the Transaction by answering the security challenge.\n\n      ',
@@ -21896,7 +21896,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getBranches',
@@ -21905,7 +21905,7 @@ module.exports = {
 						'function': 'getBranches'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/branches',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 					summary: 'Get Branches for a Bank',
 					description: '<p>Returns information about branches for a single bank specified by BANK_ID including:</p>\n<ul>\n<li>Name</li>\n<li>Address</li>\n<li>Geo Location</li>\n<li>License the data under this endpoint is released under</li>\n<li>Structured opening hours</li>\n<li>Accessible flag</li>\n<li>Branch Type</li>\n<li>More Info</li>\n</ul>\n<p>Pagination:</p>\n<p>By default, 50 records are returned.</p>\n<p>You can use the url query parameters <em>limit</em> and <em>offset</em> for pagination<br />\nYou can also use the follow url query parameters:</p>\n<ul>\n<li>\n<p>city - string, find Branches those in this city, optional</p>\n</li>\n<li>\n<p>withinMetersOf - number, find Branches within given meters distance, optional</p>\n</li>\n<li>nearLatitude - number, a position of latitude value, cooperate with withMetersOf do query filter, optional</li>\n<li>nearLongitude - number, a position of longitude value, cooperate with withMetersOf do query filter, optional</li>\n</ul>\n<p>note: withinMetersOf, nearLatitude and nearLongitude either all empty or all have value.</p>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about branches for a single bank specified by BANK_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n* Structured opening hours\n* Accessible flag\n* Branch Type\n* More Info\n\nPagination:\n\nBy default, 50 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\nYou can also use the follow url query parameters:\n\n  - city - string, find Branches those in this city, optional\n\n\n  - withinMetersOf - number, find Branches within given meters distance, optional\n  - nearLatitude - number, a position of latitude value, cooperate with withMetersOf do query filter, optional\n  - nearLongitude - number, a position of longitude value, cooperate with withMetersOf do query filter, optional\n\nnote: withinMetersOf, nearLatitude and nearLongitude either all empty or all have value.\n\nAuthentication is Optional',
@@ -22321,7 +22321,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/branches'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createTaxResidence',
@@ -22330,7 +22330,7 @@ module.exports = {
 						'function': 'createTaxResidence'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residence',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residence',
 					summary: 'Add Tax Residence to Customer',
 					description: '<p>Add a Tax Residence to the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Add a Tax Residence to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -22388,7 +22388,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residence'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residence'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getCoreAccountById',
@@ -22397,7 +22397,7 @@ module.exports = {
 						'function': 'getCoreAccountById'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/account',
+					request_url: '/obp/v3.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/account',
 					summary: 'Get Account by Id (Core)',
 					description: '<p>Information returned about the account specified by ACCOUNT_ID:</p>\n<ul>\n<li>Number - The human readable account number given by the bank that identifies the account.</li>\n<li>Label - A label given by the owner of the account</li>\n<li>Owners - Users that own this account</li>\n<li>Type - The type of account</li>\n<li>Balance - Currency and Value</li>\n<li>Account Routings - A list that might include IBAN or national account identifiers</li>\n<li>Account Rules - A list that might include Overdraft and other bank specific rules</li>\n</ul>\n<p>This call returns the owner view and requires access to that view.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Information returned about the account specified by ACCOUNT_ID:\n\n* Number - The human readable account number given by the bank that identifies the account.\n* Label - A label given by the owner of the account\n* Owners - Users that own this account\n* Type - The type of account\n* Balance - Currency and Value\n* Account Routings - A list that might include IBAN or national account identifiers\n* Account Rules - A list that might include Overdraft and other bank specific rules\n\nThis call returns the owner view and requires access to that view.\n\n\nAuthentication is Mandatory\n\n',
@@ -22564,7 +22564,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/account'
+					specified_url: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/account'
 				},
 				{
 					operation_id: 'OBPv1.2.1-addTagForViewOnTransaction',
@@ -22573,7 +22573,7 @@ module.exports = {
 						'function': 'addTagForViewOnTransaction'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 					summary: 'Add a tag.',
 					description: '<p>Posts a tag about a transaction TRANSACTION_ID on a <a href="#1_2_1-getViewsForBankAccount">view</a> VIEW_ID.</p>\n<p>Authentication is Mandatory</p>\n<p>Authentication is required as the tag is linked with the user.</p>\n',
 					description_markdown: 'Posts a tag about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nAuthentication is required as the tag is linked with the user.',
@@ -22644,7 +22644,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getKycChecks',
@@ -22749,7 +22749,7 @@ module.exports = {
 						'function': 'getProducts'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/products',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products',
 					summary: 'Get Products',
 					description: '<p>Returns information about the financial products offered by a bank specified by BANK_ID including:</p>\n<ul>\n<li>Name</li>\n<li>Code</li>\n<li>Parent Product Code</li>\n<li>Category</li>\n<li>Family</li>\n<li>Super Family</li>\n<li>More info URL</li>\n<li>Description</li>\n<li>Terms and Conditions</li>\n<li>License the data under this endpoint is released under<br />\nAuthentication is Optional</li>\n</ul>\n',
 					description_markdown: 'Returns information about the financial products offered by a bank specified by BANK_ID including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\nAuthentication is Optional',
@@ -22887,7 +22887,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/products'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCardForBank',
@@ -22896,7 +22896,7 @@ module.exports = {
 						'function': 'getCardForBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					summary: 'Get Card By Id',
 					description: '<p>This will the datails of the card.<br />\nIt shows the account infomation which linked the the card.<br />\nAlso shows the card attributes of the card.</p>\n',
 					description_markdown: '\nThis will the datails of the card.\nIt shows the account infomation which linked the the card.\nAlso shows the card attributes of the card. \n\n       ',
@@ -23146,7 +23146,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyOpenCorporatesUrl',
@@ -23155,7 +23155,7 @@ module.exports = {
 						'function': 'deleteCounterpartyOpenCorporatesUrl'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					summary: 'Delete Counterparty Open Corporates URL',
 					description: '<p>Delete open corporate url of other bank account.</p>\n',
 					description_markdown: 'Delete open corporate url of other bank account.',
@@ -23198,7 +23198,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteTransactionNarrative',
@@ -23207,7 +23207,7 @@ module.exports = {
 						'function': 'deleteTransactionNarrative'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					summary: 'Delete narrative.',
 					description: '<p>Deletes the description of the transaction TRANSACTION_ID.</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Deletes the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
@@ -23248,7 +23248,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
 				},
 				{
 					operation_id: 'OBPv3.1.0-addCardForBank',
@@ -23257,7 +23257,7 @@ module.exports = {
 						'function': 'addCardForBank'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 					summary: 'Create Card',
 					description: '<p>Create Card at bank specified by BANK_ID .</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create Card at bank specified by BANK_ID .\n\nAuthentication is Mandatory\n',
@@ -23820,7 +23820,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCardAttribute',
@@ -23829,7 +23829,7 @@ module.exports = {
 						'function': 'updateCardAttribute'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
 					summary: 'Update Card Attribute',
 					description: '<p>Update Card Attribute</p>\n<p>Card Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Card Attribute is linked to its Card by CARD_ID</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Update Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nAuthentication is Mandatory\n\n',
@@ -23915,7 +23915,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID'
 				},
 				{
 					operation_id: 'OBPv4.0.0-createTransactionRequestFreeForm',
@@ -23924,7 +23924,7 @@ module.exports = {
 						'function': 'createTransactionRequestFreeForm'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
+					request_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
 					summary: 'Create Transaction Request (FREE_FORM).',
 					description: '<p>Initiate a Payment via creating a Transaction Request.</p>\n<p>In OBP, a <code>transaction request</code> may or may not result in a <code>transaction</code>. However, a <code>transaction</code> only has one possible state: completed.</p>\n<p>A <code>Transaction Request</code> can have one of several states.</p>\n<p><code>Transactions</code> are modeled on items in a bank statement that represent the movement of money.</p>\n<p><code>Transaction Requests</code> are requests to move money which may or may not succeeed and thus result in a <code>Transaction</code>.</p>\n<p>A <code>Transaction Request</code> might create a security challenge that needs to be answered before the <code>Transaction Request</code> proceeds.</p>\n<p>Transaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).</p>\n<p>Transaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.<br />\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.</p>\n<p>The payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.</p>\n<p>In sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.</p>\n<p>In sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.</p>\n<p>If a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.</p>\n<p>You can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.</p>\n<p>The following static FX rates are available in sandbox mode:</p>\n<p><a href="http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate">http://127.0.0.1:8082/more?version=OBPv4.0.0&amp;list-all-banks=false&amp;core=&amp;psd2=&amp;obwg=#OBPv2_2_0-getCurrentFxRate</a></p>\n<p>Transaction Requests satisfy PSD2 requirements thus:</p>\n<p>1) A transaction can be initiated by a third party application.</p>\n<p>2) The customer is informed of the charge that will incurred.</p>\n<p>3) The call supports delegated authentication (OAuth)</p>\n<p>See <a href="https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py">this python code</a> for a complete example of this flow.</p>\n<p>There is further documentation <a href="https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests">here</a></p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Initiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
@@ -24399,7 +24399,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateCustomerBranch',
@@ -24408,7 +24408,7 @@ module.exports = {
 						'function': 'updateCustomerBranch'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID/branch',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/branch',
 					summary: 'Update the Branch of a Customer',
 					description: '<p>Update the Branch of the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update the Branch of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -24571,7 +24571,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/branch'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/branch'
 				},
 				{
 					operation_id: 'OBPv3.1.0-createAccountAttribute',
@@ -24580,7 +24580,7 @@ module.exports = {
 						'function': 'createAccountAttribute'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
 					summary: 'Create Account Attribute',
 					description: '<p>Create Account Attribute</p>\n<p>Account Attributes are used to describe a financial Product with a list of typed key value pairs.</p>\n<p>Each Account Attribute is linked to its Account by ACCOUNT_ID</p>\n<p>Typical account attributes might be:</p>\n<p>ISIN (for International bonds)<br />\nVKN (for German bonds)<br />\nREDCODE (markit short code for credit derivative)<br />\nLOAN_ID (e.g. used for Anacredit reporting)</p>\n<p>ISSUE_DATE (When the bond was issued in the market)<br />\nMATURITY_DATE (End of life time of a product)<br />\nTRADABLE</p>\n<p>See <a href="http://www.fpml.org/">FPML</a> for more examples.</p>\n<p>The type field must be one of &quot;STRING&quot;, &quot;INTEGER&quot;, &quot;DOUBLE&quot; or DATE_WITH_DAY&quot;</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: ' Create Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
@@ -24644,7 +24644,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getProductTree',
@@ -24653,7 +24653,7 @@ module.exports = {
 						'function': 'getProductTree'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/product-tree/PRODUCT_CODE',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-tree/PRODUCT_CODE',
 					summary: 'Get Product Tree',
 					description: '<p>Returns information about a particular financial product specified by BANK_ID and PRODUCT_CODE<br />\nand it\'s parent product(s) recursively as specified by parent_product_code.</p>\n<p>Each product includes the following information.</p>\n<ul>\n<li>Name</li>\n<li>Code</li>\n<li>Parent Product Code</li>\n<li>Category</li>\n<li>Family</li>\n<li>Super Family</li>\n<li>More info URL</li>\n<li>Description</li>\n<li>Terms and Conditions</li>\n<li>License: The licence under which this product data is released. Licence can be an Open Data licence such as Open Data Commons Public Domain Dedication and License (PDDL) or Copyright etc.</li>\n</ul>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about a particular financial product specified by BANK_ID and PRODUCT_CODE\nand it\'s parent product(s) recursively as specified by parent_product_code.\n\nEach product includes the following information.\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License: The licence under which this product data is released. Licence can be an Open Data licence such as Open Data Commons Public Domain Dedication and License (PDDL) or Copyright etc.\n\n\n\nAuthentication is Optional',
@@ -24876,7 +24876,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/product-tree/PRODUCT_CODE'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-tree/PRODUCT_CODE'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyMoreInfo',
@@ -24885,7 +24885,7 @@ module.exports = {
 						'function': 'deleteCounterpartyMoreInfo'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					summary: 'Delete more info of other bank account.',
 					description: '',
 					description_markdown: '',
@@ -24928,7 +24928,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getTagsForViewOnTransaction',
@@ -24937,7 +24937,7 @@ module.exports = {
 						'function': 'getTagsForViewOnTransaction'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 					summary: 'Get tags.',
 					description: '<p>Returns the transaction TRANSACTION_ID tags made on a <a href="#1_2_1-getViewsForBankAccount">view</a> (VIEW_ID).<br />\nAuthentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the transaction TRANSACTION_ID tags made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
@@ -25006,7 +25006,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getSystemView',
@@ -25328,7 +25328,7 @@ module.exports = {
 						'function': 'getTransactionNarrative'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					summary: 'Get narrative.',
 					description: '<p>Returns the account owner description of the transaction <a href="#1_2_1-getViewsForBankAccount">moderated</a> by the view.</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the account owner description of the transaction [moderated](#1_2_1-getViewsForBankAccount) by the view.\n\nAuthentication via OAuth is required if the view is not public.',
@@ -25369,7 +25369,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getAtms',
@@ -25378,7 +25378,7 @@ module.exports = {
 						'function': 'getAtms'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/atms',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 					summary: 'Get Bank ATMS',
 					description: '<p>Returns information about ATMs for a single bank specified by BANK_ID including:</p>\n<ul>\n<li>Address</li>\n<li>Geo Location</li>\n<li>License the data under this endpoint is released under</li>\n</ul>\n<p>Pagination:</p>\n<p>By default, 100 records are returned.</p>\n<p>You can use the url query parameters <em>limit</em> and <em>offset</em> for pagination</p>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Returns information about ATMs for a single bank specified by BANK_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\nPagination:\n\nBy default, 100 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\n\nAuthentication is Optional',
@@ -25624,7 +25624,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/atms'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms'
 				},
 				{
 					operation_id: 'OBPv2.2.0-getExplictCounterpartyById',
@@ -25633,7 +25633,7 @@ module.exports = {
 						'function': 'getExplictCounterpartyById'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.2.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
+					request_url: '/obp/v2.2.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
 					summary: 'Get Counterparty by Counterparty Id.(Explicit).',
 					description: '<p>Information returned about the Counterparty specified by COUNTERPARTY_ID:</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Information returned about the Counterparty specified by COUNTERPARTY_ID:\n\nAuthentication is Mandatory\n',
@@ -25861,7 +25861,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getPrivateAccountsAtOneBank',
@@ -25870,10 +25870,10 @@ module.exports = {
 						'function': 'getPrivateAccountsAtOneBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/accounts',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts',
 					summary: 'Get Accounts at Bank.',
-					description: '<p>Returns the list of accounts at BANK_ID that the user has access to.<br />\nFor each account the API returns the account ID and the views available to the user..<br />\nEach account must have at least one private View.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/BANK_ID/accounts?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
-					description_markdown: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+					description: '<p>Returns the list of accounts at BANK_ID that the user has access to.<br />\nFor each account the API returns the account ID and the views available to the user..<br />\nEach account must have at least one private View.</p>\n<p>optional request parameters:</p>\n<ul>\n<li>account_type_filter: one or many accountType value, split by comma</li>\n<li>account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE</li>\n</ul>\n<p>whole url example:<br />\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts?account_type_filter=330,CURRENT+PLUS&amp;account_type_filter_operation=INCLUDE</p>\n<p>Authentication is Mandatory</p>\n',
+					description_markdown: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
 					example_request_body: {
 						jsonString: '{}'
 					},
@@ -25951,7 +25951,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts'
 				},
 				{
 					operation_id: 'OBPv3.0.0-createViewForBankAccount',
@@ -25960,7 +25960,7 @@ module.exports = {
 						'function': 'createViewForBankAccount'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 					summary: 'Create View.',
 					description: '<p>Create a view on bank account</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.<br />\nThe \'alias\' field in the JSON can take one of three values:</p>\n<ul>\n<li><em>public</em>: to use the public alias if there is one specified for the other account.</li>\n<li><em>private</em>: to use the public alias if there is one specified for the other account.</li>\n<li>\n<p><em>\'\'(empty string)</em>: to use no alias; the view shows the real name of the other account.</p>\n</li>\n</ul>\n<p>The \'hide_metadata_if_alias_used\' field in the JSON can take boolean values. If it is set to <code>true</code> and there is an alias on the other account then the other accounts\' metadata (like more_info, url, image_url, open_corporates_url, etc.) will be hidden. Otherwise the metadata will be shown.</p>\n<p>The \'allowed_actions\' field is a list containing the name of the actions allowed on this view, all the actions contained will be set to <code>true</code> on the view creation, the rest will be set to <code>false</code>.</p>\n<p>You MUST use a leading _ (underscore) in the view name because other view names are reserved for OBP system views.</p>\n',
 					description_markdown: 'Create a view on bank account\n\n Authentication is Mandatory and the user needs to have access to the owner view.\n The \'alias\' field in the JSON can take one of three values:\n\n * _public_: to use the public alias if there is one specified for the other account.\n * _private_: to use the public alias if there is one specified for the other account.\n\n * _\'\'(empty string)_: to use no alias; the view shows the real name of the other account.\n\n The \'hide_metadata_if_alias_used\' field in the JSON can take boolean values. If it is set to `true` and there is an alias on the other account then the other accounts\' metadata (like more_info, url, image_url, open_corporates_url, etc.) will be hidden. Otherwise the metadata will be shown.\n\n The \'allowed_actions\' field is a list containing the name of the actions allowed on this view, all the actions contained will be set to `true` on the view creation, the rest will be set to `false`.\n\n You MUST use a leading _ (underscore) in the view name because other view names are reserved for OBP system views.\n ',
@@ -26411,7 +26411,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views'
 				},
 				{
 					operation_id: 'OBPv3.0.0-updateViewForBankAccount',
@@ -26420,7 +26420,7 @@ module.exports = {
 						'function': 'updateViewForBankAccount'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 					summary: 'Update View.',
 					description: '<p>Update an existing view on a bank account</p>\n<p>Authentication is Mandatory and the user needs to have access to the owner view.</p>\n<p>The json sent is the same as during view creation (above), with one difference: the \'name\' field<br />\nof a view is not editable (it is only set when a view is created)</p>\n',
 					description_markdown: 'Update an existing view on a bank account\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nThe json sent is the same as during view creation (above), with one difference: the \'name\' field\nof a view is not editable (it is only set when a view is created)',
@@ -26867,7 +26867,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getCoreTransactionsForBankAccount',
@@ -26876,7 +26876,7 @@ module.exports = {
 						'function': 'getCoreTransactionsForBankAccount'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/transactions',
+					request_url: '/obp/v3.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/transactions',
 					summary: 'Get Transactions for Account (Core)',
 					description: '<p>Returns transactions list (Core info) of the account specified by ACCOUNT_ID.</p>\n<p>Authentication is Mandatory</p>\n<p>Possible custom headers for pagination:</p>\n<ul>\n<li>sort_direction=ASC/DESC ==&gt; default value: DESC. The sort field is the completed date.</li>\n<li>limit=NUMBER ==&gt; default value: 50</li>\n<li>offset=NUMBER ==&gt; default value: 0</li>\n<li>from_date=DATE =&gt; default value: 0000-00-00T00:00:00.000Z</li>\n<li>to_date=DATE =&gt; default value: 3049-01-01T00:00:00.000Z</li>\n</ul>\n<p><strong>Date format parameter</strong>: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==&gt; time zone is UTC.</p>\n',
 					description_markdown: 'Returns transactions list (Core info) of the account specified by ACCOUNT_ID.\n\nAuthentication is Mandatory\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
@@ -27109,7 +27109,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/transactions'
+					specified_url: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/transactions'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyPhysicalLocation',
@@ -27118,7 +27118,7 @@ module.exports = {
 						'function': 'deleteCounterpartyPhysicalLocation'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					summary: 'Delete Counterparty Physical Location.',
 					description: '<p>Delete physical location of other bank account.</p>\n',
 					description_markdown: 'Delete physical location of other bank account.',
@@ -27161,7 +27161,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location'
 				},
 				{
 					operation_id: 'OBPv2.0.0-addEntitlement',
@@ -27246,7 +27246,7 @@ module.exports = {
 						'function': 'getCommentsForViewOnTransaction'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 					summary: 'Get comments.',
 					description: '<p>Returns the transaction TRANSACTION_ID comments made on a <a href="#1_2_1-getViewsForBankAccount">view</a> (VIEW_ID).</p>\n<p>Authentication via OAuth is required if the view is not public.</p>\n',
 					description_markdown: 'Returns the transaction TRANSACTION_ID comments made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n\nAuthentication via OAuth is required if the view is not public.',
@@ -27326,7 +27326,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments'
 				},
 				{
 					operation_id: 'OBPv2.0.0-getTransactionTypes',
@@ -27335,7 +27335,7 @@ module.exports = {
 						'function': 'getTransactionTypes'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v2.0.0/banks/BANK_ID/transaction-types',
+					request_url: '/obp/v2.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 					summary: 'Get Transaction Types at Bank',
 					description: '<p>Get Transaction Types for the bank specified by BANK_ID:</p>\n<p>Lists the possible Transaction Types available at the bank (as opposed to Transaction Request Types which are the possible ways Transactions can be created by this API Server).</p>\n<ul>\n<li>id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.</li>\n<li>bank_id : The bank that supports this TransactionType</li>\n<li>short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here</li>\n<li>summary : A succinct summary</li>\n<li>description : A longer description</li>\n<li>charge : The charge to the customer for each one of these</li>\n</ul>\n<p>Authentication is Optional</p>\n',
 					description_markdown: 'Get Transaction Types for the bank specified by BANK_ID:\n\nLists the possible Transaction Types available at the bank (as opposed to Transaction Request Types which are the possible ways Transactions can be created by this API Server).\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Optional',
@@ -27422,7 +27422,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/transaction-types'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types'
 				},
 				{
 					operation_id: 'OBPv1.2.1-getCounterpartyPublicAlias',
@@ -27431,7 +27431,7 @@ module.exports = {
 						'function': 'getCounterpartyPublicAlias'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					summary: 'Get public alias of other bank account.',
 					description: '<p>Returns the public alias of the other account OTHER_ACCOUNT_ID.<br />\nAuthentication is Optional<br />\nAuthentication is Mandatory if the view is not public.</p>\n',
 					description_markdown: 'Returns the public alias of the other account OTHER_ACCOUNT_ID.\nAuthentication is Optional\nAuthentication is Mandatory if the view is not public.',
@@ -27472,7 +27472,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias'
 				},
 				{
 					operation_id: 'OBPv3.0.0-getCustomersForUser',
@@ -27647,7 +27647,7 @@ module.exports = {
 						'function': 'createBranch'
 					},
 					request_verb: 'POST',
-					request_url: '/obp/v3.0.0/banks/BANK_ID/branches',
+					request_url: '/obp/v3.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 					summary: 'Create Branch',
 					description: '<p>Create Branch for the Bank.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Create Branch for the Bank.\n\nAuthentication is Mandatory\n\n',
@@ -28424,7 +28424,7 @@ module.exports = {
 					],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/branches'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCustomerByCustomerId',
@@ -28433,7 +28433,7 @@ module.exports = {
 						'function': 'getCustomerByCustomerId'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/customers/CUSTOMER_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID',
 					summary: 'Get Customer by CUSTOMER_ID',
 					description: '<p>Gets the Customer specified by CUSTOMER_ID.</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Gets the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
@@ -28591,7 +28591,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID'
 				},
 				{
 					operation_id: 'OBPv3.1.0-getCardsForBank',
@@ -28600,10 +28600,10 @@ module.exports = {
 						'function': 'getCardsForBank'
 					},
 					request_verb: 'GET',
-					request_url: '/obp/v3.1.0/management/banks/BANK_ID/cards',
+					request_url: '/obp/v3.1.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 					summary: 'Get Cards for the specified bank',
-					description: '<p>Should be able to filter on the following fields</p>\n<p>eg:/management/banks/BANK_ID/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0</p>\n<p>1 customer_id should be valid customer_id, otherwise, it will return an empty card list.</p>\n<p>2 account_id should be valid account_id , otherwise, it will return an empty card list.</p>\n<p>${authenticationRequiredMessage(true)}</p>\n',
-					description_markdown: 'Should be able to filter on the following fields\n\neg:/management/banks/BANK_ID/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
+					description: '<p>Should be able to filter on the following fields</p>\n<p>eg:/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0</p>\n<p>1 customer_id should be valid customer_id, otherwise, it will return an empty card list.</p>\n<p>2 account_id should be valid account_id , otherwise, it will return an empty card list.</p>\n<p>${authenticationRequiredMessage(true)}</p>\n',
+					description_markdown: 'Should be able to filter on the following fields\n\neg:/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
 					example_request_body: {
 						jsonString: '{}'
 					},
@@ -29056,7 +29056,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/management/banks/BANK_ID/cards'
+					specified_url: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards'
 				},
 				{
 					operation_id: 'OBPv3.1.0-updateAccountApplicationStatus',
@@ -29065,7 +29065,7 @@ module.exports = {
 						'function': 'updateAccountApplicationStatus'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v3.1.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+					request_url: '/obp/v3.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 					summary: 'Update Account Application Status',
 					description: '<p>Update an Account Application status</p>\n<p>Authentication is Mandatory</p>\n',
 					description_markdown: 'Update an Account Application status\n\n\nAuthentication is Mandatory\n\n',
@@ -29275,7 +29275,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID'
 				},
 				{
 					operation_id: 'OBPv1.2.1-updateCounterpartyOpenCorporatesUrl',
@@ -29284,7 +29284,7 @@ module.exports = {
 						'function': 'updateCounterpartyOpenCorporatesUrl'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					summary: 'Update Open Corporates Url of Counterparty',
 					description: '<p>Update open corporate url of other bank account.</p>\n',
 					description_markdown: 'Update open corporate url of other bank account.',
@@ -29328,7 +29328,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url'
 				},
 				{
 					operation_id: 'OBPv1.2.1-deleteCounterpartyPrivateAlias',
@@ -29337,7 +29337,7 @@ module.exports = {
 						'function': 'deleteCounterpartyPrivateAlias'
 					},
 					request_verb: 'DELETE',
-					request_url: '/obp/v1.2.1/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					request_url: '/obp/v1.2.1/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					summary: 'Delete Counterparty Private Alias',
 					description: '<p>Deletes the private alias of the other account OTHER_ACCOUNT_ID.</p>\n<p>Authentication is Optional<br />\nAuthentication is required if the view is not public.</p>\n',
 					description_markdown: 'Deletes the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
@@ -29380,7 +29380,7 @@ module.exports = {
 					},
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias'
 				},
 				{
 					operation_id: 'OBPv2.1.0-updateBranch',
@@ -29389,7 +29389,7 @@ module.exports = {
 						'function': 'updateBranch'
 					},
 					request_verb: 'PUT',
-					request_url: '/obp/v2.1.0/banks/BANK_ID/branches/BRANCH_ID',
+					request_url: '/obp/v2.1.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					summary: 'Update Branch',
 					description: '<p>Update an existing branch for a bank account (Authenticated access).<br />\nAuthentication is Mandatory</p>\n',
 					description_markdown: 'Update an existing branch for a bank account (Authenticated access).\nAuthentication is Mandatory\n',
@@ -29645,7 +29645,7 @@ module.exports = {
 					}],
 					is_featured: false,
 					special_instructions: '',
-					specified_url: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID'
+					specified_url: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID'
 				}
 			]
 		},
@@ -29660,7 +29660,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create ATM for the Bank.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 						exampleRequestBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 						exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 						typedBody: [{
@@ -29922,7 +29922,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about ATM for a single bank specified by BANK_ID and ATM_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\n\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms/ATM_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms/ATM_ID',
 						exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -29958,7 +29958,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about ATMs for a single bank specified by BANK_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\nPagination:\n\nBy default, 100 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 						exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -29995,7 +29995,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Check Available Funds\nMandatory URL parameters:\n\n* amount=NUMBER\n* currency=STRING\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
 						exampleResponseBody: '{\n  "answer": "yes",\n  "date": "2019-09-03T17:59:14Z",\n  "available_funds_request_id": "c4ykz59svsr9b7fmdxk8ezs7"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30041,7 +30041,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Create Account at bank specified by BANK_ID with Id specified by ACCOUNT_ID.\n\nThe User can create an Account for themself  - or -  the User that has the USER_ID specified in the POST body.\n\nIf the PUT body USER_ID *is* specified, the logged in user must have the Role canCreateAccount. Once created, the Account will be owned by the User specified by USER_ID.\n\nIf the PUT body USER_ID is *not* specified, the account will be owned by the logged in User.\n\nThe \'type\' field SHOULD be a product_code from Product.\nIf the type matches a product_code from Product, account attributes will be created that match the Product Attributes.\n\nNote: The Amount MUST be zero.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 						exampleRequestBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "label": "Label",\n  "type": "CURRENT",\n  "balance": {\n    "currency": "EUR",\n    "amount": "0"\n  },\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "OBP",\n    "address": "UK123456"\n  }\n}',
 						exampleResponseBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "label": "My Account",\n  "type": "AC",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "branch_id": "DERBY6",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  },\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 						typedBody: [{
@@ -30183,7 +30183,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: ' Create Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "product_code": "saving1",\n  "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						typedBody: [{
@@ -30235,7 +30235,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Information returned about the account specified by ACCOUNT_ID:\n\n* Number - The human readable account number given by the bank that identifies the account.\n* Label - A label given by the owner of the account\n* Owners - Users that own this account\n* Type - The type of account\n* Balance - Currency and Value\n* Account Routings - A list that might include IBAN or national account identifiers\n* Account Rules - A list that might include Overdraft and other bank specific rules\n\nThis call returns the owner view and requires access to that view.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/account',
+						specificUrl: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/account',
 						exampleResponseBody: '{\n  "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "bank_id": "GENODEM1GLS",\n  "label": "My Account",\n  "number": "546387432",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "AC",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "views_basic": [\n    {\n      "id": "owner",\n      "short_name": "Owner",\n      "description": "This view is for the owner for the account.",\n      "is_public": false\n    }\n  ],\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30261,7 +30261,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Information returned about an account specified by ACCOUNT_ID as moderated by the view (VIEW_ID):\n\n* Number\n* Owners\n* Type\n* Balance\n* IBAN\n* Available views (sorted by short_name)\n\nMore details about the data moderation by the view [here](#1_2_1-getViewsForBankAccount).\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is required if the \'is_public\' field in view (VIEW_ID) is not set to `true`.\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/account',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/account',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "label": "NoneLabel",\n  "number": "123",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "OBP",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "views_available": [\n    {\n      "id": "123",\n      "short_name": "short_name",\n      "description": "description",\n      "is_public": true,\n      "alias": "None",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true\n    }\n  ],\n  "bank_id": "GENODEM1GLS",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  },\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30301,8 +30301,8 @@ module.exports = {
 							type: 'GET',
 							color: '#06D6A0'
 						},
-						description: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/account_ids/private',
+						description: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30332,8 +30332,8 @@ module.exports = {
 							type: 'GET',
 							color: '#06D6A0'
 						},
-						description: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/private',
+						description: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "label": "String",\n      "bank_id": "GENODEM1GLS",\n      "account_type": "330",\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ],\n      "views": [\n        {\n          "id": "owner",\n          "short_name": "Owner",\n          "description": "This view is for the owner for the account.",\n          "is_public": false\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30363,8 +30363,8 @@ module.exports = {
 							type: 'GET',
 							color: '#06D6A0'
 						},
-						description: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts',
+						description: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "label": "NoneLabel",\n      "bank_id": "GENODEM1GLS",\n      "views_available": [\n        {\n          "id": "1",\n          "short_name": "HHH",\n          "is_public": true\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30390,7 +30390,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Balances for the Accounts of the current User at one bank.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/balances',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/balances',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "label": "My Account",\n      "bank_id": "GENODEM1GLS",\n      "account_routings": [\n        {\n          "scheme": "accountNumber",\n          "address": "123456"\n        }\n      ],\n      "balance": {\n        "currency": "EUR",\n        "amount": "100"\n      }\n    }\n  ],\n  "overall_balance": {\n    "currency": "EUR",\n    "amount": "100"\n  },\n  "overall_balance_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30409,8 +30409,8 @@ module.exports = {
 							type: 'GET',
 							color: '#06D6A0'
 						},
-						description: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts-held',
+						description: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "12314",\n      "bank_id": "123",\n      "number": "123",\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30430,7 +30430,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '**NOTE: This endpoint currently only returns example data.**\n\n      Get all checkbook orders',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
 						exampleResponseBody: '{\n  "account": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n    "account_type": "330",\n    "account_routings": [\n      {\n        "scheme": "AccountNumber",\n        "address": "4930396"\n      }\n    ],\n    "branch_routings": [\n      {\n        "scheme": "BranchNumber",\n        "address": "678"\n      }\n    ]\n  },\n  "orders": [\n    {\n      "order": {\n        "order_id": "xjksajfkj",\n        "order_date": "07082013",\n        "number_of_checkbooks": "4",\n        "distribution_channel": "1201",\n        "status": "2",\n        "first_check_number": "5165276",\n        "shipping_code": "1"\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30471,7 +30471,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: ' Update Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "product_code": "saving1",\n  "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						typedBody: [{
@@ -30523,7 +30523,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Update the label for the account. The label is how the account is known to the account owner e.g. \'My savings account\'\n\n\nAuthentication is Mandatory\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 						exampleRequestBody: '{\n  "id": "123123",\n  "label": "label",\n  "bank_id": "GENODEM1GLS"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -30585,7 +30585,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the account. \n\nAuthentication is Mandatory\n\n       ',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/accounts/ACCOUNT_ID',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 						exampleRequestBody: '{\n  "label": "Label",\n  "type": "CURRENT",\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  }\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "label": "Label",\n  "type": "CURRENT",\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  }\n}',
 						typedBody: [{
@@ -30658,7 +30658,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: ' Create Account Application\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 						exampleRequestBody: '{\n  "product_code": "saveing1",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 						typedBody: [{
@@ -30705,7 +30705,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Account Application.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 						exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30736,7 +30736,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Account Applications.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 						exampleResponseBody: '{\n  "account_applications": [\n    {\n      "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n      "product_code": "saveing1",\n      "user": {\n        "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n        "email": "eveline@example.com",\n        "provider_id": "Chris",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      },\n      "customer": {\n        "bank_id": "GENODEM1GLS",\n        "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n        "customer_number": "5987953",\n        "legal_name": "Eveline Tripman",\n        "mobile_phone_number": "+44 07972 444 876",\n        "email": "eveline@example.com",\n        "face_image": {\n          "url": "www.openbankproject",\n          "date": "2017-09-19T00:00:00Z"\n        },\n        "date_of_birth": "2017-09-19T00:00:00Z",\n        "relationship_status": "single",\n        "dependants": 10,\n        "dob_of_dependants": [\n          "2017-09-19T00:00:00Z"\n        ],\n        "credit_rating": {\n          "rating": "OBP",\n          "source": "OBP"\n        },\n        "credit_limit": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "highest_education_attained": "Master",\n        "employment_status": "worker",\n        "kyc_status": true,\n        "last_ok_date": "2017-09-19T00:00:00Z",\n        "title": "Dr.",\n        "branchId": "DERBY6",\n        "nameSuffix": "Sr"\n      },\n      "date_of_application": "2017-09-19T00:00:00Z",\n      "status": "REQUESTED"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30767,7 +30767,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update an Account Application status\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 						exampleRequestBody: '{\n  "status": "ACCEPTED"\n}',
 						exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 						typedBody: [{
@@ -30810,7 +30810,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '\nReturns information about an account that has a public view.\n\nThe account is specified by ACCOUNT_ID. The information is moderated by the view specified by VIEW_ID.\n\n* Number\n* Owners\n* Type\n* Balance\n* Routing\n\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is Optional\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/public/accounts/ACCOUNT_ID/VIEW_ID/account',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/public/accounts/ACCOUNT_ID/VIEW_ID/account',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "bank_id": "String",\n  "label": "String",\n  "number": "String",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "String",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "account_rules": [\n    {\n      "scheme": "OVERDRAFT",\n      "value": "10"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30877,7 +30877,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns a list of the public accounts (Anonymous access) at BANK_ID. For each account the API returns the ID and the available views.\n\nAuthentication is Optional\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/public',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/public',
 						exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "label": "NoneLabel",\n      "bank_id": "GENODEM1GLS",\n      "views_available": [\n        {\n          "id": "1",\n          "short_name": "HHH",\n          "is_public": true\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -30898,7 +30898,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Create Transaction Types for the bank specified by BANK_ID:\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Mandatory',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-types',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 						exampleRequestBody: '{\n  "id": {\n    "value": "123"\n  },\n  "bank_id": "GENODEM1GLS",\n  "short_code": "PlaceholderString",\n  "summary": "PlaceholderString",\n  "description": "PlaceholderString",\n  "charge": {\n    "currency": "EUR",\n    "amount": "10"\n  }\n}',
 						exampleResponseBody: '{\n  "id": {\n    "value": "123"\n  },\n  "bankId": {\n    "value": "gh.uk.9j"\n  },\n  "shortCode": "80080",\n  "summary": "SANDBOX_TAN",\n  "description": "This is the sandbox mode, charging litter money.",\n  "charge": {\n    "currency": "EUR",\n    "amount": "100"\n  }\n}',
 						typedBody: [{
@@ -31021,7 +31021,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get Transaction Types for the bank specified by BANK_ID:\n\nLists the possible Transaction Types available at the bank (as opposed to Transaction Request Types which are the possible ways Transactions can be created by this API Server).\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-types',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 						exampleResponseBody: '{\n  "transaction_types": [\n    {\n      "id": {\n        "value": "123"\n      },\n      "bank_id": "GENODEM1GLS",\n      "short_code": "PlaceholderString",\n      "summary": "PlaceholderString",\n      "description": "PlaceholderString",\n      "charge": {\n        "currency": "EUR",\n        "amount": "10"\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -31048,7 +31048,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create Branch for the Bank.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 						exampleRequestBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 						exampleResponseBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 						typedBody: [{
@@ -31480,7 +31480,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete Branch from given Bank.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -31527,7 +31527,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about a single Branch specified by BANK_ID and BRANCH_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under.\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 						exampleResponseBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -31558,7 +31558,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about branches for a single bank specified by BANK_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n* Structured opening hours\n* Accessible flag\n* Branch Type\n* More Info\n\nPagination:\n\nBy default, 50 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\nYou can also use the follow url query parameters:\n\n  - city - string, find Branches those in this city, optional\n\n\n  - withinMetersOf - number, find Branches within given meters distance, optional\n  - nearLatitude - number, a position of latitude value, cooperate with withMetersOf do query filter, optional\n  - nearLongitude - number, a position of longitude value, cooperate with withMetersOf do query filter, optional\n\nnote: withinMetersOf, nearLatitude and nearLongitude either all empty or all have value.\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 						exampleResponseBody: '{\n  "branches": [\n    {\n      "id": "branch-id-123",\n      "bank_id": "bank-id-123",\n      "name": "Branch by the Lake",\n      "address": {\n        "line_1": "No 1 the Road",\n        "line_2": "The Place",\n        "line_3": "The Hill",\n        "city": "Berlin",\n        "county": "String",\n        "state": "Brandenburg",\n        "postcode": "13359",\n        "country_code": "DE"\n      },\n      "location": {\n        "latitude": 10,\n        "longitude": 10\n      },\n      "meta": {\n        "license": {\n          "id": "PDDL",\n          "name": "Open Data Commons Public Domain Dedication and License "\n        }\n      },\n      "lobby": {\n        "monday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "tuesday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "wednesday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "thursday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "friday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "saturday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "sunday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ]\n      },\n      "drive_up": {\n        "monday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "tuesday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "wednesday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "thursday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "friday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "saturday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "sunday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        }\n      },\n      "branch_routing": {\n        "scheme": "OBP",\n        "address": "123abc"\n      },\n      "is_accessible": "true",\n      "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n      "branch_type": "Full service store",\n      "more_info": "short walk to the lake from here",\n      "phone_number": "+381631954907"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -31594,7 +31594,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update an existing branch for a bank account (Authenticated access).\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 						exampleRequestBody: '{\n  "bank_id": "gh.29.fi",\n  "name": "OBP",\n  "address": {\n    "line_1": "Osloer Straße 16/17",\n    "line_2": "Wedding",\n    "line_3": "",\n    "city": "Berlin",\n    "state": "Berlin Brandenburg",\n    "postcode": "13359",\n    "country": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "lobby": {\n    "hours": "5"\n  },\n  "drive_up": {\n    "hours": "5"\n  }\n}',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "name": "String",\n  "address": {\n    "line_1": "Osloer Straße 16/17",\n    "line_2": "Wedding",\n    "line_3": "",\n    "city": "Berlin",\n    "state": "Berlin Brandenburg",\n    "postcode": "13359",\n    "country": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "lobby": {\n    "hours": "5"\n  },\n  "drive_up": {\n    "hours": "5"\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "branch_routing": {\n    "scheme": "BranchNumber",\n    "address": "678"\n  }\n}',
 						typedBody: [{
@@ -31747,7 +31747,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create Card at bank specified by BANK_ID .\n\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 						exampleRequestBody: '{\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "technology": "technology1",\n  "networks": [\n    "network1",\n    "network2"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    },\n    {\n      "requested_date": "2019-09-03T17:59:14Z",\n      "reason_requested": "GOOD_SECURITY_PRACTICE"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "123",\n    "label": "OBP",\n    "views_available": [\n      {\n        "id": "123",\n        "short_name": "short_name",\n        "description": "description",\n        "is_public": true,\n        "alias": "None",\n        "hide_metadata_if_alias_used": true,\n        "can_add_comment": true,\n        "can_add_corporate_location": true,\n        "can_add_image": true,\n        "can_add_image_url": true,\n        "can_add_more_info": true,\n        "can_add_open_corporates_url": true,\n        "can_add_physical_location": true,\n        "can_add_private_alias": true,\n        "can_add_public_alias": true,\n        "can_add_tag": true,\n        "can_add_url": true,\n        "can_add_where_tag": true,\n        "can_delete_comment": true,\n        "can_delete_corporate_location": true,\n        "can_delete_image": true,\n        "can_delete_physical_location": true,\n        "can_delete_tag": true,\n        "can_delete_where_tag": true,\n        "can_edit_owner_comment": true,\n        "can_see_bank_account_balance": true,\n        "can_see_bank_account_bank_name": true,\n        "can_see_bank_account_currency": true,\n        "can_see_bank_account_iban": true,\n        "can_see_bank_account_label": true,\n        "can_see_bank_account_national_identifier": true,\n        "can_see_bank_account_number": true,\n        "can_see_bank_account_owners": true,\n        "can_see_bank_account_swift_bic": true,\n        "can_see_bank_account_type": true,\n        "can_see_comments": true,\n        "can_see_corporate_location": true,\n        "can_see_image_url": true,\n        "can_see_images": true,\n        "can_see_more_info": true,\n        "can_see_open_corporates_url": true,\n        "can_see_other_account_bank_name": true,\n        "can_see_other_account_iban": true,\n        "can_see_other_account_kind": true,\n        "can_see_other_account_metadata": true,\n        "can_see_other_account_national_identifier": true,\n        "can_see_other_account_number": true,\n        "can_see_other_account_swift_bic": true,\n        "can_see_owner_comment": true,\n        "can_see_physical_location": true,\n        "can_see_private_alias": true,\n        "can_see_public_alias": true,\n        "can_see_tags": true,\n        "can_see_transaction_amount": true,\n        "can_see_transaction_balance": true,\n        "can_see_transaction_currency": true,\n        "can_see_transaction_description": true,\n        "can_see_transaction_finish_date": true,\n        "can_see_transaction_metadata": true,\n        "can_see_transaction_other_bank_account": true,\n        "can_see_transaction_start_date": true,\n        "can_see_transaction_this_bank_account": true,\n        "can_see_transaction_type": true,\n        "can_see_url": true,\n        "can_see_where_tag": true\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						typedBody: [{
@@ -31939,7 +31939,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: ' Create Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attribute',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attribute',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DOUBLE",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "attribute_type": {\n    "i": 2,\n    "name": "DOUBLE"\n  },\n  "bank_id": {\n    "value": "GENODEM1GLS"\n  },\n  "value": "2012-04-23",\n  "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n}',
 						typedBody: [{
@@ -31991,7 +31991,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete a Card at bank specified by CARD_ID .\n\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -32038,7 +32038,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '\nThis will the datails of the card.\nIt shows the account infomation which linked the the card.\nAlso shows the card attributes of the card. \n\n       ',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 						exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n    "label": "My Account",\n    "views_available": [\n      {\n        "id": "owner",\n        "name": "Owner",\n        "description": "This view is for the owner for the account."\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "card_attributes": [\n    {\n      "name": "OVERDRAFT_START_DATE",\n      "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n      "attribute_type": {\n        "i": 0,\n        "name": "STRING"\n      },\n      "bank_id": {\n        "value": "GENODEM1GLS"\n      },\n      "value": "2012-04-23",\n      "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32094,8 +32094,8 @@ module.exports = {
 							type: 'GET',
 							color: '#06D6A0'
 						},
-						description: 'Should be able to filter on the following fields\n\neg:/management/banks/BANK_ID/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards',
+						description: 'Should be able to filter on the following fields\n\neg:/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 						exampleResponseBody: '{\n  "cards": [\n    {\n      "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n      "bank_id": "GENODEM1GLS",\n      "card_number": "364435172576215",\n      "card_type": "Credit",\n      "name_on_card": "SusanSmith",\n      "issue_number": "1",\n      "serial_number": "1324234",\n      "valid_from_date": "2017-09-19T00:00:00Z",\n      "expires_date": "2017-09-19T00:00:00Z",\n      "enabled": true,\n      "cancelled": true,\n      "on_hot_list": true,\n      "technology": "technologyString1",\n      "networks": [\n        "networks1"\n      ],\n      "allows": [\n        "credit",\n        "debit"\n      ],\n      "account": {\n        "id": "123",\n        "label": "OBP",\n        "views_available": [\n          {\n            "id": "123",\n            "short_name": "short_name",\n            "description": "description",\n            "is_public": true,\n            "alias": "None",\n            "hide_metadata_if_alias_used": true,\n            "can_add_comment": true,\n            "can_add_corporate_location": true,\n            "can_add_image": true,\n            "can_add_image_url": true,\n            "can_add_more_info": true,\n            "can_add_open_corporates_url": true,\n            "can_add_physical_location": true,\n            "can_add_private_alias": true,\n            "can_add_public_alias": true,\n            "can_add_tag": true,\n            "can_add_url": true,\n            "can_add_where_tag": true,\n            "can_delete_comment": true,\n            "can_delete_corporate_location": true,\n            "can_delete_image": true,\n            "can_delete_physical_location": true,\n            "can_delete_tag": true,\n            "can_delete_where_tag": true,\n            "can_edit_owner_comment": true,\n            "can_see_bank_account_balance": true,\n            "can_see_bank_account_bank_name": true,\n            "can_see_bank_account_currency": true,\n            "can_see_bank_account_iban": true,\n            "can_see_bank_account_label": true,\n            "can_see_bank_account_national_identifier": true,\n            "can_see_bank_account_number": true,\n            "can_see_bank_account_owners": true,\n            "can_see_bank_account_swift_bic": true,\n            "can_see_bank_account_type": true,\n            "can_see_comments": true,\n            "can_see_corporate_location": true,\n            "can_see_image_url": true,\n            "can_see_images": true,\n            "can_see_more_info": true,\n            "can_see_open_corporates_url": true,\n            "can_see_other_account_bank_name": true,\n            "can_see_other_account_iban": true,\n            "can_see_other_account_kind": true,\n            "can_see_other_account_metadata": true,\n            "can_see_other_account_national_identifier": true,\n            "can_see_other_account_number": true,\n            "can_see_other_account_swift_bic": true,\n            "can_see_owner_comment": true,\n            "can_see_physical_location": true,\n            "can_see_private_alias": true,\n            "can_see_public_alias": true,\n            "can_see_tags": true,\n            "can_see_transaction_amount": true,\n            "can_see_transaction_balance": true,\n            "can_see_transaction_currency": true,\n            "can_see_transaction_description": true,\n            "can_see_transaction_finish_date": true,\n            "can_see_transaction_metadata": true,\n            "can_see_transaction_other_bank_account": true,\n            "can_see_transaction_start_date": true,\n            "can_see_transaction_this_bank_account": true,\n            "can_see_transaction_type": true,\n            "can_see_url": true,\n            "can_see_where_tag": true\n          }\n        ],\n        "bank_id": "GENODEM1GLS"\n      },\n      "replacement": {\n        "requested_date": "2017-09-19T00:00:00Z",\n        "reason_requested": "RENEW"\n      },\n      "pin_reset": [\n        {\n          "requested_date": "2017-09-19T00:00:00Z",\n          "reason_requested": "FORGOT"\n        }\n      ],\n      "collected": "2017-09-19T00:00:00Z",\n      "posted": "2017-09-19T00:00:00Z",\n      "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32126,7 +32126,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '**NOTE: This endpoint currently only returns example data.**\n\n      Get status of Credit Card orders\nGet all orders\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
 						exampleResponseBody: '{\n  "cards": [\n    {\n      "card_type": "5",\n      "card_description": "good",\n      "use_type": "3"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32167,7 +32167,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update Card at bank specified by CARD_ID .\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 						exampleRequestBody: '{\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "technology": "technology1",\n  "networks": [\n    "network1",\n    "network2"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    },\n    {\n      "requested_date": "2019-09-03T17:59:14Z",\n      "reason_requested": "GOOD_SECURITY_PRACTICE"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "123",\n    "label": "OBP",\n    "views_available": [\n      {\n        "id": "123",\n        "short_name": "short_name",\n        "description": "description",\n        "is_public": true,\n        "alias": "None",\n        "hide_metadata_if_alias_used": true,\n        "can_add_comment": true,\n        "can_add_corporate_location": true,\n        "can_add_image": true,\n        "can_add_image_url": true,\n        "can_add_more_info": true,\n        "can_add_open_corporates_url": true,\n        "can_add_physical_location": true,\n        "can_add_private_alias": true,\n        "can_add_public_alias": true,\n        "can_add_tag": true,\n        "can_add_url": true,\n        "can_add_where_tag": true,\n        "can_delete_comment": true,\n        "can_delete_corporate_location": true,\n        "can_delete_image": true,\n        "can_delete_physical_location": true,\n        "can_delete_tag": true,\n        "can_delete_where_tag": true,\n        "can_edit_owner_comment": true,\n        "can_see_bank_account_balance": true,\n        "can_see_bank_account_bank_name": true,\n        "can_see_bank_account_currency": true,\n        "can_see_bank_account_iban": true,\n        "can_see_bank_account_label": true,\n        "can_see_bank_account_national_identifier": true,\n        "can_see_bank_account_number": true,\n        "can_see_bank_account_owners": true,\n        "can_see_bank_account_swift_bic": true,\n        "can_see_bank_account_type": true,\n        "can_see_comments": true,\n        "can_see_corporate_location": true,\n        "can_see_image_url": true,\n        "can_see_images": true,\n        "can_see_more_info": true,\n        "can_see_open_corporates_url": true,\n        "can_see_other_account_bank_name": true,\n        "can_see_other_account_iban": true,\n        "can_see_other_account_kind": true,\n        "can_see_other_account_metadata": true,\n        "can_see_other_account_national_identifier": true,\n        "can_see_other_account_number": true,\n        "can_see_other_account_swift_bic": true,\n        "can_see_owner_comment": true,\n        "can_see_physical_location": true,\n        "can_see_private_alias": true,\n        "can_see_public_alias": true,\n        "can_see_tags": true,\n        "can_see_transaction_amount": true,\n        "can_see_transaction_balance": true,\n        "can_see_transaction_currency": true,\n        "can_see_transaction_description": true,\n        "can_see_transaction_finish_date": true,\n        "can_see_transaction_metadata": true,\n        "can_see_transaction_other_bank_account": true,\n        "can_see_transaction_start_date": true,\n        "can_see_transaction_this_bank_account": true,\n        "can_see_transaction_type": true,\n        "can_see_url": true,\n        "can_see_where_tag": true\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						typedBody: [{
@@ -32354,7 +32354,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: ' Update Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DOUBLE",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "attribute_type": {\n    "i": 2,\n    "name": "DOUBLE"\n  },\n  "bank_id": {\n    "value": "GENODEM1GLS"\n  },\n  "value": "2012-04-23",\n  "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n}',
 						typedBody: [{
@@ -32407,7 +32407,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nThis endpoint is used to confirm a Consent previously created.\n\nThe User must supply a code that was sent out of band (OOB) for example via an SMS.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/consents/CONSENT_ID/challenge',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/consents/CONSENT_ID/challenge',
 						exampleRequestBody: '{\n  "answer": "12345678"\n}',
 						exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 						typedBody: [{
@@ -32459,7 +32459,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/EMAIL',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/EMAIL',
 						exampleRequestBody: '{\n  "for": "ALL_MY_ACCOUNTS",\n  "view": "owner",\n  "email": "marko@tesobe.com"\n}',
 						exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 						typedBody: [{
@@ -32521,7 +32521,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/SMS',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/SMS',
 						exampleRequestBody: '{\n  "for": "ALL_MY_ACCOUNTS",\n  "view": "owner",\n  "phone_number": "493081453994"\n}',
 						exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 						typedBody: [{
@@ -32583,7 +32583,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\n\nThis endpoint gets the Consents that the current User created.\n\nAuthentication is Mandatory\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents',
 						exampleResponseBody: '{\n  "consents": [\n    {\n      "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n      "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n      "status": "INITIATED"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32614,7 +32614,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nRevoke Consent for current user specified by CONSENT_ID\n\n\nAuthentication is Mandatory\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/CONSENT_ID/revoke',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/CONSENT_ID/revoke',
 						exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "REJECTED"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32646,7 +32646,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create Counterparty (Explicit) for an Account.\n\nIn OBP, there are two types of Counterparty.\n\n* Explicit Counterparties (those here) which we create explicitly and are used in COUNTERPARTY Transaction Requests\n\n* Implicit Counterparties (AKA Other Accounts) which are generated automatically from the other sides of Transactions.\n\nExplicit Counterparties are created for the account / view\nThey are how the user of the view (e.g. account owner) refers to the other side of the transaction\n\nname : the human readable name (e.g. Piano teacher, Miss Nipa)\n\ndescription : the human readable name (e.g. Piano teacher, Miss Nipa)\n\nbank_routing_scheme : eg: bankId or bankCode or any other strings\n\nbank_routing_address : eg: `gh.29.uk`, must be valid sandbox bankIds\n\naccount_routing_scheme : eg: AccountId or AccountNumber or any other strings\n\naccount_routing_address : eg: `1d65db7c-a7b2-4839-af41-95`, must be valid accountIds\n\nother_account_secondary_routing_scheme : eg: IBan or any other strings\n\nother_account_secondary_routing_address : if it is IBan, it should be unique for each counterparty. \n\nother_branch_routing_scheme : eg: branchId or any other strings or you can leave it empty, not useful in sandbox mode.\n\nother_branch_routing_address : eg: `branch-id-123` or you can leave it empty, not useful in sandbox mode.\n\nis_beneficiary : must be set to `true` in order to send payments to this counterparty\n\nbespoke: It support list of key-value, you can add it to the counterarty.\n\nbespoke.key : any info-key you want to add to this counerparty\n \nbespoke.value : any info-value you want to add to this counerparty\n\nThe view specified by VIEW_ID must have the canAddCounterparty permission\n\nA minimal example for TransactionRequestType == COUNTERPARTY\n {\n  "name": "Tesobe1",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "other_account_secondary_routing_scheme": "",\n  "other_account_secondary_routing_address": "",\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\n \nA minimal example for TransactionRequestType == SEPA\n \n {\n  "name": "Tesobe2",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "other_account_secondary_routing_scheme": "IBAN",\n  "other_account_secondary_routing_address": "DE89 3704 0044 0532 0130 00",\n  "is_beneficiary": true,\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 						exampleRequestBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "IBAN",\n  "other_account_secondary_routing_address": "DE89370400440532013000",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ]\n}',
 						exampleResponseBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "this_bank_id": "GENODEM1GLS",\n  "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "this_view_id": "owner",\n  "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "accountId",\n  "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ],\n  "metadata": {\n    "public_alias": "String",\n    "more_info": "String",\n    "url": "String",\n    "image_url": "String",\n    "open_corporates_url": "String",\n    "corporate_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "physical_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "private_alias": "String"\n  }\n}',
 						typedBody: [{
@@ -32788,7 +32788,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Counterparties (Explicit) for the account / view.\n\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 						exampleResponseBody: '{\n  "counterparties": [\n    {\n      "name": "CounterpartyName",\n      "description": "My landlord",\n      "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n      "this_bank_id": "GENODEM1GLS",\n      "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "this_view_id": "owner",\n      "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n      "other_bank_routing_scheme": "bankCode",\n      "other_bank_routing_address": "10",\n      "other_branch_routing_scheme": "branchNumber",\n      "other_branch_routing_address": "10010",\n      "other_account_routing_scheme": "accountNumber",\n      "other_account_routing_address": "7987987-2348987-234234",\n      "other_account_secondary_routing_scheme": "accountId",\n      "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "is_beneficiary": true,\n      "bespoke": [\n        {\n          "key": "englishName",\n          "value": "english Name"\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32834,7 +32834,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Information returned about the Counterparty specified by COUNTERPARTY_ID:\n\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
 						exampleResponseBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "this_bank_id": "GENODEM1GLS",\n  "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "this_view_id": "owner",\n  "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "accountId",\n  "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ],\n  "metadata": {\n    "public_alias": "String",\n    "more_info": "String",\n    "url": "String",\n    "image_url": "String",\n    "open_corporates_url": "String",\n    "corporate_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "physical_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "private_alias": "String"\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32865,7 +32865,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns data about the Other Account that has shared at least one transaction with ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "holder": {\n    "name": "OBP",\n    "is_alias": true\n  },\n  "bank_routing": {\n    "scheme": "Bank_ID",\n    "address": "gh.29.uk"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "metadata": {\n    "public_alias": "NONE",\n    "private_alias": "NONE",\n    "more_info": "www.openbankproject.com",\n    "URL": "www.openbankproject.com",\n    "image_URL": "www.openbankproject.com",\n    "open_corporates_URL": "www.openbankproject.com",\n    "corporate_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    },\n    "physical_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32906,7 +32906,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns data about all the other accounts that have shared at least one transaction with the ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view VIEW_ID is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
 						exampleResponseBody: '{\n  "other_accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "holder": {\n        "name": "OBP",\n        "is_alias": true\n      },\n      "bank_routing": {\n        "scheme": "Bank_ID",\n        "address": "gh.29.uk"\n      },\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ],\n      "metadata": {\n        "public_alias": "NONE",\n        "private_alias": "NONE",\n        "more_info": "www.openbankproject.com",\n        "URL": "www.openbankproject.com",\n        "image_URL": "www.openbankproject.com",\n        "open_corporates_URL": "www.openbankproject.com",\n        "corporate_location": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        },\n        "physical_location": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        }\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -32948,7 +32948,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add the geolocation of the counterparty\'s registered address',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 						exampleRequestBody: '{\n  "corporate_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33020,7 +33020,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add a description of the counter party from the perpestive of the account e.g. My dentist.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 						exampleRequestBody: '{\n  "more_info": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33082,7 +33082,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add a url that points to the logo of the counterparty',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 						exampleRequestBody: '{\n  "image_URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33144,7 +33144,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add open corporates url to other bank account.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 						exampleRequestBody: '{\n  "open_corporates_URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33201,7 +33201,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add geocoordinates of the counterparty\'s main location',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 						exampleRequestBody: '{\n  "physical_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33278,7 +33278,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Creates the public alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\nNote: Public aliases are automatically generated for new \'other accounts / counterparties\', so this call should only be used if\nthe public alias was deleted.\n\nThe VIEW_ID parameter should be a view the caller is permitted to access to and that has permission to create public aliases.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 						exampleRequestBody: '{\n  "alias": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33340,7 +33340,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'A url which represents the counterparty (home page url etc.)',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 						exampleRequestBody: '{\n  "URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33402,7 +33402,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Creates a private alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 						exampleRequestBody: '{\n  "alias": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -33464,7 +33464,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete corporate location of other bank account. Delete the geolocation of the counterparty\'s registered address',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33521,7 +33521,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete image url of other bank account.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33552,7 +33552,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete open corporate url of other bank account.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33609,7 +33609,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete physical location of other bank account.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33666,7 +33666,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33723,7 +33723,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the public alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33775,7 +33775,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: '',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33832,7 +33832,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: '',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -33889,7 +33889,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get metadata of one other account.\nReturns only the metadata about one other bank account (OTHER_ACCOUNT_ID) that had shared at least one transaction with ACCOUNT_ID at BANK_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
 						exampleResponseBody: '{\n  "public_alias": "NONE",\n  "private_alias": "NONE",\n  "more_info": "www.openbankproject.com",\n  "URL": "www.openbankproject.com",\n  "image_URL": "www.openbankproject.com",\n  "open_corporates_URL": "www.openbankproject.com",\n  "corporate_location": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  },\n  "physical_location": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -33920,7 +33920,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 						exampleResponseBody: '{\n  "alias": "String"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -33961,7 +33961,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the public alias of the other account OTHER_ACCOUNT_ID.\nAuthentication is Optional\nAuthentication is Mandatory if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 						exampleResponseBody: '{\n  "alias": "String"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -33997,7 +33997,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the geolocation of the counterparty\'s registered address',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 						exampleRequestBody: '{\n  "corporate_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34074,7 +34074,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the url that points to the logo of the counterparty',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 						exampleRequestBody: '{\n  "image_URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34131,7 +34131,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the more info description of the counter party from the perpestive of the account e.g. My dentist.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 						exampleRequestBody: '{\n  "more_info": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34193,7 +34193,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update geocoordinates of the counterparty\'s main location',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 						exampleRequestBody: '{\n  "physical_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34270,7 +34270,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Updates the private alias of the counterparty (AKA other account) OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 						exampleRequestBody: '{\n  "alias": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34332,7 +34332,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update open corporate url of other bank account.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 						exampleRequestBody: '{\n  "open_corporates_URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34394,7 +34394,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Updates the public alias of the other account / counterparty OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 						exampleRequestBody: '{\n  "alias": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34456,7 +34456,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'A url which represents the counterparty (home page url etc.)',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 						exampleRequestBody: '{\n  "URL": "String"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34519,7 +34519,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add an Address to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/address',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/address',
 						exampleRequestBody: '{\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK"\n}',
 						exampleResponseBody: '{\n  "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK",\n  "insert_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [{
@@ -34616,7 +34616,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add a social media handle for the customer specified by CUSTOMER_ID.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 						exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "handle": "PlaceholderString",\n  "date_added": "2017-09-19T00:00:00Z",\n  "date_activated": "2017-09-19T00:00:00Z"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -34703,7 +34703,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Add a Tax Residence to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residence',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residence',
 						exampleRequestBody: '{\n  "domain": "Enter some domain",\n  "tax_number": "Enter some number"\n}',
 						exampleResponseBody: '{\n  "domain": "Enter some domain",\n  "tax_number": "Enter some number",\n  "tax_residence_id": "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n}',
 						typedBody: [{
@@ -34755,7 +34755,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '**NOTE: This endpoint currently only returns example data.**\n\n      \nCreate credit limit order request\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 						exampleRequestBody: '{\n  "requested_current_rate_amount1": "String",\n  "requested_current_rate_amount2": "String",\n  "requested_current_valid_end_date": "String",\n  "current_credit_documentation": "String",\n  "temporary_requested_current_amount": "String",\n  "requested_temporary_valid_end_date": "String",\n  "temporary_credit_documentation": "String"\n}',
 						exampleResponseBody: '{\n  "execution_time": "String",\n  "execution_date": "String",\n  "token": "String",\n  "short_reference": "String"\n}',
 						typedBody: [{
@@ -34826,7 +34826,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\nThe Customer resource stores the customer number, legal name, email, phone number, their date of birth, relationship status, education attained, a url for a profile image, KYC status etc.\nDates need to be in the format 2013-01-21T23:08:00Z\n\nAuthentication is Mandatory\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 						exampleRequestBody: '{\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35028,7 +35028,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Link a User to a Customer\n\nAuthentication is Mandatory\n\nCanCreateUserCustomerLink OR CanCreateUserCustomerLinkAtAnyBank entitlements are required.\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/user_customer_links',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/user_customer_links',
 						exampleRequestBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 						exampleResponseBody: '{\n  "user_customer_link_id": "String",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "date_inserted": "2017-09-19T00:00:00Z",\n  "is_active": true\n}',
 						typedBody: [{
@@ -35105,7 +35105,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -35147,7 +35147,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete a Tax Residence of the Customer specified by TAX_RESIDENCE_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -35189,7 +35189,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '**NOTE: This endpoint currently only returns example data.**\n\n      \n        Get Credit Limit Order Request By Request Id\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
 						exampleResponseBody: '{\n  "rank_amount_1": "String",\n  "nominal_interest_1": "String",\n  "rank_amount_2": "String",\n  "nominal_interest_2": "String"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35209,7 +35209,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '**NOTE: This endpoint currently only returns example data.**\n\n      \nGet Credit Limit Order Requests \n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 						exampleResponseBody: '{\n  "rank_amount_1": "String",\n  "nominal_interest_1": "String",\n  "rank_amount_2": "String",\n  "nominal_interest_2": "String"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35229,7 +35229,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/crm-events',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/crm-events',
 						exampleResponseBody: '{\n  "crm_events": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "bank_id": "GENODEM1GLS",\n      "customer_name": "String",\n      "customer_number": "5987953",\n      "category": "String",\n      "detail": "String",\n      "channel": "String",\n      "scheduled_date": "2017-09-19T00:00:00Z",\n      "actual_date": "2017-09-19T00:00:00Z",\n      "result": "String"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35265,7 +35265,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Addresses of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses',
 						exampleResponseBody: '{\n  "addresses": [\n    {\n      "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n      "line_1": "No 1 the Road",\n      "line_2": "The Place",\n      "line_3": "The Hill",\n      "city": "Berlin",\n      "county": "",\n      "state": "Brandenburg",\n      "postcode": "13359",\n      "country_code": "DE",\n      "tags": [\n        "mailing",\n        "home"\n      ],\n      "status": "OK",\n      "insert_date": "2017-09-19T00:00:00Z"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35296,7 +35296,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Gets the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35327,7 +35327,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Gets the Customer specified by CUSTOMER_NUMBER.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/customer-number',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/customer-number',
 						exampleRequestBody: '{\n  "customer_number": "5987953"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35369,7 +35369,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get social media handles for a customer specified by CUSTOMER_ID.\n\nAuthentication is Mandatory',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 						exampleResponseBody: '{\n  "checks": [\n    {\n      "customer_number": "5987953",\n      "type": "PlaceholderString",\n      "handle": "PlaceholderString",\n      "date_added": "2017-09-19T00:00:00Z",\n      "date_activated": "2017-09-19T00:00:00Z"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35436,7 +35436,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Retuns a list of Customers at the Bank that are linked to the currently authenticated User.\n\n\nAuthentication is Mandatory',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35482,7 +35482,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the Tax Residences of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residences',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residences',
 						exampleResponseBody: '{\n  "tax_residence": [\n    {\n      "domain": "Enter some domain",\n      "tax_number": "Enter some number",\n      "tax_residence_id": "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -35513,7 +35513,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 						exampleRequestBody: '{\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK"\n}',
 						exampleResponseBody: '{\n  "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK",\n  "insert_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [{
@@ -35610,7 +35610,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the Branch of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/branch',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/branch',
 						exampleRequestBody: '{\n  "branch_id": "123"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35657,7 +35657,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the credit limit of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-limit',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-limit',
 						exampleRequestBody: '{\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "1000"\n  }\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35714,7 +35714,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the credit rating and source of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-rating-and-source',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-rating-and-source',
 						exampleRequestBody: '{\n  "credit_rating": "Good",\n  "credit_source": "Bank"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35766,7 +35766,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update an email of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/email',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/email',
 						exampleRequestBody: '{\n  "email": "marko@tesobe.com"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35813,7 +35813,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the identity data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/identity',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/identity',
 						exampleRequestBody: '{\n  "legal_name": "Eveline Tripman",\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "name_suffix": "Sr"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35880,7 +35880,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the mobile number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/mobile-number',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/mobile-number',
 						exampleRequestBody: '{\n  "mobile_phone_number": "+381631954907"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35927,7 +35927,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/number',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/number',
 						exampleRequestBody: '{\n  "customer_number": "5987953"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -35974,7 +35974,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update the other data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/data',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/data',
 						exampleRequestBody: '{\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "relationship_status": "single",\n  "dependants": 10,\n  "highest_education_attained": "Master",\n  "employment_status": "worker"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 						typedBody: [{
@@ -36057,7 +36057,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Create or Update Fx for the Bank.\n\nExample:\n\n“from_currency_code”:“EUR”,\n“to_currency_code”:“USD”,\n“conversion_value”: 1.136305,\n“inverse_conversion_value”: 1 / 1.136305 = 0.8800454103431737,\n\n Thus 1 Euro = 1.136305 US Dollar\n and\n 1 US Dollar = 0.8800 Euro\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/fx',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx',
 						exampleRequestBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "USD",\n  "conversion_value": 1.136305,\n  "inverse_conversion_value": 0.8800454103431737,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "USD",\n  "conversion_value": 1.136305,\n  "inverse_conversion_value": 0.8800454103431737,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [{
@@ -36134,7 +36134,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the latest FX rate specified by BANK_ID, FROM_CURRENCY_CODE and TO_CURRENCY_CODE\n\nOBP may try different sources of FX rate information depending on the Connector in operation.\n\nFor example we want to convert EUR => USD:\n\nOBP will:\n1st try - Connector (database, core banking system or external FX service)\n2nd try part 1 - fallbackexchangerates/eur.json\n2nd try part 2 - fallbackexchangerates/usd.json (the inverse rate is used)\n3rd try - Hardcoded map of FX rates.\n\n![FX Flow](https://user-images.githubusercontent.com/485218/60005085-1eded600-966e-11e9-96fb-798b102d9ad0.png)\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "GBP",\n  "conversion_value": 1.001,\n  "inverse_conversion_value": 0.998,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -36171,7 +36171,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Add a KYC check for the customer specified by CUSTOMER_ID. KYC Checks store details of checks on a customer made by the KYC team, their comments and a satisfied status.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
 						exampleRequestBody: '{\n  "customer_number": "5987953",\n  "date": "2017-09-19T00:00:00Z",\n  "how": "online_meeting",\n  "staff_user_id": "67876",\n  "staff_name": "Simon",\n  "satisfied": true,\n  "comments": "String"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "date": "2017-09-19T00:00:00Z",\n  "how": "PlaceholderString",\n  "staff_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "staff_name": "PlaceholderString",\n  "satisfied": true,\n  "comments": "PlaceholderString"\n}',
 						typedBody: [{
@@ -36263,7 +36263,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Add a KYC document for the customer specified by CUSTOMER_ID. KYC Documents contain the document type (e.g. passport), place of issue, expiry etc. ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
 						exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "passport",\n  "number": "12345",\n  "issue_date": "2017-09-19T00:00:00Z",\n  "issue_place": "Berlin",\n  "expiry_date": "2017-09-19T00:00:00Z"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "number": "PlaceholderString",\n  "issue_date": "2017-09-19T00:00:00Z",\n  "issue_place": "PlaceholderString",\n  "expiry_date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [{
@@ -36355,7 +36355,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Add some KYC media for the customer specified by CUSTOMER_ID. KYC Media resources relate to KYC Documents and KYC Checks and contain media urls for scans of passports, utility bills etc.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
 						exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "image",\n  "url": "http://www.example.com/id-docs/123/image.png",\n  "date": "2017-09-19T00:00:00Z",\n  "relates_to_kyc_document_id": "123",\n  "relates_to_kyc_check_id": "123"\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "PlaceholderString",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "url": "PlaceholderString",\n  "date": "2017-09-19T00:00:00Z",\n  "relates_to_kyc_document_id": "PlaceholderString",\n  "relates_to_kyc_check_id": "PlaceholderString"\n}',
 						typedBody: [{
@@ -36437,7 +36437,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Add a kyc_status for the customer specified by CUSTOMER_ID. KYC Status is a timeline of the KYC status of the customer',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_statuses',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_statuses',
 						exampleRequestBody: '{\n  "customer_number": "5987953",\n  "ok": true,\n  "date": "2017-09-19T00:00:00Z"\n}',
 						exampleResponseBody: '{\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "ok": true,\n  "date": "2017-09-19T00:00:00Z"\n}',
 						typedBody: [{
@@ -36639,7 +36639,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Create or Update Product for the Bank.\n\n\nTypical Super Family values / Asset classes are:\n\nDebt\nEquity\nFX\nCommodity\nDerivative\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\n\nAuthentication is Mandatory\n\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 						exampleRequestBody: '{\n  "bank_id": "GENODEM1GLS",\n  "name": "product name",\n  "parent_product_code": "parent product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  }\n}',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "code": "product_code",\n  "parent_product_code": "parent",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "product_attributes": [\n    {\n      "product_code": "saving1",\n      "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 						typedBody: [{
@@ -36746,7 +36746,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: ' Create Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nTypical product attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\n\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attribute',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attribute',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						typedBody: [{
@@ -36793,7 +36793,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: ' Delete Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nDelete a Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -36830,7 +36830,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about a financial Product offered by the bank specified by BANK_ID and PRODUCT_CODE including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 						exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "code": "product_code",\n  "parent_product_code": "parent",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "product_attributes": [\n    {\n      "product_code": "saving1",\n      "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -36861,7 +36861,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: ' Get Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nGet one product attribute by its id.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 						exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -36887,7 +36887,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about a particular financial product specified by BANK_ID and PRODUCT_CODE\nand it\'s parent product(s) recursively as specified by parent_product_code.\n\nEach product includes the following information.\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License: The licence under which this product data is released. Licence can be an Open Data licence such as Open Data Commons Public Domain Dedication and License (PDDL) or Copyright etc.\n\n\n\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-tree/PRODUCT_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-tree/PRODUCT_CODE',
 						exampleResponseBody: '{\n  "bank_id": "testBank2",\n  "code": "PRODUCT_CODE",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "parent_product": {\n    "bank_id": "testBank2",\n    "code": "PARENT_CODE",\n    "name": "product name",\n    "category": "category",\n    "family": "family",\n    "super_family": "super family",\n    "more_info_url": "www.example.com/prod1/more-info.html",\n    "details": "Details",\n    "description": "Description",\n    "meta": {\n      "license": {\n        "id": "5",\n        "name": "TESOBE"\n      }\n    },\n    "parent_product": {\n      "bank_id": "testBank2",\n      "code": "GRANDPARENT_CODE",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      }\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -36918,7 +36918,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about the financial products offered by a bank specified by BANK_ID including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\nAuthentication is Optional',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products',
 						exampleResponseBody: '{\n  "products": [\n    {\n      "bank_id": "GENODEM1GLS",\n      "code": "product_code",\n      "parent_product_code": "parent",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      },\n      "product_attributes": [\n        {\n          "product_code": "saving1",\n          "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n          "name": "OVERDRAFT_START_DATE",\n          "type": "DATE_WITH_DAY",\n          "value": "2012-04-23"\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -36954,7 +36954,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: ' Update Product Attribute. \n\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nUpdate one Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 						exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 						typedBody: [{
@@ -37002,7 +37002,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Create or Update a Product Collection at the Bank.\n\nUse Product Collections to create Product "Baskets", "Portfolios", "Indices", "Collections", "Underlyings-lists", "Buckets" etc. etc.\n\nThere is a many to many relationship between Products and Product Collections:\n\n* A Product can exist in many Collections\n\n* A Collection can contain many Products.\n\nA collection has collection code, one parent Product and one or more child Products.\n\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\nAuthentication is Mandatory\n\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 						exampleRequestBody: '{\n  "parent_product_code": "A",\n  "children_product_codes": [\n    "B",\n    "C",\n    "D"\n  ]\n}',
 						exampleResponseBody: '{\n  "product_collection": [\n    {\n      "collection_code": "C",\n      "product_code": "D",\n      "items": [\n        {\n          "member_product_code": "A"\n        },\n        {\n          "member_product_code": "B"\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [{
@@ -37059,7 +37059,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns information about the financial Product Collection specified by BANK_ID and COLLECTION_CODE:\n\n          ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 						exampleResponseBody: '{\n  "collection_code": "A",\n  "products": [\n    {\n      "bank_id": "GENODEM1GLS",\n      "code": "product_code",\n      "parent_product_code": "parent",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      },\n      "product_attributes": [\n        {\n          "product_code": "saving1",\n          "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n          "name": "OVERDRAFT_START_DATE",\n          "type": "DATE_WITH_DAY",\n          "value": "2012-04-23"\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37457,7 +37457,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '\n\nGet Entitlements specified by BANK_ID and USER_ID\n\nAuthentication is Mandatory\n\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/users/USER_ID/entitlements',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/USER_ID/entitlements',
 						exampleResponseBody: '{\n  "list": [\n    {\n      "entitlement_id": "6fb17583-1e49-4435-bb74-a14fe0996723",\n      "role_name": "CanQueryOtherUser",\n      "bank_id": "GENODEM1GLS"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37748,7 +37748,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get other account of a transaction.\nReturns details of the other party involved in the transaction, moderated by the [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n          Authentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "holder": {\n    "name": "OBP",\n    "is_alias": true\n  },\n  "number": "123",\n  "kind": "3456",\n  "IBAN": "UK234DB",\n  "swift_bic": "UK12321DB",\n  "bank": {\n    "national_identifier": "OBP",\n    "name": "OBP"\n  },\n  "metadata": {\n    "public_alias": "NONE",\n    "private_alias": "NONE",\n    "more_info": "www.openbankproject.com",\n    "URL": "www.openbankproject.com",\n    "image_URL": "www.openbankproject.com",\n    "open_corporates_URL": "www.openbankproject.com",\n    "corporate_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    },\n    "physical_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37774,7 +37774,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns one transaction specified by TRANSACTION_ID of the account ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "this_account": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "holders": [\n      {\n        "name": "OBP",\n        "is_alias": true\n      }\n    ],\n    "number": "123",\n    "kind": "AC",\n    "IBAN": "UK1234AD",\n    "swift_bic": "UK1234AD",\n    "bank": {\n      "national_identifier": "OBP",\n      "name": "OBP"\n    }\n  },\n  "other_account": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "holder": {\n      "name": "OBP",\n      "is_alias": true\n    },\n    "number": "123",\n    "kind": "3456",\n    "IBAN": "UK234DB",\n    "swift_bic": "UK12321DB",\n    "bank": {\n      "national_identifier": "OBP",\n      "name": "OBP"\n    },\n    "metadata": {\n      "public_alias": "NONE",\n      "private_alias": "NONE",\n      "more_info": "www.openbankproject.com",\n      "URL": "www.openbankproject.com",\n      "image_URL": "www.openbankproject.com",\n      "open_corporates_URL": "www.openbankproject.com",\n      "corporate_location": {\n        "latitude": 1.231,\n        "longitude": 1.231,\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      },\n      "physical_location": {\n        "latitude": 1.231,\n        "longitude": 1.231,\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    }\n  },\n  "details": {\n    "type": "AC",\n    "description": "this is for family",\n    "posted": "2017-09-19T00:00:00Z",\n    "completed": "2017-09-19T00:00:00Z",\n    "new_balance": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  },\n  "metadata": {\n    "narrative": "NONE",\n    "comments": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "value": "OBP",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "tags": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "value": "OBP",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "images": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "label": "NONE",\n        "URL": "www.openbankproject.com",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "where": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37815,7 +37815,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns transactions list (Core info) of the account specified by ACCOUNT_ID.\n\nAuthentication is Mandatory\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
-						specificUrl: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/transactions',
+						specificUrl: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/transactions',
 						exampleResponseBody: '{\n  "transactions": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "this_account": {\n        "id": "String",\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "holders": [\n          {\n            "name": "OBP",\n            "is_alias": true\n          }\n        ]\n      },\n      "other_account": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "holder": {\n          "name": "OBP",\n          "is_alias": true\n        },\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ]\n      },\n      "details": {\n        "type": "AC",\n        "description": "OBP",\n        "posted": "2017-09-19T00:00:00Z",\n        "completed": "2017-09-19T00:00:00Z",\n        "new_balance": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37871,7 +37871,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns transactions list of the account specified by ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\n\nAuthentication is required if the view is not public.\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions',
 						exampleResponseBody: '{\n  "transactions": [\n    {\n      "id": "String",\n      "this_account": {\n        "id": "String",\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "holders": [\n          {\n            "name": "OBP",\n            "is_alias": true\n          }\n        ]\n      },\n      "other_account": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "holder": {\n          "name": "OBP",\n          "is_alias": true\n        },\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "metadata": {\n          "public_alias": "NONE",\n          "private_alias": "NONE",\n          "more_info": "www.openbankproject.com",\n          "URL": "www.openbankproject.com",\n          "image_URL": "www.openbankproject.com",\n          "open_corporates_URL": "www.openbankproject.com",\n          "corporate_location": {\n            "latitude": 1.231,\n            "longitude": 1.231,\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          },\n          "physical_location": {\n            "latitude": 1.231,\n            "longitude": 1.231,\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        }\n      },\n      "details": {\n        "type": "AC",\n        "description": "this is for family",\n        "posted": "2017-09-19T00:00:00Z",\n        "completed": "2017-09-19T00:00:00Z",\n        "new_balance": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      },\n      "metadata": {\n        "narrative": "NONE",\n        "comments": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "value": "OBP",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "tags": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "value": "OBP",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "images": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "label": "NONE",\n            "URL": "www.openbankproject.com",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "where": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        }\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -37928,7 +37928,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Posts a tag about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nAuthentication is required as the tag is linked with the user.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 						exampleRequestBody: '{\n  "value": "String"\n}',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 						typedBody: [{
@@ -37985,7 +37985,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Posts an image about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nThe image is linked with the user.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 						exampleRequestBody: '{\n  "label": "String",\n  "URL": "String"\n}',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "label": "NONE",\n  "URL": "www.openbankproject.com",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 						typedBody: [{
@@ -38047,7 +38047,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Posts a comment about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\n${authenticationRequiredMessage(false)}\n\nAuthentication is required since the comment is linked with the user.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 						exampleRequestBody: '{\n  "value": "String"\n}',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 						typedBody: [{
@@ -38104,7 +38104,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Creates a description of the transaction TRANSACTION_ID.\n\nNote: Unlike other items of metadata, there is only one "narrative" per transaction accross all views.\nIf you set narrative via a view e.g. view-x it will be seen via view-y (as long as view-y has permission to see the narrative).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 						exampleRequestBody: '{\n  "narrative": "narative"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -38156,7 +38156,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Creates a "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 						exampleRequestBody: '{\n  "where": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -38228,7 +38228,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the tag TAG_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\nAuthentication via OAuth is required. The user must either have owner privileges for this account, \nor must be the user that posted the tag.\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -38270,7 +38270,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the image IMAGE_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the image.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -38337,7 +38337,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Delete the comment COMMENT_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the comment.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -38389,7 +38389,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -38436,7 +38436,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the where tag of the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe user must either have owner privileges for this account, or must be the user that posted the geo tag.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -38503,7 +38503,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the transaction TRANSACTION_ID comments made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 						exampleResponseBody: '{\n  "comments": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "value": "OBP",\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -38544,7 +38544,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the transaction TRANSACTION_ID images made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 						exampleResponseBody: '{\n  "images": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "label": "NONE",\n      "URL": "www.openbankproject.com",\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -38585,7 +38585,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the account owner description of the transaction [moderated](#1_2_1-getViewsForBankAccount) by the view.\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 						exampleResponseBody: '{\n  "narrative": "narative"\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -38621,7 +38621,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the transaction TRANSACTION_ID tags made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 						exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -38657,7 +38657,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the "where" Geo tag added to the transaction TRANSACTION_ID made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\nIt represents the location where the transaction has been initiated.\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 						exampleResponseBody: '{\n  "where": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  }\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -38693,7 +38693,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Updates the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 						exampleRequestBody: '{\n  "narrative": "narative"\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -38745,7 +38745,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Updates the "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 						exampleRequestBody: '{\n  "where": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 						exampleResponseBody: '{\n  "success": "Success"\n}',
 						typedBody: [{
@@ -38818,7 +38818,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'In Sandbox mode, any string that can be converted to a positive integer will be accepted as an answer.\n\nThis endpoint totally depends on createTransactionRequest, it need get the following data from createTransactionRequest response body.\n\n1)`TRANSACTION_REQUEST_TYPE` : is the same as createTransactionRequest request URL .\n\n2)`TRANSACTION_REQUEST_ID` : is the `id` field in createTransactionRequest response body.\n\n3) `id` :  is `challenge.id` field in createTransactionRequest response body.\n\n4) `answer` : must be `123`. if it is in sandbox mode. If it kafka mode, the answer can be got by phone message or other security ways.\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
 						exampleRequestBody: '{\n  "id": "This is challenge.id, you can get it from `Create Transaction Request.` response, only is useful if status ==`INITIATED` there.",\n  "answer": "123"\n}',
 						exampleResponseBody: '{\n  "id": "82f92531-9c63-4246-abfc-96c20ec46188",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": "666666-9c63-4246-abfc-96c20ec46188",\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -38910,7 +38910,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
 						exampleRequestBody: '{\n  "to": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "this is for work"\n}',
 						exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -39052,7 +39052,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
 						exampleRequestBody: '{\n  "to": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "this is for work"\n}',
 						exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -39194,7 +39194,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\nSpecial instructions for COUNTERPARTY:\n\nWhen using a COUNTERPARTY to create a Transaction Request, specificy the counterparty_id in the body of the request.\nThe routing details of the counterparty will be forwarded for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
 						exampleRequestBody: '{\n  "to": {\n    "counterparty_id": "123456"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "A description for the transaction to the counterparty",\n  "charge_policy": "SHARED",\n  "future_date": "20881230"\n}',
 						exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -39341,7 +39341,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Initiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
 						exampleRequestBody: '{\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "This is a FREE_FORM Transaction Request"\n}',
 						exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -39468,7 +39468,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: '\nSpecial instructions for SEPA:\n\nWhen using a SEPA Transaction Request, you specify the IBAN of a Counterparty in the body of the request.\nThe routing details (IBAN) of the counterparty will be forwarded to the core banking system for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
 						exampleRequestBody: '{\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "to": {\n    "iban": "123"\n  },\n  "description": "This is a SEPA Transaction Request",\n  "charge_policy": "SHARED",\n  "future_date": "20881230"\n}',
 						exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 						typedBody: [{
@@ -39615,7 +39615,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get the list of the Transaction Request Types supported by the bank.\n\nAuthentication is Optional\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-request-types',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-request-types',
 						exampleResponseBody: '{\n  "transaction_request_types": [\n    {\n      "transaction_request_type": "SandboxTan"\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -39641,7 +39641,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the Transation Request Types that the account specified by ACCOUNT_ID and view specified by VIEW_ID has access to.\n\nThese are the ways this API Server can create a Transaction via a Transaction Request\n(as opposed to Transaction Types which include external types too e.g. for Transactions created by core banking etc.)\n\n A Transaction Request Type internally determines:\n\n * the required Transaction Request \'body\' i.e. fields that define the \'what\' and \'to\' of a Transaction Request,\n * the type of security challenge that may be be raised before the Transaction Request proceeds, and\n * the threshold of that challenge.\n\n For instance in a \'SANDBOX_TAN\' Transaction Request, for amounts over 1000 currency units, the user must supply a positive integer to complete the Transaction Request and create a Transaction.\n\n This approach aims to provide only one endpoint for initiating transactions, and one that handles challenges, whilst still allowing flexibility with the payload and internal logic.\n \n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
 						exampleResponseBody: '{\n  "transaction_request_types": [\n    {\n      "value": "10",\n      "charge": {\n        "summary": "The bank fixed charge",\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -39702,7 +39702,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns transaction requests for account specified by ACCOUNT_ID at bank specified by BANK_ID.\n\nThe VIEW_ID specified must be \'owner\' and the user must have access to this view.\n\nVersion 2.0.0 now returns charge information.\n\nTransaction Requests serve to initiate transactions that may or may not proceed. They contain information including:\n\n* Transaction Request Id\n* Type\n* Status (INITIATED, COMPLETED)\n* Challenge (in order to confirm the request)\n* From Bank / Account\n* Details including Currency, Value, Description and other initiation information specific to each type. (Could potentialy include a list of future transactions.)\n* Related Transactions\n\nPSD2 Context: PSD2 requires transparency of charges to the customer.\nThis endpoint provides the charge that would be applied if the Transaction Request proceeds - and a record of that charge there after.\nThe customer can proceed with the Transaction by answering the security challenge.\n\n      ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
 						exampleResponseBody: '{\n  "transaction_requests_with_charges": [\n    {\n      "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n      "type": "SANDBOX_TAN",\n      "from": {\n        "bank_id": "GENODEM1GLS",\n        "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n      },\n      "details": {\n        "to_sandbox_tan": {\n          "bank_id": "String",\n          "account_id": "String"\n        },\n        "to_sepa": {\n          "iban": "String"\n        },\n        "to_counterparty": {\n          "counterparty_id": "String"\n        },\n        "to_transfer_to_phone": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "message": "String",\n          "from": {\n            "mobile_phone_number": "+44 07972 444 876",\n            "nickname": "String"\n          },\n          "to": {\n            "mobile_phone_number": "+44 07972 444 876"\n          }\n        },\n        "to_transfer_to_atm": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "message": "String",\n          "from": {\n            "mobile_phone_number": "+44 07972 444 876",\n            "nickname": "String"\n          },\n          "to": {\n            "legal_name": "Eveline Tripman",\n            "date_of_birth": "20181230",\n            "mobile_phone_number": "+44 07972 444 876",\n            "kyc_document": {\n              "type": "String",\n              "number": "String"\n            }\n          }\n        },\n        "to_transfer_to_account": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "transfer_type": "String",\n          "future_date": "20181230",\n          "to": {\n            "name": "String",\n            "bank_code": "String",\n            "branch_number": "String",\n            "account": {\n              "number": "String",\n              "iban": "String"\n            }\n          }\n        },\n        "to_sepa_credit_transfers": {\n          "debtorAccount": {\n            "iban": "12345"\n          },\n          "instructedAmount": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "creditorAccount": {\n            "iban": "54321"\n          },\n          "creditorName": "John Miles"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "100"\n        },\n        "description": "String"\n      },\n      "transaction_ids": [\n        "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n      ],\n      "status": "COMPLETED",\n      "start_date": "2017-09-19T00:00:00Z",\n      "end_date": "2017-09-19T00:00:00Z",\n      "challenge": {\n        "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n        "allowed_attempts": 3,\n        "challenge_type": "SANDBOX_TAN"\n      },\n      "charge": {\n        "summary": "Rent the flat",\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -40000,7 +40000,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create User Auth Context Update.\nAuthentication is Mandatory\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/users/current/auth-context-updates/SCA_METHOD',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/current/auth-context-updates/SCA_METHOD',
 						exampleRequestBody: '{\n  "key": "CUSTOMER_NUMBER",\n  "value": "78987432"\n}',
 						exampleResponseBody: '{\n  "user_auth_context_update_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "key": "CUSTOMER_NUMBER",\n  "value": "78987432",\n  "status": "INITIATED"\n}',
 						typedBody: [{
@@ -40396,7 +40396,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create a view on bank account\n\n Authentication is Mandatory and the user needs to have access to the owner view.\n The \'alias\' field in the JSON can take one of three values:\n\n * _public_: to use the public alias if there is one specified for the other account.\n * _private_: to use the public alias if there is one specified for the other account.\n\n * _\'\'(empty string)_: to use no alias; the view shows the real name of the other account.\n\n The \'hide_metadata_if_alias_used\' field in the JSON can take boolean values. If it is set to `true` and there is an alias on the other account then the other accounts\' metadata (like more_info, url, image_url, open_corporates_url, etc.) will be hidden. Otherwise the metadata will be shown.\n\n The \'allowed_actions\' field is a list containing the name of the actions allowed on this view, all the actions contained will be set to `true` on the view creation, the rest will be set to `false`.\n\n You MUST use a leading _ (underscore) in the view name because other view names are reserved for OBP system views.\n ',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 						exampleRequestBody: '{\n  "name": "_test",\n  "description": "This view is for family",\n  "metadata_view": "_test",\n  "is_public": true,\n  "which_alias_to_use": "family",\n  "hide_metadata_if_alias_used": false,\n  "allowed_actions": [\n    "can_see_transaction_this_bank_account",\n    "can_see_transaction_other_bank_account",\n    "can_see_transaction_metadata",\n    "can_see_transaction_label",\n    "can_see_transaction_amount",\n    "can_see_transaction_type",\n    "can_see_transaction_currency",\n    "can_see_transaction_start_date",\n    "can_see_transaction_finish_date",\n    "can_see_transaction_balance",\n    "can_see_comments",\n    "can_see_narrative",\n    "can_see_tags",\n    "can_see_images",\n    "can_see_bank_account_owners",\n    "can_see_bank_account_type",\n    "can_see_bank_account_balance",\n    "can_see_bank_account_currency",\n    "can_see_bank_account_label",\n    "can_see_bank_account_national_identifier",\n    "can_see_bank_account_swift_bic",\n    "can_see_bank_account_iban",\n    "can_see_bank_account_number",\n    "can_see_bank_account_bank_name",\n    "can_see_other_account_national_identifier",\n    "can_see_other_account_swift_bic",\n    "can_see_other_account_iban",\n    "can_see_other_account_bank_name",\n    "can_see_other_account_number",\n    "can_see_other_account_metadata",\n    "can_see_other_account_kind",\n    "can_see_more_info",\n    "can_see_url",\n    "can_see_image_url",\n    "can_see_open_corporates_url",\n    "can_see_corporate_location",\n    "can_see_physical_location",\n    "can_see_public_alias",\n    "can_see_private_alias",\n    "can_add_more_info",\n    "can_add_url",\n    "can_add_image_url",\n    "can_add_open_corporates_url",\n    "can_add_corporate_location",\n    "can_add_physical_location",\n    "can_add_public_alias",\n    "can_add_private_alias",\n    "can_delete_corporate_location",\n    "can_delete_physical_location",\n    "can_edit_narrative",\n    "can_add_comment",\n    "can_delete_comment",\n    "can_add_tag",\n    "can_delete_tag",\n    "can_add_image",\n    "can_delete_image",\n    "can_add_where_tag",\n    "can_see_where_tag",\n    "can_delete_where_tag",\n    "can_create_counterparty",\n    "can_see_bank_routing_scheme",\n    "can_see_bank_routing_address",\n    "can_see_bank_account_routing_scheme",\n    "can_see_bank_account_routing_address",\n    "can_see_other_bank_routing_scheme",\n    "can_see_other_bank_routing_address",\n    "can_see_other_account_routing_scheme",\n    "can_see_other_account_routing_address",\n    "can_query_available_funds"\n  ]\n}',
 						exampleResponseBody: '{\n  "id": "1234",\n  "short_name": "short_name",\n  "description": "description",\n  "metadata_view": "owner",\n  "is_public": true,\n  "alias": "No",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_add_counterparty": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_query_available_funds": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true,\n  "can_see_bank_routing_scheme": true,\n  "can_see_bank_routing_address": true,\n  "can_see_bank_account_routing_scheme": true,\n  "can_see_bank_account_routing_address": true,\n  "can_see_other_bank_routing_scheme": true,\n  "can_see_other_bank_routing_address": true,\n  "can_see_other_account_routing_scheme": true,\n  "can_see_other_account_routing_address": true,\n  "can_add_transaction_request_to_own_account": true,\n  "can_add_transaction_request_to_any_account": true,\n  "can_see_bank_account_credit_limit": true\n}',
 						typedBody: [{
@@ -40478,7 +40478,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Deletes the view specified by VIEW_ID on the bank account specified by ACCOUNT_ID at bank BANK_ID.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -40525,7 +40525,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the list of the permissions at BANK_ID for account ACCOUNT_ID, with each time a pair composed of the user and the views that he has access to.\n\nAuthentication is Mandatory\nand the user needs to have access to the owner view.\n\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions',
 						exampleResponseBody: '{\n  "permissions": [\n    {\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      },\n      "views": [\n        {\n          "id": "123",\n          "short_name": "short_name",\n          "description": "description",\n          "is_public": true,\n          "alias": "None",\n          "hide_metadata_if_alias_used": true,\n          "can_add_comment": true,\n          "can_add_corporate_location": true,\n          "can_add_image": true,\n          "can_add_image_url": true,\n          "can_add_more_info": true,\n          "can_add_open_corporates_url": true,\n          "can_add_physical_location": true,\n          "can_add_private_alias": true,\n          "can_add_public_alias": true,\n          "can_add_tag": true,\n          "can_add_url": true,\n          "can_add_where_tag": true,\n          "can_delete_comment": true,\n          "can_delete_corporate_location": true,\n          "can_delete_image": true,\n          "can_delete_physical_location": true,\n          "can_delete_tag": true,\n          "can_delete_where_tag": true,\n          "can_edit_owner_comment": true,\n          "can_see_bank_account_balance": true,\n          "can_see_bank_account_bank_name": true,\n          "can_see_bank_account_currency": true,\n          "can_see_bank_account_iban": true,\n          "can_see_bank_account_label": true,\n          "can_see_bank_account_national_identifier": true,\n          "can_see_bank_account_number": true,\n          "can_see_bank_account_owners": true,\n          "can_see_bank_account_swift_bic": true,\n          "can_see_bank_account_type": true,\n          "can_see_comments": true,\n          "can_see_corporate_location": true,\n          "can_see_image_url": true,\n          "can_see_images": true,\n          "can_see_more_info": true,\n          "can_see_open_corporates_url": true,\n          "can_see_other_account_bank_name": true,\n          "can_see_other_account_iban": true,\n          "can_see_other_account_kind": true,\n          "can_see_other_account_metadata": true,\n          "can_see_other_account_national_identifier": true,\n          "can_see_other_account_number": true,\n          "can_see_other_account_swift_bic": true,\n          "can_see_owner_comment": true,\n          "can_see_physical_location": true,\n          "can_see_private_alias": true,\n          "can_see_public_alias": true,\n          "can_see_tags": true,\n          "can_see_transaction_amount": true,\n          "can_see_transaction_balance": true,\n          "can_see_transaction_currency": true,\n          "can_see_transaction_description": true,\n          "can_see_transaction_finish_date": true,\n          "can_see_transaction_metadata": true,\n          "can_see_transaction_other_bank_account": true,\n          "can_see_transaction_start_date": true,\n          "can_see_transaction_this_bank_account": true,\n          "can_see_transaction_type": true,\n          "can_see_url": true,\n          "can_see_where_tag": true\n        }\n      ]\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -40561,7 +40561,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Returns the list of the views at BANK_ID for account ACCOUNT_ID that a user identified by PROVIDER_ID at their provider PROVIDER has access to.\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for USER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe user needs to have access to the owner view.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
 						exampleResponseBody: '{\n  "views": [\n    {\n      "id": "1234",\n      "short_name": "short_name",\n      "description": "description",\n      "metadata_view": "owner",\n      "is_public": true,\n      "alias": "No",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_add_counterparty": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_query_available_funds": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true,\n      "can_see_bank_routing_scheme": true,\n      "can_see_bank_routing_address": true,\n      "can_see_bank_account_routing_scheme": true,\n      "can_see_bank_account_routing_address": true,\n      "can_see_other_bank_routing_scheme": true,\n      "can_see_other_bank_routing_address": true,\n      "can_see_other_account_routing_scheme": true,\n      "can_see_other_account_routing_address": true,\n      "can_add_transaction_request_to_own_account": true,\n      "can_add_transaction_request_to_any_account": true,\n      "can_see_bank_account_credit_limit": true\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -40597,7 +40597,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: '#Views\n\n\nViews in Open Bank Project provide a mechanism for fine grained access control and delegation to Accounts and Transactions. Account holders use the \'owner\' view by default. Delegated access is made through other views for example \'accountants\', \'share-holders\' or \'tagging-application\'. Views can be created via the API and each view has a list of entitlements.\n\nViews on accounts and transactions filter the underlying data to redact certain fields for certain users. For instance the balance on an account may be hidden from the public. The way to know what is possible on a view is determined in the following JSON.\n\n**Data:** When a view moderates a set of data, some fields my contain the value `null` rather than the original value. This indicates either that the user is not allowed to see the original data or the field is empty.\n\nThere is currently one exception to this rule; the \'holder\' field in the JSON contains always a value which is either an alias or the real name - indicated by the \'is_alias\' field.\n\n**Action:** When a user performs an action like trying to post a comment (with POST API call), if he is not allowed, the body response will contain an error message.\n\n**Metadata:**\nTransaction metadata (like images, tags, comments, etc.) will appears *ONLY* on the view where they have been created e.g. comments posted to the public view only appear on the public view.\n\nThe other account metadata fields (like image_URL, more_info, etc.) are unique through all the views. Example, if a user edits the \'more_info\' field in the \'team\' view, then the view \'authorities\' will show the new value (if it is allowed to do it).\n\n# All\n*Optional*\n\nReturns the list of the views created for account ACCOUNT_ID at BANK_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 						exampleResponseBody: '{\n  "views": [\n    {\n      "id": "1234",\n      "short_name": "short_name",\n      "description": "description",\n      "metadata_view": "owner",\n      "is_public": true,\n      "alias": "No",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_add_counterparty": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_query_available_funds": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true,\n      "can_see_bank_routing_scheme": true,\n      "can_see_bank_routing_address": true,\n      "can_see_bank_account_routing_scheme": true,\n      "can_see_bank_account_routing_address": true,\n      "can_see_other_bank_routing_scheme": true,\n      "can_see_other_bank_routing_address": true,\n      "can_see_other_account_routing_scheme": true,\n      "can_see_other_account_routing_address": true,\n      "can_add_transaction_request_to_own_account": true,\n      "can_add_transaction_request_to_any_account": true,\n      "can_see_bank_account_credit_limit": true\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -40628,7 +40628,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Grants the user identified by PROVIDER_ID at their provider PROVIDER access to a list of views at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe User needs to have access to the owner view.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 						exampleRequestBody: '{\n  "views": [\n    "_family",\n    "_work"\n  ]\n}',
 						exampleResponseBody: '{\n  "views": [\n    {\n      "id": "123",\n      "short_name": "short_name",\n      "description": "description",\n      "is_public": true,\n      "alias": "None",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true\n    }\n  ]\n}',
 						typedBody: [{
@@ -40690,7 +40690,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Grants the User identified by PROVIDER_ID at PROVIDER access to the view VIEW_ID at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER and PROVIDER_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nGranting access to a public view will return an error message, as the user already has access.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "id": "123",\n  "short_name": "short_name",\n  "description": "description",\n  "is_public": true,\n  "alias": "None",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true\n}',
 						typedBody: [{
@@ -40742,7 +40742,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: '"Revokes access to all Views on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -40789,7 +40789,7 @@ module.exports = {
 							color: '#EF476F'
 						},
 						description: 'Revokes access to a View on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 						exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 						exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 						typedBody: [{
@@ -40841,7 +40841,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Update an existing view on a bank account\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nThe json sent is the same as during view creation (above), with one difference: the \'name\' field\nof a view is not editable (it is only set when a view is created)',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 						exampleRequestBody: '{\n  "description": "this is for family",\n  "metadata_view": "owner",\n  "is_public": true,\n  "which_alias_to_use": "family",\n  "hide_metadata_if_alias_used": true,\n  "allowed_actions": [\n    "can_see_transaction_this_bank_account",\n    "can_see_transaction_other_bank_account",\n    "can_see_transaction_metadata",\n    "can_see_transaction_label",\n    "can_see_transaction_amount",\n    "can_see_transaction_type",\n    "can_see_transaction_currency",\n    "can_see_transaction_start_date",\n    "can_see_transaction_finish_date",\n    "can_see_transaction_balance",\n    "can_see_comments",\n    "can_see_narrative",\n    "can_see_tags",\n    "can_see_images",\n    "can_see_bank_account_owners",\n    "can_see_bank_account_type",\n    "can_see_bank_account_balance",\n    "can_see_bank_account_currency",\n    "can_see_bank_account_label",\n    "can_see_bank_account_national_identifier",\n    "can_see_bank_account_swift_bic",\n    "can_see_bank_account_iban",\n    "can_see_bank_account_number",\n    "can_see_bank_account_bank_name",\n    "can_see_other_account_national_identifier",\n    "can_see_other_account_swift_bic",\n    "can_see_other_account_iban",\n    "can_see_other_account_bank_name",\n    "can_see_other_account_number",\n    "can_see_other_account_metadata",\n    "can_see_other_account_kind",\n    "can_see_more_info",\n    "can_see_url",\n    "can_see_image_url",\n    "can_see_open_corporates_url",\n    "can_see_corporate_location",\n    "can_see_physical_location",\n    "can_see_public_alias",\n    "can_see_private_alias",\n    "can_add_more_info",\n    "can_add_url",\n    "can_add_image_url",\n    "can_add_open_corporates_url",\n    "can_add_corporate_location",\n    "can_add_physical_location",\n    "can_add_public_alias",\n    "can_add_private_alias",\n    "can_delete_corporate_location",\n    "can_delete_physical_location",\n    "can_edit_narrative",\n    "can_add_comment",\n    "can_delete_comment",\n    "can_add_tag",\n    "can_delete_tag",\n    "can_add_image",\n    "can_delete_image",\n    "can_add_where_tag",\n    "can_see_where_tag",\n    "can_delete_where_tag",\n    "can_create_counterparty",\n    "can_see_bank_routing_scheme",\n    "can_see_bank_routing_address",\n    "can_see_bank_account_routing_scheme",\n    "can_see_bank_account_routing_address",\n    "can_see_other_bank_routing_scheme",\n    "can_see_other_bank_routing_address",\n    "can_see_other_account_routing_scheme",\n    "can_see_other_account_routing_address",\n    "can_query_available_funds"\n  ]\n}',
 						exampleResponseBody: '{\n  "id": "1234",\n  "short_name": "short_name",\n  "description": "description",\n  "metadata_view": "owner",\n  "is_public": true,\n  "alias": "No",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_add_counterparty": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_query_available_funds": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true,\n  "can_see_bank_routing_scheme": true,\n  "can_see_bank_routing_address": true,\n  "can_see_bank_account_routing_scheme": true,\n  "can_see_bank_account_routing_address": true,\n  "can_see_other_bank_routing_scheme": true,\n  "can_see_other_bank_routing_address": true,\n  "can_see_other_account_routing_scheme": true,\n  "can_see_other_account_routing_address": true,\n  "can_add_transaction_request_to_own_account": true,\n  "can_add_transaction_request_to_any_account": true,\n  "can_see_bank_account_credit_limit": true\n}',
 						typedBody: [{
@@ -40919,7 +40919,7 @@ module.exports = {
 							color: '#005EB8'
 						},
 						description: 'Create an Account Webhook\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 						exampleRequestBody: '{\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "is_active": "true"\n}',
 						exampleResponseBody: '{\n  "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "is_active": true\n}',
 						typedBody: [{
@@ -40975,7 +40975,7 @@ module.exports = {
 							color: '#FFD166'
 						},
 						description: 'Enable/Disable an Account Webhook\n\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
-						specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks',
+						specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 						exampleRequestBody: '{\n  "account_webhook_id": "fc23a7e2-7dd2-4bdf-a0b4-ae31232a4762",\n  "is_active": "true"\n}',
 						exampleResponseBody: '{\n  "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "is_active": true\n}',
 						typedBody: [{
@@ -41011,7 +41011,7 @@ module.exports = {
 							color: '#06D6A0'
 						},
 						description: 'Get Account Webhooks.\n\nPossible custom URL parameters for pagination:\n\n* limit=NUMBER\n* offset=NUMBER\n* account_id=STRING\n* user_id=STRING\n\n\n',
-						specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/account-web-hooks',
+						specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 						exampleResponseBody: '{\n  "web_hooks": [\n    {\n      "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "bank_id": "GENODEM1GLS",\n      "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "trigger_name": "OnBalanceChange",\n      "url": "https://localhost.openbankproject.com",\n      "http_method": "POST",\n      "http_protocol": "HTTP/1.1",\n      "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n      "is_active": true\n    }\n  ]\n}',
 						typedBody: [],
 						possibleErrors: [{
@@ -41044,7 +41044,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create ATM for the Bank.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 					exampleRequestBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 					exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 					typedBody: [{
@@ -41306,7 +41306,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about ATM for a single bank specified by BANK_ID and ATM_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\n\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms/ATM_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms/ATM_ID',
 					exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41342,7 +41342,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about ATMs for a single bank specified by BANK_ID including:\n\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n\nPagination:\n\nBy default, 100 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/atms',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/atms',
 					exampleResponseBody: '{\n  "id": "atm-id-123",\n  "bank_id": "GENODEM1GLS",\n  "name": "Atm by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "monday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "tuesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "wednesday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "thursday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "friday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "saturday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "sunday": {\n    "opening_time": "10:00",\n    "closing_time": "18:00"\n  },\n  "is_accessible": "true",\n  "located_at": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "has_deposit_capability": "true"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41378,7 +41378,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Check Available Funds\nMandatory URL parameters:\n\n* amount=NUMBER\n* currency=STRING\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/funds-available',
 					exampleResponseBody: '{\n  "answer": "yes",\n  "date": "2019-09-03T17:59:14Z",\n  "available_funds_request_id": "c4ykz59svsr9b7fmdxk8ezs7"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41424,7 +41424,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Create Account at bank specified by BANK_ID with Id specified by ACCOUNT_ID.\n\nThe User can create an Account for themself  - or -  the User that has the USER_ID specified in the POST body.\n\nIf the PUT body USER_ID *is* specified, the logged in user must have the Role canCreateAccount. Once created, the Account will be owned by the User specified by USER_ID.\n\nIf the PUT body USER_ID is *not* specified, the account will be owned by the logged in User.\n\nThe \'type\' field SHOULD be a product_code from Product.\nIf the type matches a product_code from Product, account attributes will be created that match the Product Attributes.\n\nNote: The Amount MUST be zero.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					exampleRequestBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "label": "Label",\n  "type": "CURRENT",\n  "balance": {\n    "currency": "EUR",\n    "amount": "0"\n  },\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "OBP",\n    "address": "UK123456"\n  }\n}',
 					exampleResponseBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "label": "My Account",\n  "type": "AC",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "branch_id": "DERBY6",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  },\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 					typedBody: [{
@@ -41566,7 +41566,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: ' Create Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attribute',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "product_code": "saving1",\n  "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					typedBody: [{
@@ -41618,7 +41618,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Information returned about the account specified by ACCOUNT_ID:\n\n* Number - The human readable account number given by the bank that identifies the account.\n* Label - A label given by the owner of the account\n* Owners - Users that own this account\n* Type - The type of account\n* Balance - Currency and Value\n* Account Routings - A list that might include IBAN or national account identifiers\n* Account Rules - A list that might include Overdraft and other bank specific rules\n\nThis call returns the owner view and requires access to that view.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/account',
+					specificUrl: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/account',
 					exampleResponseBody: '{\n  "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "bank_id": "GENODEM1GLS",\n  "label": "My Account",\n  "number": "546387432",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "AC",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "views_basic": [\n    {\n      "id": "owner",\n      "short_name": "Owner",\n      "description": "This view is for the owner for the account.",\n      "is_public": false\n    }\n  ],\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41644,7 +41644,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Information returned about an account specified by ACCOUNT_ID as moderated by the view (VIEW_ID):\n\n* Number\n* Owners\n* Type\n* Balance\n* IBAN\n* Available views (sorted by short_name)\n\nMore details about the data moderation by the view [here](#1_2_1-getViewsForBankAccount).\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is required if the \'is_public\' field in view (VIEW_ID) is not set to `true`.\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/account',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/account',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "label": "NoneLabel",\n  "number": "123",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "OBP",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "views_available": [\n    {\n      "id": "123",\n      "short_name": "short_name",\n      "description": "description",\n      "is_public": true,\n      "alias": "None",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true\n    }\n  ],\n  "bank_id": "GENODEM1GLS",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  },\n  "account_attributes": [\n    {\n      "product_code": "saving1",\n      "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41684,8 +41684,8 @@ module.exports = {
 						type: 'GET',
 						color: '#06D6A0'
 					},
-					description: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/account_ids/private',
+					description: 'Returns only the list of accounts ids at BANK_ID that the user has access to.\n\nEach account must have at least one private View.\n\nFor each account the API returns its account ID.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/account_ids/private',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41715,8 +41715,8 @@ module.exports = {
 						type: 'GET',
 						color: '#06D6A0'
 					},
-					description: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/private',
+					description: 'Returns the minimal list of private accounts at BANK_ID that the user has access to.\nFor each account, the API returns the ID, routing addresses and the views available to the current user.\n\nIf you want to see more information on the Views, use the Account Detail call.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/private',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "label": "String",\n      "bank_id": "GENODEM1GLS",\n      "account_type": "330",\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ],\n      "views": [\n        {\n          "id": "owner",\n          "short_name": "Owner",\n          "description": "This view is for the owner for the account.",\n          "is_public": false\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41746,8 +41746,8 @@ module.exports = {
 						type: 'GET',
 						color: '#06D6A0'
 					},
-					description: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts',
+					description: '\nReturns the list of accounts at BANK_ID that the user has access to.\nFor each account the API returns the account ID and the views available to the user..\nEach account must have at least one private View.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "label": "NoneLabel",\n      "bank_id": "GENODEM1GLS",\n      "views_available": [\n        {\n          "id": "1",\n          "short_name": "HHH",\n          "is_public": true\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41773,7 +41773,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Balances for the Accounts of the current User at one bank.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/balances',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/balances',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "label": "My Account",\n      "bank_id": "GENODEM1GLS",\n      "account_routings": [\n        {\n          "scheme": "accountNumber",\n          "address": "123456"\n        }\n      ],\n      "balance": {\n        "currency": "EUR",\n        "amount": "100"\n      }\n    }\n  ],\n  "overall_balance": {\n    "currency": "EUR",\n    "amount": "100"\n  },\n  "overall_balance_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41792,8 +41792,8 @@ module.exports = {
 						type: 'GET',
 						color: '#06D6A0'
 					},
-					description: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/BANK_ID/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts-held',
+					description: 'Get Accounts held by the current User if even the User has not been assigned the owner View yet.\n\nCan be used to onboard the account to the API - since all other account and transaction endpoints require views to be assigned.\n\n\noptional request parameters:\n\n* account_type_filter: one or many accountType value, split by comma\n* account_type_filter_operation: the filter type of account_type_filter, value must be INCLUDE or EXCLUDE\n\nwhole url example:\n/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held?account_type_filter=330,CURRENT+PLUS&account_type_filter_operation=INCLUDE\n    \n\nAuthentication is Mandatory\n      ',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts-held',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "12314",\n      "bank_id": "123",\n      "number": "123",\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41813,7 +41813,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '**NOTE: This endpoint currently only returns example data.**\n\n      Get all checkbook orders',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/checkbook/orders',
 					exampleResponseBody: '{\n  "account": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n    "account_type": "330",\n    "account_routings": [\n      {\n        "scheme": "AccountNumber",\n        "address": "4930396"\n      }\n    ],\n    "branch_routings": [\n      {\n        "scheme": "BranchNumber",\n        "address": "678"\n      }\n    ]\n  },\n  "orders": [\n    {\n      "order": {\n        "order_id": "xjksajfkj",\n        "order_date": "07082013",\n        "number_of_checkbooks": "4",\n        "distribution_channel": "1201",\n        "status": "2",\n        "first_check_number": "5165276",\n        "shipping_code": "1"\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -41854,7 +41854,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: ' Update Account Attribute\n\n\nAccount Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Account Attribute is linked to its Account by ACCOUNT_ID\n\n\n       \n\nTypical account attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/products/PRODUCT_CODE/attributes/ACCOUNT_ATTRIBUTE_ID',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "product_code": "saving1",\n  "account_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					typedBody: [{
@@ -41906,7 +41906,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Update the label for the account. The label is how the account is known to the account owner e.g. \'My savings account\'\n\n\nAuthentication is Mandatory\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					exampleRequestBody: '{\n  "id": "123123",\n  "label": "label",\n  "bank_id": "GENODEM1GLS"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -41968,7 +41968,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the account. \n\nAuthentication is Mandatory\n\n       ',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/accounts/ACCOUNT_ID',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID',
 					exampleRequestBody: '{\n  "label": "Label",\n  "type": "CURRENT",\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  }\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "label": "Label",\n  "type": "CURRENT",\n  "branch_id": "1234",\n  "account_routing": {\n    "scheme": "AccountNumber",\n    "address": "4930396"\n  }\n}',
 					typedBody: [{
@@ -42040,7 +42040,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: ' Create Account Application\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 					exampleRequestBody: '{\n  "product_code": "saveing1",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 					typedBody: [{
@@ -42087,7 +42087,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Account Application.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 					exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42118,7 +42118,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Account Applications.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications',
 					exampleResponseBody: '{\n  "account_applications": [\n    {\n      "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n      "product_code": "saveing1",\n      "user": {\n        "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n        "email": "eveline@example.com",\n        "provider_id": "Chris",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      },\n      "customer": {\n        "bank_id": "GENODEM1GLS",\n        "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n        "customer_number": "5987953",\n        "legal_name": "Eveline Tripman",\n        "mobile_phone_number": "+44 07972 444 876",\n        "email": "eveline@example.com",\n        "face_image": {\n          "url": "www.openbankproject",\n          "date": "2017-09-19T00:00:00Z"\n        },\n        "date_of_birth": "2017-09-19T00:00:00Z",\n        "relationship_status": "single",\n        "dependants": 10,\n        "dob_of_dependants": [\n          "2017-09-19T00:00:00Z"\n        ],\n        "credit_rating": {\n          "rating": "OBP",\n          "source": "OBP"\n        },\n        "credit_limit": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "highest_education_attained": "Master",\n        "employment_status": "worker",\n        "kyc_status": true,\n        "last_ok_date": "2017-09-19T00:00:00Z",\n        "title": "Dr.",\n        "branchId": "DERBY6",\n        "nameSuffix": "Sr"\n      },\n      "date_of_application": "2017-09-19T00:00:00Z",\n      "status": "REQUESTED"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42149,7 +42149,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update an Account Application status\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-applications/ACCOUNT_APPLICATION_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-applications/ACCOUNT_APPLICATION_ID',
 					exampleRequestBody: '{\n  "status": "ACCEPTED"\n}',
 					exampleResponseBody: '{\n  "account_application_id": "gc23a7e2-7dd2-4bdf-a0b4-ae31232a4763",\n  "product_code": "saveing1",\n  "user": {\n    "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n    "email": "eveline@example.com",\n    "provider_id": "Chris",\n    "provider": "http://127.0.0.1:8080",\n    "username": "felixsmith"\n  },\n  "customer": {\n    "bank_id": "GENODEM1GLS",\n    "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n    "customer_number": "5987953",\n    "legal_name": "Eveline Tripman",\n    "mobile_phone_number": "+44 07972 444 876",\n    "email": "eveline@example.com",\n    "face_image": {\n      "url": "www.openbankproject",\n      "date": "2017-09-19T00:00:00Z"\n    },\n    "date_of_birth": "2017-09-19T00:00:00Z",\n    "relationship_status": "single",\n    "dependants": 10,\n    "dob_of_dependants": [\n      "2017-09-19T00:00:00Z"\n    ],\n    "credit_rating": {\n      "rating": "OBP",\n      "source": "OBP"\n    },\n    "credit_limit": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "highest_education_attained": "Master",\n    "employment_status": "worker",\n    "kyc_status": true,\n    "last_ok_date": "2017-09-19T00:00:00Z",\n    "title": "Dr.",\n    "branchId": "DERBY6",\n    "nameSuffix": "Sr"\n  },\n  "date_of_application": "2017-09-19T00:00:00Z",\n  "status": "REQUESTED"\n}',
 					typedBody: [{
@@ -42191,7 +42191,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '\nReturns information about an account that has a public view.\n\nThe account is specified by ACCOUNT_ID. The information is moderated by the view specified by VIEW_ID.\n\n* Number\n* Owners\n* Type\n* Balance\n* Routing\n\n\nPSD2 Context: PSD2 requires customers to have access to their account information via third party applications.\nThis call provides balance and other account information via delegated authentication using OAuth.\n\nAuthentication is Optional\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/public/accounts/ACCOUNT_ID/VIEW_ID/account',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/public/accounts/ACCOUNT_ID/VIEW_ID/account',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "bank_id": "String",\n  "label": "String",\n  "number": "String",\n  "owners": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  ],\n  "type": "String",\n  "balance": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "account_rules": [\n    {\n      "scheme": "OVERDRAFT",\n      "value": "10"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42258,7 +42258,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns a list of the public accounts (Anonymous access) at BANK_ID. For each account the API returns the ID and the available views.\n\nAuthentication is Optional\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/public',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/public',
 					exampleResponseBody: '{\n  "accounts": [\n    {\n      "id": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "label": "NoneLabel",\n      "bank_id": "GENODEM1GLS",\n      "views_available": [\n        {\n          "id": "1",\n          "short_name": "HHH",\n          "is_public": true\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42278,7 +42278,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Create Transaction Types for the bank specified by BANK_ID:\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Mandatory',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-types',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 					exampleRequestBody: '{\n  "id": {\n    "value": "123"\n  },\n  "bank_id": "GENODEM1GLS",\n  "short_code": "PlaceholderString",\n  "summary": "PlaceholderString",\n  "description": "PlaceholderString",\n  "charge": {\n    "currency": "EUR",\n    "amount": "10"\n  }\n}',
 					exampleResponseBody: '{\n  "id": {\n    "value": "123"\n  },\n  "bankId": {\n    "value": "gh.uk.9j"\n  },\n  "shortCode": "80080",\n  "summary": "SANDBOX_TAN",\n  "description": "This is the sandbox mode, charging litter money.",\n  "charge": {\n    "currency": "EUR",\n    "amount": "100"\n  }\n}',
 					typedBody: [{
@@ -42401,7 +42401,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get Transaction Types for the bank specified by BANK_ID:\n\nLists the possible Transaction Types available at the bank (as opposed to Transaction Request Types which are the possible ways Transactions can be created by this API Server).\n\n  * id : Unique transaction type id across the API instance. SHOULD be a UUID. MUST be unique.\n  * bank_id : The bank that supports this TransactionType\n  * short_code : A short code (SHOULD have no-spaces) which MUST be unique across the bank. May be stored with Transactions to link here\n  * summary : A succinct summary\n  * description : A longer description\n  * charge : The charge to the customer for each one of these\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-types',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-types',
 					exampleResponseBody: '{\n  "transaction_types": [\n    {\n      "id": {\n        "value": "123"\n      },\n      "bank_id": "GENODEM1GLS",\n      "short_code": "PlaceholderString",\n      "summary": "PlaceholderString",\n      "description": "PlaceholderString",\n      "charge": {\n        "currency": "EUR",\n        "amount": "10"\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42427,7 +42427,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create Branch for the Bank.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 					exampleRequestBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 					exampleResponseBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 					typedBody: [{
@@ -42859,7 +42859,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete Branch from given Bank.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -42906,7 +42906,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about a single Branch specified by BANK_ID and BRANCH_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under.\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					exampleResponseBody: '{\n  "id": "branch-id-123",\n  "bank_id": "bank-id-123",\n  "name": "Branch by the Lake",\n  "address": {\n    "line_1": "No 1 the Road",\n    "line_2": "The Place",\n    "line_3": "The Hill",\n    "city": "Berlin",\n    "county": "String",\n    "state": "Brandenburg",\n    "postcode": "13359",\n    "country_code": "DE"\n  },\n  "location": {\n    "latitude": 10,\n    "longitude": 10\n  },\n  "meta": {\n    "license": {\n      "id": "PDDL",\n      "name": "Open Data Commons Public Domain Dedication and License "\n    }\n  },\n  "lobby": {\n    "monday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "tuesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "wednesday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "thursday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "friday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "saturday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ],\n    "sunday": [\n      {\n        "opening_time": "10:00",\n        "closing_time": "18:00"\n      }\n    ]\n  },\n  "drive_up": {\n    "monday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "tuesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "wednesday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "thursday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "friday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "saturday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    },\n    "sunday": {\n      "opening_time": "10:00",\n      "closing_time": "18:00"\n    }\n  },\n  "branch_routing": {\n    "scheme": "OBP",\n    "address": "123abc"\n  },\n  "is_accessible": "true",\n  "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n  "branch_type": "Full service store",\n  "more_info": "short walk to the lake from here",\n  "phone_number": "+381631954907"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42937,7 +42937,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about branches for a single bank specified by BANK_ID including:\n\n* Name\n* Address\n* Geo Location\n* License the data under this endpoint is released under\n* Structured opening hours\n* Accessible flag\n* Branch Type\n* More Info\n\nPagination:\n\nBy default, 50 records are returned.\n\nYou can use the url query parameters *limit* and *offset* for pagination\nYou can also use the follow url query parameters:\n\n  - city - string, find Branches those in this city, optional\n\n\n  - withinMetersOf - number, find Branches within given meters distance, optional\n  - nearLatitude - number, a position of latitude value, cooperate with withMetersOf do query filter, optional\n  - nearLongitude - number, a position of longitude value, cooperate with withMetersOf do query filter, optional\n\nnote: withinMetersOf, nearLatitude and nearLongitude either all empty or all have value.\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches',
 					exampleResponseBody: '{\n  "branches": [\n    {\n      "id": "branch-id-123",\n      "bank_id": "bank-id-123",\n      "name": "Branch by the Lake",\n      "address": {\n        "line_1": "No 1 the Road",\n        "line_2": "The Place",\n        "line_3": "The Hill",\n        "city": "Berlin",\n        "county": "String",\n        "state": "Brandenburg",\n        "postcode": "13359",\n        "country_code": "DE"\n      },\n      "location": {\n        "latitude": 10,\n        "longitude": 10\n      },\n      "meta": {\n        "license": {\n          "id": "PDDL",\n          "name": "Open Data Commons Public Domain Dedication and License "\n        }\n      },\n      "lobby": {\n        "monday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "tuesday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "wednesday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "thursday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "friday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "saturday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ],\n        "sunday": [\n          {\n            "opening_time": "10:00",\n            "closing_time": "18:00"\n          }\n        ]\n      },\n      "drive_up": {\n        "monday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "tuesday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "wednesday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "thursday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "friday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "saturday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        },\n        "sunday": {\n          "opening_time": "10:00",\n          "closing_time": "18:00"\n        }\n      },\n      "branch_routing": {\n        "scheme": "OBP",\n        "address": "123abc"\n      },\n      "is_accessible": "true",\n      "accessibleFeatures": "wheelchair, atm usuable by the visually impaired",\n      "branch_type": "Full service store",\n      "more_info": "short walk to the lake from here",\n      "phone_number": "+381631954907"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -42973,7 +42973,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update an existing branch for a bank account (Authenticated access).\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/branches/BRANCH_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/branches/BRANCH_ID',
 					exampleRequestBody: '{\n  "bank_id": "gh.29.fi",\n  "name": "OBP",\n  "address": {\n    "line_1": "Osloer Straße 16/17",\n    "line_2": "Wedding",\n    "line_3": "",\n    "city": "Berlin",\n    "state": "Berlin Brandenburg",\n    "postcode": "13359",\n    "country": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "lobby": {\n    "hours": "5"\n  },\n  "drive_up": {\n    "hours": "5"\n  }\n}',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "name": "String",\n  "address": {\n    "line_1": "Osloer Straße 16/17",\n    "line_2": "Wedding",\n    "line_3": "",\n    "city": "Berlin",\n    "state": "Berlin Brandenburg",\n    "postcode": "13359",\n    "country": "DE"\n  },\n  "location": {\n    "latitude": 11.45,\n    "longitude": 11.45\n  },\n  "lobby": {\n    "hours": "5"\n  },\n  "drive_up": {\n    "hours": "5"\n  },\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "branch_routing": {\n    "scheme": "BranchNumber",\n    "address": "678"\n  }\n}',
 					typedBody: [{
@@ -43125,7 +43125,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create Card at bank specified by BANK_ID .\n\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 					exampleRequestBody: '{\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "technology": "technology1",\n  "networks": [\n    "network1",\n    "network2"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    },\n    {\n      "requested_date": "2019-09-03T17:59:14Z",\n      "reason_requested": "GOOD_SECURITY_PRACTICE"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "123",\n    "label": "OBP",\n    "views_available": [\n      {\n        "id": "123",\n        "short_name": "short_name",\n        "description": "description",\n        "is_public": true,\n        "alias": "None",\n        "hide_metadata_if_alias_used": true,\n        "can_add_comment": true,\n        "can_add_corporate_location": true,\n        "can_add_image": true,\n        "can_add_image_url": true,\n        "can_add_more_info": true,\n        "can_add_open_corporates_url": true,\n        "can_add_physical_location": true,\n        "can_add_private_alias": true,\n        "can_add_public_alias": true,\n        "can_add_tag": true,\n        "can_add_url": true,\n        "can_add_where_tag": true,\n        "can_delete_comment": true,\n        "can_delete_corporate_location": true,\n        "can_delete_image": true,\n        "can_delete_physical_location": true,\n        "can_delete_tag": true,\n        "can_delete_where_tag": true,\n        "can_edit_owner_comment": true,\n        "can_see_bank_account_balance": true,\n        "can_see_bank_account_bank_name": true,\n        "can_see_bank_account_currency": true,\n        "can_see_bank_account_iban": true,\n        "can_see_bank_account_label": true,\n        "can_see_bank_account_national_identifier": true,\n        "can_see_bank_account_number": true,\n        "can_see_bank_account_owners": true,\n        "can_see_bank_account_swift_bic": true,\n        "can_see_bank_account_type": true,\n        "can_see_comments": true,\n        "can_see_corporate_location": true,\n        "can_see_image_url": true,\n        "can_see_images": true,\n        "can_see_more_info": true,\n        "can_see_open_corporates_url": true,\n        "can_see_other_account_bank_name": true,\n        "can_see_other_account_iban": true,\n        "can_see_other_account_kind": true,\n        "can_see_other_account_metadata": true,\n        "can_see_other_account_national_identifier": true,\n        "can_see_other_account_number": true,\n        "can_see_other_account_swift_bic": true,\n        "can_see_owner_comment": true,\n        "can_see_physical_location": true,\n        "can_see_private_alias": true,\n        "can_see_public_alias": true,\n        "can_see_tags": true,\n        "can_see_transaction_amount": true,\n        "can_see_transaction_balance": true,\n        "can_see_transaction_currency": true,\n        "can_see_transaction_description": true,\n        "can_see_transaction_finish_date": true,\n        "can_see_transaction_metadata": true,\n        "can_see_transaction_other_bank_account": true,\n        "can_see_transaction_start_date": true,\n        "can_see_transaction_this_bank_account": true,\n        "can_see_transaction_type": true,\n        "can_see_url": true,\n        "can_see_where_tag": true\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					typedBody: [{
@@ -43317,7 +43317,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: ' Create Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attribute',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attribute',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DOUBLE",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "attribute_type": {\n    "i": 2,\n    "name": "DOUBLE"\n  },\n  "bank_id": {\n    "value": "GENODEM1GLS"\n  },\n  "value": "2012-04-23",\n  "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n}',
 					typedBody: [{
@@ -43369,7 +43369,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete a Card at bank specified by CARD_ID .\n\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -43416,7 +43416,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '\nThis will the datails of the card.\nIt shows the account infomation which linked the the card.\nAlso shows the card attributes of the card. \n\n       ',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n    "label": "My Account",\n    "views_available": [\n      {\n        "id": "owner",\n        "name": "Owner",\n        "description": "This view is for the owner for the account."\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "card_attributes": [\n    {\n      "name": "OVERDRAFT_START_DATE",\n      "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n      "attribute_type": {\n        "i": 0,\n        "name": "STRING"\n      },\n      "bank_id": {\n        "value": "GENODEM1GLS"\n      },\n      "value": "2012-04-23",\n      "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -43472,8 +43472,8 @@ module.exports = {
 						type: 'GET',
 						color: '#06D6A0'
 					},
-					description: 'Should be able to filter on the following fields\n\neg:/management/banks/BANK_ID/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards',
+					description: 'Should be able to filter on the following fields\n\neg:/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards?customer_id=66214b8e-259e-44ad-8868-3eb47be70646$account_id=8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0\n\n1 customer_id should be valid customer_id, otherwise, it will return an empty card list.  \n\n2 account_id should be valid account_id , otherwise, it will return an empty card list.  \n\n\n${authenticationRequiredMessage(true)}',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards',
 					exampleResponseBody: '{\n  "cards": [\n    {\n      "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n      "bank_id": "GENODEM1GLS",\n      "card_number": "364435172576215",\n      "card_type": "Credit",\n      "name_on_card": "SusanSmith",\n      "issue_number": "1",\n      "serial_number": "1324234",\n      "valid_from_date": "2017-09-19T00:00:00Z",\n      "expires_date": "2017-09-19T00:00:00Z",\n      "enabled": true,\n      "cancelled": true,\n      "on_hot_list": true,\n      "technology": "technologyString1",\n      "networks": [\n        "networks1"\n      ],\n      "allows": [\n        "credit",\n        "debit"\n      ],\n      "account": {\n        "id": "123",\n        "label": "OBP",\n        "views_available": [\n          {\n            "id": "123",\n            "short_name": "short_name",\n            "description": "description",\n            "is_public": true,\n            "alias": "None",\n            "hide_metadata_if_alias_used": true,\n            "can_add_comment": true,\n            "can_add_corporate_location": true,\n            "can_add_image": true,\n            "can_add_image_url": true,\n            "can_add_more_info": true,\n            "can_add_open_corporates_url": true,\n            "can_add_physical_location": true,\n            "can_add_private_alias": true,\n            "can_add_public_alias": true,\n            "can_add_tag": true,\n            "can_add_url": true,\n            "can_add_where_tag": true,\n            "can_delete_comment": true,\n            "can_delete_corporate_location": true,\n            "can_delete_image": true,\n            "can_delete_physical_location": true,\n            "can_delete_tag": true,\n            "can_delete_where_tag": true,\n            "can_edit_owner_comment": true,\n            "can_see_bank_account_balance": true,\n            "can_see_bank_account_bank_name": true,\n            "can_see_bank_account_currency": true,\n            "can_see_bank_account_iban": true,\n            "can_see_bank_account_label": true,\n            "can_see_bank_account_national_identifier": true,\n            "can_see_bank_account_number": true,\n            "can_see_bank_account_owners": true,\n            "can_see_bank_account_swift_bic": true,\n            "can_see_bank_account_type": true,\n            "can_see_comments": true,\n            "can_see_corporate_location": true,\n            "can_see_image_url": true,\n            "can_see_images": true,\n            "can_see_more_info": true,\n            "can_see_open_corporates_url": true,\n            "can_see_other_account_bank_name": true,\n            "can_see_other_account_iban": true,\n            "can_see_other_account_kind": true,\n            "can_see_other_account_metadata": true,\n            "can_see_other_account_national_identifier": true,\n            "can_see_other_account_number": true,\n            "can_see_other_account_swift_bic": true,\n            "can_see_owner_comment": true,\n            "can_see_physical_location": true,\n            "can_see_private_alias": true,\n            "can_see_public_alias": true,\n            "can_see_tags": true,\n            "can_see_transaction_amount": true,\n            "can_see_transaction_balance": true,\n            "can_see_transaction_currency": true,\n            "can_see_transaction_description": true,\n            "can_see_transaction_finish_date": true,\n            "can_see_transaction_metadata": true,\n            "can_see_transaction_other_bank_account": true,\n            "can_see_transaction_start_date": true,\n            "can_see_transaction_this_bank_account": true,\n            "can_see_transaction_type": true,\n            "can_see_url": true,\n            "can_see_where_tag": true\n          }\n        ],\n        "bank_id": "GENODEM1GLS"\n      },\n      "replacement": {\n        "requested_date": "2017-09-19T00:00:00Z",\n        "reason_requested": "RENEW"\n      },\n      "pin_reset": [\n        {\n          "requested_date": "2017-09-19T00:00:00Z",\n          "reason_requested": "FORGOT"\n        }\n      ],\n      "collected": "2017-09-19T00:00:00Z",\n      "posted": "2017-09-19T00:00:00Z",\n      "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -43504,7 +43504,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '**NOTE: This endpoint currently only returns example data.**\n\n      Get status of Credit Card orders\nGet all orders\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/credit_cards/orders',
 					exampleResponseBody: '{\n  "cards": [\n    {\n      "card_type": "5",\n      "card_description": "good",\n      "use_type": "3"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -43545,7 +43545,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update Card at bank specified by CARD_ID .\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID',
 					exampleRequestBody: '{\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "technology": "technology1",\n  "networks": [\n    "network1",\n    "network2"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    },\n    {\n      "requested_date": "2019-09-03T17:59:14Z",\n      "reason_requested": "GOOD_SECURITY_PRACTICE"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					exampleResponseBody: '{\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "bank_id": "GENODEM1GLS",\n  "card_number": "364435172576215",\n  "card_type": "Credit",\n  "name_on_card": "SusanSmith",\n  "issue_number": "1",\n  "serial_number": "1324234",\n  "valid_from_date": "2017-09-19T00:00:00Z",\n  "expires_date": "2017-09-19T00:00:00Z",\n  "enabled": true,\n  "cancelled": true,\n  "on_hot_list": true,\n  "technology": "technologyString1",\n  "networks": [\n    "networks1"\n  ],\n  "allows": [\n    "credit",\n    "debit"\n  ],\n  "account": {\n    "id": "123",\n    "label": "OBP",\n    "views_available": [\n      {\n        "id": "123",\n        "short_name": "short_name",\n        "description": "description",\n        "is_public": true,\n        "alias": "None",\n        "hide_metadata_if_alias_used": true,\n        "can_add_comment": true,\n        "can_add_corporate_location": true,\n        "can_add_image": true,\n        "can_add_image_url": true,\n        "can_add_more_info": true,\n        "can_add_open_corporates_url": true,\n        "can_add_physical_location": true,\n        "can_add_private_alias": true,\n        "can_add_public_alias": true,\n        "can_add_tag": true,\n        "can_add_url": true,\n        "can_add_where_tag": true,\n        "can_delete_comment": true,\n        "can_delete_corporate_location": true,\n        "can_delete_image": true,\n        "can_delete_physical_location": true,\n        "can_delete_tag": true,\n        "can_delete_where_tag": true,\n        "can_edit_owner_comment": true,\n        "can_see_bank_account_balance": true,\n        "can_see_bank_account_bank_name": true,\n        "can_see_bank_account_currency": true,\n        "can_see_bank_account_iban": true,\n        "can_see_bank_account_label": true,\n        "can_see_bank_account_national_identifier": true,\n        "can_see_bank_account_number": true,\n        "can_see_bank_account_owners": true,\n        "can_see_bank_account_swift_bic": true,\n        "can_see_bank_account_type": true,\n        "can_see_comments": true,\n        "can_see_corporate_location": true,\n        "can_see_image_url": true,\n        "can_see_images": true,\n        "can_see_more_info": true,\n        "can_see_open_corporates_url": true,\n        "can_see_other_account_bank_name": true,\n        "can_see_other_account_iban": true,\n        "can_see_other_account_kind": true,\n        "can_see_other_account_metadata": true,\n        "can_see_other_account_national_identifier": true,\n        "can_see_other_account_number": true,\n        "can_see_other_account_swift_bic": true,\n        "can_see_owner_comment": true,\n        "can_see_physical_location": true,\n        "can_see_private_alias": true,\n        "can_see_public_alias": true,\n        "can_see_tags": true,\n        "can_see_transaction_amount": true,\n        "can_see_transaction_balance": true,\n        "can_see_transaction_currency": true,\n        "can_see_transaction_description": true,\n        "can_see_transaction_finish_date": true,\n        "can_see_transaction_metadata": true,\n        "can_see_transaction_other_bank_account": true,\n        "can_see_transaction_start_date": true,\n        "can_see_transaction_this_bank_account": true,\n        "can_see_transaction_type": true,\n        "can_see_url": true,\n        "can_see_where_tag": true\n      }\n    ],\n    "bank_id": "GENODEM1GLS"\n  },\n  "replacement": {\n    "requested_date": "2017-09-19T00:00:00Z",\n    "reason_requested": "RENEW"\n  },\n  "pin_reset": [\n    {\n      "requested_date": "2017-09-19T00:00:00Z",\n      "reason_requested": "FORGOT"\n    }\n  ],\n  "collected": "2017-09-19T00:00:00Z",\n  "posted": "2017-09-19T00:00:00Z",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					typedBody: [{
@@ -43732,7 +43732,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: ' Update Card Attribute\n\nCard Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Card Attribute is linked to its Card by CARD_ID\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/cards/CARD_ID/attributes/CARD_ATTRIBUTE_ID',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DOUBLE",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "card_id": "36f8a9e6-c2b1-407a-8bd0-421b7119307e ",\n  "attribute_type": {\n    "i": 2,\n    "name": "DOUBLE"\n  },\n  "bank_id": {\n    "value": "GENODEM1GLS"\n  },\n  "value": "2012-04-23",\n  "card_attribute_id": "b4e0352a-9a0f-4bfa-b30b-9003aa467f50"\n}',
 					typedBody: [{
@@ -43784,7 +43784,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nThis endpoint is used to confirm a Consent previously created.\n\nThe User must supply a code that was sent out of band (OOB) for example via an SMS.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/consents/CONSENT_ID/challenge',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/consents/CONSENT_ID/challenge',
 					exampleRequestBody: '{\n  "answer": "12345678"\n}',
 					exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 					typedBody: [{
@@ -43836,7 +43836,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/EMAIL',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/EMAIL',
 					exampleRequestBody: '{\n  "for": "ALL_MY_ACCOUNTS",\n  "view": "owner",\n  "email": "marko@tesobe.com"\n}',
 					exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 					typedBody: [{
@@ -43898,7 +43898,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\n\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\nThis endpoint starts the process of creating a Consent.\n\nThe Consent is created in an INITIATED state.\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\nWhen the Consent is created, OBP (or a backend system) stores the challenge so it can be checked later against the value supplied by the User with the Answer Consent Challenge endpoint.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/SMS',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/SMS',
 					exampleRequestBody: '{\n  "for": "ALL_MY_ACCOUNTS",\n  "view": "owner",\n  "phone_number": "493081453994"\n}',
 					exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "INITIATED"\n}',
 					typedBody: [{
@@ -43960,7 +43960,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\n\nThis endpoint gets the Consents that the current User created.\n\nAuthentication is Mandatory\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents',
 					exampleResponseBody: '{\n  "consents": [\n    {\n      "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n      "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n      "status": "INITIATED"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -43991,7 +43991,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '\n\n\nAn OBP Consent allows the holder of the Consent to call one or more endpoints.\n\nConsents must be created and authorisied using SCA (Strong Customer Authentication).\n\nThat is, Consents can be created by an authorised User via the OBP REST API but they must be confirmed via an out of band (OOB) mechanism such as a code sent to a mobile phone.\n\nEach Consent has one of the following states: INITIATED, ACCEPTED, REJECTED, REVOKED, RECEIVED, VALID, REVOKEDBYPSU, EXPIRED, TERMINATEDBYTPP.\n\n\n\n      \n\n\nRevoke Consent for current user specified by CONSENT_ID\n\n\nAuthentication is Mandatory\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/my/consents/CONSENT_ID/revoke',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/my/consents/CONSENT_ID/revoke',
 					exampleResponseBody: '{\n  "consent_id": "9d429899-24f5-42c8-8565-943ffa6a7945",\n  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOltdLCJjcmVhdGVkQnlVc2VySWQiOiJhYjY1MzlhOS1iMTA1LTQ0ODktYTg4My0wYWQ4ZDZjNjE2NTciLCJzdWIiOiIyMWUxYzhjYy1mOTE4LTRlYWMtYjhlMy01ZTVlZWM2YjNiNGIiLCJhdWQiOiJlanpuazUwNWQxMzJyeW9tbmhieDFxbXRvaHVyYnNiYjBraWphanNrIiwibmJmIjoxNTUzNTU0ODk5LCJpc3MiOiJodHRwczpcL1wvd3d3Lm9wZW5iYW5rcHJvamVjdC5jb20iLCJleHAiOjE1NTM1NTg0OTksImlhdCI6MTU1MzU1NDg5OSwianRpIjoiMDlmODhkNWYtZWNlNi00Mzk4LThlOTktNjYxMWZhMWNkYmQ1Iiwidmlld3MiOlt7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAxIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifSx7ImFjY291bnRfaWQiOiJtYXJrb19wcml2aXRlXzAyIiwiYmFua19pZCI6ImdoLjI5LnVrLngiLCJ2aWV3X2lkIjoib3duZXIifV19.8cc7cBEf2NyQvJoukBCmDLT7LXYcuzTcSYLqSpbxLp4",\n  "status": "REJECTED"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -44022,7 +44022,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create Counterparty (Explicit) for an Account.\n\nIn OBP, there are two types of Counterparty.\n\n* Explicit Counterparties (those here) which we create explicitly and are used in COUNTERPARTY Transaction Requests\n\n* Implicit Counterparties (AKA Other Accounts) which are generated automatically from the other sides of Transactions.\n\nExplicit Counterparties are created for the account / view\nThey are how the user of the view (e.g. account owner) refers to the other side of the transaction\n\nname : the human readable name (e.g. Piano teacher, Miss Nipa)\n\ndescription : the human readable name (e.g. Piano teacher, Miss Nipa)\n\nbank_routing_scheme : eg: bankId or bankCode or any other strings\n\nbank_routing_address : eg: `gh.29.uk`, must be valid sandbox bankIds\n\naccount_routing_scheme : eg: AccountId or AccountNumber or any other strings\n\naccount_routing_address : eg: `1d65db7c-a7b2-4839-af41-95`, must be valid accountIds\n\nother_account_secondary_routing_scheme : eg: IBan or any other strings\n\nother_account_secondary_routing_address : if it is IBan, it should be unique for each counterparty. \n\nother_branch_routing_scheme : eg: branchId or any other strings or you can leave it empty, not useful in sandbox mode.\n\nother_branch_routing_address : eg: `branch-id-123` or you can leave it empty, not useful in sandbox mode.\n\nis_beneficiary : must be set to `true` in order to send payments to this counterparty\n\nbespoke: It support list of key-value, you can add it to the counterarty.\n\nbespoke.key : any info-key you want to add to this counerparty\n \nbespoke.value : any info-value you want to add to this counerparty\n\nThe view specified by VIEW_ID must have the canAddCounterparty permission\n\nA minimal example for TransactionRequestType == COUNTERPARTY\n {\n  "name": "Tesobe1",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "other_account_secondary_routing_scheme": "",\n  "other_account_secondary_routing_address": "",\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\n \nA minimal example for TransactionRequestType == SEPA\n \n {\n  "name": "Tesobe2",\n  "description": "Good Company",\n  "other_bank_routing_scheme": "bankId",\n  "other_bank_routing_address": "gh.29.uk",\n  "other_account_routing_scheme": "accountId",\n  "other_account_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "other_account_secondary_routing_scheme": "IBAN",\n  "other_account_secondary_routing_address": "DE89 3704 0044 0532 0130 00",\n  "is_beneficiary": true,\n  "other_branch_routing_scheme": "",\n  "other_branch_routing_address": "",\n  "bespoke": []\n}\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 					exampleRequestBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "IBAN",\n  "other_account_secondary_routing_address": "DE89370400440532013000",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ]\n}',
 					exampleResponseBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "this_bank_id": "GENODEM1GLS",\n  "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "this_view_id": "owner",\n  "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "accountId",\n  "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ],\n  "metadata": {\n    "public_alias": "String",\n    "more_info": "String",\n    "url": "String",\n    "image_url": "String",\n    "open_corporates_url": "String",\n    "corporate_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "physical_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "private_alias": "String"\n  }\n}',
 					typedBody: [{
@@ -44164,7 +44164,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Counterparties (Explicit) for the account / view.\n\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties',
 					exampleResponseBody: '{\n  "counterparties": [\n    {\n      "name": "CounterpartyName",\n      "description": "My landlord",\n      "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n      "this_bank_id": "GENODEM1GLS",\n      "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "this_view_id": "owner",\n      "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n      "other_bank_routing_scheme": "bankCode",\n      "other_bank_routing_address": "10",\n      "other_branch_routing_scheme": "branchNumber",\n      "other_branch_routing_address": "10010",\n      "other_account_routing_scheme": "accountNumber",\n      "other_account_routing_address": "7987987-2348987-234234",\n      "other_account_secondary_routing_scheme": "accountId",\n      "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n      "is_beneficiary": true,\n      "bespoke": [\n        {\n          "key": "englishName",\n          "value": "english Name"\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -44210,7 +44210,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Information returned about the Counterparty specified by COUNTERPARTY_ID:\n\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/counterparties/COUNTERPARTY_ID',
 					exampleResponseBody: '{\n  "name": "CounterpartyName",\n  "description": "My landlord",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "this_bank_id": "GENODEM1GLS",\n  "this_account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "this_view_id": "owner",\n  "counterparty_id": "1d65db7c-a7b2-4839-af41-958276ab7790",\n  "other_bank_routing_scheme": "bankCode",\n  "other_bank_routing_address": "10",\n  "other_branch_routing_scheme": "branchNumber",\n  "other_branch_routing_address": "10010",\n  "other_account_routing_scheme": "accountNumber",\n  "other_account_routing_address": "7987987-2348987-234234",\n  "other_account_secondary_routing_scheme": "accountId",\n  "other_account_secondary_routing_address": "8ca8a7e4-6d02-48e3-a029-0b2bf89de9f0",\n  "is_beneficiary": true,\n  "bespoke": [\n    {\n      "key": "englishName",\n      "value": "english Name"\n    }\n  ],\n  "metadata": {\n    "public_alias": "String",\n    "more_info": "String",\n    "url": "String",\n    "image_url": "String",\n    "open_corporates_url": "String",\n    "corporate_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "physical_location": {\n      "latitude": 11.45,\n      "longitude": 11.45,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "123",\n        "provider": "http://127.0.0.1:8080",\n        "username": "felixsmith"\n      }\n    },\n    "private_alias": "String"\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -44241,7 +44241,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns data about the Other Account that has shared at least one transaction with ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "holder": {\n    "name": "OBP",\n    "is_alias": true\n  },\n  "bank_routing": {\n    "scheme": "Bank_ID",\n    "address": "gh.29.uk"\n  },\n  "account_routings": [\n    {\n      "scheme": "AccountNumber",\n      "address": "4930396"\n    }\n  ],\n  "metadata": {\n    "public_alias": "NONE",\n    "private_alias": "NONE",\n    "more_info": "www.openbankproject.com",\n    "URL": "www.openbankproject.com",\n    "image_URL": "www.openbankproject.com",\n    "open_corporates_URL": "www.openbankproject.com",\n    "corporate_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    },\n    "physical_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -44282,7 +44282,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns data about all the other accounts that have shared at least one transaction with the ACCOUNT_ID at BANK_ID.\nAuthentication is Optional\n\nAuthentication is required if the view VIEW_ID is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts',
 					exampleResponseBody: '{\n  "other_accounts": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "holder": {\n        "name": "OBP",\n        "is_alias": true\n      },\n      "bank_routing": {\n        "scheme": "Bank_ID",\n        "address": "gh.29.uk"\n      },\n      "account_routings": [\n        {\n          "scheme": "AccountNumber",\n          "address": "4930396"\n        }\n      ],\n      "metadata": {\n        "public_alias": "NONE",\n        "private_alias": "NONE",\n        "more_info": "www.openbankproject.com",\n        "URL": "www.openbankproject.com",\n        "image_URL": "www.openbankproject.com",\n        "open_corporates_URL": "www.openbankproject.com",\n        "corporate_location": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        },\n        "physical_location": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        }\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -44323,7 +44323,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add the geolocation of the counterparty\'s registered address',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					exampleRequestBody: '{\n  "corporate_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44395,7 +44395,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add a description of the counter party from the perpestive of the account e.g. My dentist.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					exampleRequestBody: '{\n  "more_info": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44457,7 +44457,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add a url that points to the logo of the counterparty',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					exampleRequestBody: '{\n  "image_URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44519,7 +44519,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add open corporates url to other bank account.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					exampleRequestBody: '{\n  "open_corporates_URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44576,7 +44576,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add geocoordinates of the counterparty\'s main location',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					exampleRequestBody: '{\n  "physical_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44653,7 +44653,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Creates the public alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\nNote: Public aliases are automatically generated for new \'other accounts / counterparties\', so this call should only be used if\nthe public alias was deleted.\n\nThe VIEW_ID parameter should be a view the caller is permitted to access to and that has permission to create public aliases.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					exampleRequestBody: '{\n  "alias": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44715,7 +44715,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'A url which represents the counterparty (home page url etc.)',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					exampleRequestBody: '{\n  "URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44777,7 +44777,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Creates a private alias for the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					exampleRequestBody: '{\n  "alias": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -44839,7 +44839,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete corporate location of other bank account. Delete the geolocation of the counterparty\'s registered address',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -44896,7 +44896,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete image url of other bank account.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -44927,7 +44927,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete open corporate url of other bank account.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -44984,7 +44984,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete physical location of other bank account.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -45041,7 +45041,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -45098,7 +45098,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the public alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -45150,7 +45150,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: '',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -45207,7 +45207,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: '',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -45264,7 +45264,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get metadata of one other account.\nReturns only the metadata about one other bank account (OTHER_ACCOUNT_ID) that had shared at least one transaction with ACCOUNT_ID at BANK_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata',
 					exampleResponseBody: '{\n  "public_alias": "NONE",\n  "private_alias": "NONE",\n  "more_info": "www.openbankproject.com",\n  "URL": "www.openbankproject.com",\n  "image_URL": "www.openbankproject.com",\n  "open_corporates_URL": "www.openbankproject.com",\n  "corporate_location": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  },\n  "physical_location": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -45295,7 +45295,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the private alias of the other account OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					exampleResponseBody: '{\n  "alias": "String"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -45336,7 +45336,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the public alias of the other account OTHER_ACCOUNT_ID.\nAuthentication is Optional\nAuthentication is Mandatory if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					exampleResponseBody: '{\n  "alias": "String"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -45372,7 +45372,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the geolocation of the counterparty\'s registered address',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/corporate_location',
 					exampleRequestBody: '{\n  "corporate_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45449,7 +45449,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the url that points to the logo of the counterparty',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/image_url',
 					exampleRequestBody: '{\n  "image_URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45506,7 +45506,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the more info description of the counter party from the perpestive of the account e.g. My dentist.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/more_info',
 					exampleRequestBody: '{\n  "more_info": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45568,7 +45568,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update geocoordinates of the counterparty\'s main location',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/physical_location',
 					exampleRequestBody: '{\n  "physical_location": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45645,7 +45645,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Updates the private alias of the counterparty (AKA other account) OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/private_alias',
 					exampleRequestBody: '{\n  "alias": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45707,7 +45707,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update open corporate url of other bank account.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/open_corporates_url',
 					exampleRequestBody: '{\n  "open_corporates_URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45769,7 +45769,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Updates the public alias of the other account / counterparty OTHER_ACCOUNT_ID.\n\nAuthentication is Optional\nAuthentication is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/public_alias',
 					exampleRequestBody: '{\n  "alias": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45831,7 +45831,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'A url which represents the counterparty (home page url etc.)',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/other_accounts/OTHER_ACCOUNT_ID/metadata/url',
 					exampleRequestBody: '{\n  "URL": "String"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -45893,7 +45893,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add an Address to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/address',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/address',
 					exampleRequestBody: '{\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK"\n}',
 					exampleResponseBody: '{\n  "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK",\n  "insert_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [{
@@ -45990,7 +45990,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add a social media handle for the customer specified by CUSTOMER_ID.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 					exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "handle": "PlaceholderString",\n  "date_added": "2017-09-19T00:00:00Z",\n  "date_activated": "2017-09-19T00:00:00Z"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -46077,7 +46077,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Add a Tax Residence to the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residence',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residence',
 					exampleRequestBody: '{\n  "domain": "Enter some domain",\n  "tax_number": "Enter some number"\n}',
 					exampleResponseBody: '{\n  "domain": "Enter some domain",\n  "tax_number": "Enter some number",\n  "tax_residence_id": "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n}',
 					typedBody: [{
@@ -46129,7 +46129,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '**NOTE: This endpoint currently only returns example data.**\n\n      \nCreate credit limit order request\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 					exampleRequestBody: '{\n  "requested_current_rate_amount1": "String",\n  "requested_current_rate_amount2": "String",\n  "requested_current_valid_end_date": "String",\n  "current_credit_documentation": "String",\n  "temporary_requested_current_amount": "String",\n  "requested_temporary_valid_end_date": "String",\n  "temporary_credit_documentation": "String"\n}',
 					exampleResponseBody: '{\n  "execution_time": "String",\n  "execution_date": "String",\n  "token": "String",\n  "short_reference": "String"\n}',
 					typedBody: [{
@@ -46200,7 +46200,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\nThe Customer resource stores the customer number, legal name, email, phone number, their date of birth, relationship status, education attained, a url for a profile image, KYC status etc.\nDates need to be in the format 2013-01-21T23:08:00Z\n\nAuthentication is Mandatory\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 					exampleRequestBody: '{\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -46402,7 +46402,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Link a User to a Customer\n\nAuthentication is Mandatory\n\nCanCreateUserCustomerLink OR CanCreateUserCustomerLinkAtAnyBank entitlements are required.\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/user_customer_links',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/user_customer_links',
 					exampleRequestBody: '{\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh"\n}',
 					exampleResponseBody: '{\n  "user_customer_link_id": "String",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "date_inserted": "2017-09-19T00:00:00Z",\n  "is_active": true\n}',
 					typedBody: [{
@@ -46479,7 +46479,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -46521,7 +46521,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete a Tax Residence of the Customer specified by TAX_RESIDENCE_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax_residencies/TAX_RESIDENCE_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -46563,7 +46563,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '**NOTE: This endpoint currently only returns example data.**\n\n      \n        Get Credit Limit Order Request By Request Id\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests/REQUEST_ID',
 					exampleResponseBody: '{\n  "rank_amount_1": "String",\n  "nominal_interest_1": "String",\n  "rank_amount_2": "String",\n  "nominal_interest_2": "String"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46583,7 +46583,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '**NOTE: This endpoint currently only returns example data.**\n\n      \nGet Credit Limit Order Requests \n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit_limit/requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit_limit/requests',
 					exampleResponseBody: '{\n  "rank_amount_1": "String",\n  "nominal_interest_1": "String",\n  "rank_amount_2": "String",\n  "nominal_interest_2": "String"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46603,7 +46603,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/crm-events',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/crm-events',
 					exampleResponseBody: '{\n  "crm_events": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "bank_id": "GENODEM1GLS",\n      "customer_name": "String",\n      "customer_number": "5987953",\n      "category": "String",\n      "detail": "String",\n      "channel": "String",\n      "scheduled_date": "2017-09-19T00:00:00Z",\n      "actual_date": "2017-09-19T00:00:00Z",\n      "result": "String"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46639,7 +46639,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Addresses of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses',
 					exampleResponseBody: '{\n  "addresses": [\n    {\n      "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n      "line_1": "No 1 the Road",\n      "line_2": "The Place",\n      "line_3": "The Hill",\n      "city": "Berlin",\n      "county": "",\n      "state": "Brandenburg",\n      "postcode": "13359",\n      "country_code": "DE",\n      "tags": [\n        "mailing",\n        "home"\n      ],\n      "status": "OK",\n      "insert_date": "2017-09-19T00:00:00Z"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46670,7 +46670,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Gets the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46701,7 +46701,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Gets the Customer specified by CUSTOMER_NUMBER.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/customer-number',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/customer-number',
 					exampleRequestBody: '{\n  "customer_number": "5987953"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -46743,7 +46743,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get social media handles for a customer specified by CUSTOMER_ID.\n\nAuthentication is Mandatory',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/social_media_handles',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/social_media_handles',
 					exampleResponseBody: '{\n  "checks": [\n    {\n      "customer_number": "5987953",\n      "type": "PlaceholderString",\n      "handle": "PlaceholderString",\n      "date_added": "2017-09-19T00:00:00Z",\n      "date_activated": "2017-09-19T00:00:00Z"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46810,7 +46810,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Retuns a list of Customers at the Bank that are linked to the currently authenticated User.\n\n\nAuthentication is Mandatory',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46856,7 +46856,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the Tax Residences of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/tax-residences',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/tax-residences',
 					exampleResponseBody: '{\n  "tax_residence": [\n    {\n      "domain": "Enter some domain",\n      "tax_number": "Enter some number",\n      "tax_residence_id": "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -46887,7 +46887,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update an Address of the Customer specified by CUSTOMER_ADDRESS_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/addresses/CUSTOMER_ADDRESS_ID',
 					exampleRequestBody: '{\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK"\n}',
 					exampleResponseBody: '{\n  "customer_address_id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "line_1": "No 1 the Road",\n  "line_2": "The Place",\n  "line_3": "The Hill",\n  "city": "Berlin",\n  "county": "",\n  "state": "Brandenburg",\n  "postcode": "13359",\n  "country_code": "DE",\n  "tags": [\n    "mailing",\n    "home"\n  ],\n  "status": "OK",\n  "insert_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [{
@@ -46984,7 +46984,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the Branch of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/branch',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/branch',
 					exampleRequestBody: '{\n  "branch_id": "123"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47031,7 +47031,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the credit limit of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-limit',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-limit',
 					exampleRequestBody: '{\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "1000"\n  }\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47088,7 +47088,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the credit rating and source of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/credit-rating-and-source',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/credit-rating-and-source',
 					exampleRequestBody: '{\n  "credit_rating": "Good",\n  "credit_source": "Bank"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47140,7 +47140,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update an email of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/email',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/email',
 					exampleRequestBody: '{\n  "email": "marko@tesobe.com"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47187,7 +47187,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the identity data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/identity',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/identity',
 					exampleRequestBody: '{\n  "legal_name": "Eveline Tripman",\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "name_suffix": "Sr"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47254,7 +47254,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the mobile number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/mobile-number',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/mobile-number',
 					exampleRequestBody: '{\n  "mobile_phone_number": "+381631954907"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47301,7 +47301,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the number of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/number',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/number',
 					exampleRequestBody: '{\n  "customer_number": "5987953"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47348,7 +47348,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update the other data of the Customer specified by CUSTOMER_ID.\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/data',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/data',
 					exampleRequestBody: '{\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "relationship_status": "single",\n  "dependants": 10,\n  "highest_education_attained": "Master",\n  "employment_status": "worker"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "legal_name": "Eveline Tripman",\n  "mobile_phone_number": "+44 07972 444 876",\n  "email": "eveline@example.com",\n  "face_image": {\n    "url": "www.openbankproject",\n    "date": "2017-09-19T00:00:00Z"\n  },\n  "date_of_birth": "2017-09-19T00:00:00Z",\n  "relationship_status": "single",\n  "dependants": 10,\n  "dob_of_dependants": [\n    "2017-09-19T00:00:00Z"\n  ],\n  "credit_rating": {\n    "rating": "OBP",\n    "source": "OBP"\n  },\n  "credit_limit": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "highest_education_attained": "Master",\n  "employment_status": "worker",\n  "kyc_status": true,\n  "last_ok_date": "2017-09-19T00:00:00Z",\n  "title": "Dr.",\n  "branchId": "DERBY6",\n  "nameSuffix": "Sr"\n}',
 					typedBody: [{
@@ -47430,7 +47430,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Create or Update Fx for the Bank.\n\nExample:\n\n“from_currency_code”:“EUR”,\n“to_currency_code”:“USD”,\n“conversion_value”: 1.136305,\n“inverse_conversion_value”: 1 / 1.136305 = 0.8800454103431737,\n\n Thus 1 Euro = 1.136305 US Dollar\n and\n 1 US Dollar = 0.8800 Euro\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/fx',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx',
 					exampleRequestBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "USD",\n  "conversion_value": 1.136305,\n  "inverse_conversion_value": 0.8800454103431737,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "USD",\n  "conversion_value": 1.136305,\n  "inverse_conversion_value": 0.8800454103431737,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [{
@@ -47507,7 +47507,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the latest FX rate specified by BANK_ID, FROM_CURRENCY_CODE and TO_CURRENCY_CODE\n\nOBP may try different sources of FX rate information depending on the Connector in operation.\n\nFor example we want to convert EUR => USD:\n\nOBP will:\n1st try - Connector (database, core banking system or external FX service)\n2nd try part 1 - fallbackexchangerates/eur.json\n2nd try part 2 - fallbackexchangerates/usd.json (the inverse rate is used)\n3rd try - Hardcoded map of FX rates.\n\n![FX Flow](https://user-images.githubusercontent.com/485218/60005085-1eded600-966e-11e9-96fb-798b102d9ad0.png)\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/fx/FROM_CURRENCY_CODE/TO_CURRENCY_CODE',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "from_currency_code": "EUR",\n  "to_currency_code": "GBP",\n  "conversion_value": 1.001,\n  "inverse_conversion_value": 0.998,\n  "effective_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -47543,7 +47543,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Add a KYC check for the customer specified by CUSTOMER_ID. KYC Checks store details of checks on a customer made by the KYC team, their comments and a satisfied status.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_check/KYC_CHECK_ID',
 					exampleRequestBody: '{\n  "customer_number": "5987953",\n  "date": "2017-09-19T00:00:00Z",\n  "how": "online_meeting",\n  "staff_user_id": "67876",\n  "staff_name": "Simon",\n  "satisfied": true,\n  "comments": "String"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "date": "2017-09-19T00:00:00Z",\n  "how": "PlaceholderString",\n  "staff_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "staff_name": "PlaceholderString",\n  "satisfied": true,\n  "comments": "PlaceholderString"\n}',
 					typedBody: [{
@@ -47635,7 +47635,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Add a KYC document for the customer specified by CUSTOMER_ID. KYC Documents contain the document type (e.g. passport), place of issue, expiry etc. ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_documents/KYC_DOCUMENT_ID',
 					exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "passport",\n  "number": "12345",\n  "issue_date": "2017-09-19T00:00:00Z",\n  "issue_place": "Berlin",\n  "expiry_date": "2017-09-19T00:00:00Z"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "number": "PlaceholderString",\n  "issue_date": "2017-09-19T00:00:00Z",\n  "issue_place": "PlaceholderString",\n  "expiry_date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [{
@@ -47727,7 +47727,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Add some KYC media for the customer specified by CUSTOMER_ID. KYC Media resources relate to KYC Documents and KYC Checks and contain media urls for scans of passports, utility bills etc.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_media/KYC_MEDIA_ID',
 					exampleRequestBody: '{\n  "customer_number": "5987953",\n  "type": "image",\n  "url": "http://www.example.com/id-docs/123/image.png",\n  "date": "2017-09-19T00:00:00Z",\n  "relates_to_kyc_document_id": "123",\n  "relates_to_kyc_check_id": "123"\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "customer_id": "PlaceholderString",\n  "id": "PlaceholderString",\n  "customer_number": "5987953",\n  "type": "PlaceholderString",\n  "url": "PlaceholderString",\n  "date": "2017-09-19T00:00:00Z",\n  "relates_to_kyc_document_id": "PlaceholderString",\n  "relates_to_kyc_check_id": "PlaceholderString"\n}',
 					typedBody: [{
@@ -47809,7 +47809,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Add a kyc_status for the customer specified by CUSTOMER_ID. KYC Status is a timeline of the KYC status of the customer',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/customers/CUSTOMER_ID/kyc_statuses',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/customers/CUSTOMER_ID/kyc_statuses',
 					exampleRequestBody: '{\n  "customer_number": "5987953",\n  "ok": true,\n  "date": "2017-09-19T00:00:00Z"\n}',
 					exampleResponseBody: '{\n  "customer_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",\n  "customer_number": "5987953",\n  "ok": true,\n  "date": "2017-09-19T00:00:00Z"\n}',
 					typedBody: [{
@@ -48010,7 +48010,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Create or Update Product for the Bank.\n\n\nTypical Super Family values / Asset classes are:\n\nDebt\nEquity\nFX\nCommodity\nDerivative\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\n\nAuthentication is Mandatory\n\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 					exampleRequestBody: '{\n  "bank_id": "GENODEM1GLS",\n  "name": "product name",\n  "parent_product_code": "parent product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  }\n}',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "code": "product_code",\n  "parent_product_code": "parent",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "product_attributes": [\n    {\n      "product_code": "saving1",\n      "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 					typedBody: [{
@@ -48117,7 +48117,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: ' Create Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nTypical product attributes might be:\n\nISIN (for International bonds)\nVKN (for German bonds)\nREDCODE (markit short code for credit derivative)\nLOAN_ID (e.g. used for Anacredit reporting)\n\nISSUE_DATE (When the bond was issued in the market)\nMATURITY_DATE (End of life time of a product)\nTRADABLE\n\nSee [FPML](http://www.fpml.org/) for more examples.\n\n\nThe type field must be one of "STRING", "INTEGER", "DOUBLE" or DATE_WITH_DAY"\n\n\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attribute',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attribute',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					typedBody: [{
@@ -48164,7 +48164,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: ' Delete Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nDelete a Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -48201,7 +48201,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about a financial Product offered by the bank specified by BANK_ID and PRODUCT_CODE including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE',
 					exampleResponseBody: '{\n  "bank_id": "GENODEM1GLS",\n  "code": "product_code",\n  "parent_product_code": "parent",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "product_attributes": [\n    {\n      "product_code": "saving1",\n      "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "name": "OVERDRAFT_START_DATE",\n      "type": "DATE_WITH_DAY",\n      "value": "2012-04-23"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -48232,7 +48232,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: ' Get Product Attribute\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nGet one product attribute by its id.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -48258,7 +48258,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about a particular financial product specified by BANK_ID and PRODUCT_CODE\nand it\'s parent product(s) recursively as specified by parent_product_code.\n\nEach product includes the following information.\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License: The licence under which this product data is released. Licence can be an Open Data licence such as Open Data Commons Public Domain Dedication and License (PDDL) or Copyright etc.\n\n\n\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-tree/PRODUCT_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-tree/PRODUCT_CODE',
 					exampleResponseBody: '{\n  "bank_id": "testBank2",\n  "code": "PRODUCT_CODE",\n  "name": "product name",\n  "category": "category",\n  "family": "family",\n  "super_family": "super family",\n  "more_info_url": "www.example.com/prod1/more-info.html",\n  "details": "Details",\n  "description": "Description",\n  "meta": {\n    "license": {\n      "id": "5",\n      "name": "TESOBE"\n    }\n  },\n  "parent_product": {\n    "bank_id": "testBank2",\n    "code": "PARENT_CODE",\n    "name": "product name",\n    "category": "category",\n    "family": "family",\n    "super_family": "super family",\n    "more_info_url": "www.example.com/prod1/more-info.html",\n    "details": "Details",\n    "description": "Description",\n    "meta": {\n      "license": {\n        "id": "5",\n        "name": "TESOBE"\n      }\n    },\n    "parent_product": {\n      "bank_id": "testBank2",\n      "code": "GRANDPARENT_CODE",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      }\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -48289,7 +48289,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about the financial products offered by a bank specified by BANK_ID including:\n\n* Name\n* Code\n* Parent Product Code\n* Category\n* Family\n* Super Family\n* More info URL\n* Description\n* Terms and Conditions\n* License the data under this endpoint is released under\nAuthentication is Optional',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products',
 					exampleResponseBody: '{\n  "products": [\n    {\n      "bank_id": "GENODEM1GLS",\n      "code": "product_code",\n      "parent_product_code": "parent",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      },\n      "product_attributes": [\n        {\n          "product_code": "saving1",\n          "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n          "name": "OVERDRAFT_START_DATE",\n          "type": "DATE_WITH_DAY",\n          "value": "2012-04-23"\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -48325,7 +48325,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: ' Update Product Attribute. \n\n\n\nProduct Attributes are used to describe a financial Product with a list of typed key value pairs.\n\nEach Product Attribute is linked to its Product by PRODUCT_CODE\n\n\n       \n\nUpdate one Product Attribute by its id.\n\nAuthentication is Mandatory\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/products/PRODUCT_CODE/attributes/PRODUCT_ATTRIBUTE_ID',
 					exampleRequestBody: '{\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					exampleResponseBody: '{\n  "product_code": "saving1",\n  "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "name": "OVERDRAFT_START_DATE",\n  "type": "DATE_WITH_DAY",\n  "value": "2012-04-23"\n}',
 					typedBody: [{
@@ -48372,7 +48372,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Create or Update a Product Collection at the Bank.\n\nUse Product Collections to create Product "Baskets", "Portfolios", "Indices", "Collections", "Underlyings-lists", "Buckets" etc. etc.\n\nThere is a many to many relationship between Products and Product Collections:\n\n* A Product can exist in many Collections\n\n* A Collection can contain many Products.\n\nA collection has collection code, one parent Product and one or more child Products.\n\n\n\n\nProduct hiearchy vs Product Collections:\n\n* You can define a hierarchy of products - so that a child Product inherits attributes of its parent Product -  using the parent_product_code in Product.\n\n* You can define a collection (also known as baskets or buckets) of products using Product Collections.\n\n      \n\nAuthentication is Mandatory\n\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 					exampleRequestBody: '{\n  "parent_product_code": "A",\n  "children_product_codes": [\n    "B",\n    "C",\n    "D"\n  ]\n}',
 					exampleResponseBody: '{\n  "product_collection": [\n    {\n      "collection_code": "C",\n      "product_code": "D",\n      "items": [\n        {\n          "member_product_code": "A"\n        },\n        {\n          "member_product_code": "B"\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [{
@@ -48429,7 +48429,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns information about the financial Product Collection specified by BANK_ID and COLLECTION_CODE:\n\n          ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/product-collections/COLLECTION_CODE',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/product-collections/COLLECTION_CODE',
 					exampleResponseBody: '{\n  "collection_code": "A",\n  "products": [\n    {\n      "bank_id": "GENODEM1GLS",\n      "code": "product_code",\n      "parent_product_code": "parent",\n      "name": "product name",\n      "category": "category",\n      "family": "family",\n      "super_family": "super family",\n      "more_info_url": "www.example.com/prod1/more-info.html",\n      "details": "Details",\n      "description": "Description",\n      "meta": {\n        "license": {\n          "id": "5",\n          "name": "TESOBE"\n        }\n      },\n      "product_attributes": [\n        {\n          "product_code": "saving1",\n          "product_attribute_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n          "name": "OVERDRAFT_START_DATE",\n          "type": "DATE_WITH_DAY",\n          "value": "2012-04-23"\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -48826,7 +48826,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '\n\nGet Entitlements specified by BANK_ID and USER_ID\n\nAuthentication is Mandatory\n\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/users/USER_ID/entitlements',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/USER_ID/entitlements',
 					exampleResponseBody: '{\n  "list": [\n    {\n      "entitlement_id": "6fb17583-1e49-4435-bb74-a14fe0996723",\n      "role_name": "CanQueryOtherUser",\n      "bank_id": "GENODEM1GLS"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49115,7 +49115,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get other account of a transaction.\nReturns details of the other party involved in the transaction, moderated by the [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n          Authentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/other_account',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "holder": {\n    "name": "OBP",\n    "is_alias": true\n  },\n  "number": "123",\n  "kind": "3456",\n  "IBAN": "UK234DB",\n  "swift_bic": "UK12321DB",\n  "bank": {\n    "national_identifier": "OBP",\n    "name": "OBP"\n  },\n  "metadata": {\n    "public_alias": "NONE",\n    "private_alias": "NONE",\n    "more_info": "www.openbankproject.com",\n    "URL": "www.openbankproject.com",\n    "image_URL": "www.openbankproject.com",\n    "open_corporates_URL": "www.openbankproject.com",\n    "corporate_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    },\n    "physical_location": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49141,7 +49141,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns one transaction specified by TRANSACTION_ID of the account ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/transaction',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "this_account": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "holders": [\n      {\n        "name": "OBP",\n        "is_alias": true\n      }\n    ],\n    "number": "123",\n    "kind": "AC",\n    "IBAN": "UK1234AD",\n    "swift_bic": "UK1234AD",\n    "bank": {\n      "national_identifier": "OBP",\n      "name": "OBP"\n    }\n  },\n  "other_account": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "holder": {\n      "name": "OBP",\n      "is_alias": true\n    },\n    "number": "123",\n    "kind": "3456",\n    "IBAN": "UK234DB",\n    "swift_bic": "UK12321DB",\n    "bank": {\n      "national_identifier": "OBP",\n      "name": "OBP"\n    },\n    "metadata": {\n      "public_alias": "NONE",\n      "private_alias": "NONE",\n      "more_info": "www.openbankproject.com",\n      "URL": "www.openbankproject.com",\n      "image_URL": "www.openbankproject.com",\n      "open_corporates_URL": "www.openbankproject.com",\n      "corporate_location": {\n        "latitude": 1.231,\n        "longitude": 1.231,\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      },\n      "physical_location": {\n        "latitude": 1.231,\n        "longitude": 1.231,\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    }\n  },\n  "details": {\n    "type": "AC",\n    "description": "this is for family",\n    "posted": "2017-09-19T00:00:00Z",\n    "completed": "2017-09-19T00:00:00Z",\n    "new_balance": {\n      "currency": "EUR",\n      "amount": "10"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  },\n  "metadata": {\n    "narrative": "NONE",\n    "comments": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "value": "OBP",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "tags": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "value": "OBP",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "images": [\n      {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "label": "NONE",\n        "URL": "www.openbankproject.com",\n        "date": "2017-09-19T00:00:00Z",\n        "user": {\n          "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n          "provider": "http://127.0.0.1:8080",\n          "display_name": "OBP"\n        }\n      }\n    ],\n    "where": {\n      "latitude": 1.231,\n      "longitude": 1.231,\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49182,7 +49182,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns transactions list (Core info) of the account specified by ACCOUNT_ID.\n\nAuthentication is Mandatory\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
-					specificUrl: '/obp/v4.0.0/my/banks/BANK_ID/accounts/ACCOUNT_ID/transactions',
+					specificUrl: '/obp/v4.0.0/my/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/transactions',
 					exampleResponseBody: '{\n  "transactions": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "this_account": {\n        "id": "String",\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "holders": [\n          {\n            "name": "OBP",\n            "is_alias": true\n          }\n        ]\n      },\n      "other_account": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "holder": {\n          "name": "OBP",\n          "is_alias": true\n        },\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ]\n      },\n      "details": {\n        "type": "AC",\n        "description": "OBP",\n        "posted": "2017-09-19T00:00:00Z",\n        "completed": "2017-09-19T00:00:00Z",\n        "new_balance": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49238,7 +49238,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns transactions list of the account specified by ACCOUNT_ID and [moderated](#1_2_1-getViewsForBankAccount) by the view (VIEW_ID).\n\nAuthentication is Optional\n\nAuthentication is required if the view is not public.\n\nPossible custom headers for pagination:\n\n* sort_direction=ASC/DESC ==> default value: DESC. The sort field is the completed date.\n* limit=NUMBER ==> default value: 50\n* offset=NUMBER ==> default value: 0\n* from_date=DATE => default value: 0000-00-00T00:00:00.000Z\n* to_date=DATE => default value: 3049-01-01T00:00:00.000Z\n\n**Date format parameter**: yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'(2017-09-19T02:31:05.000Z) ==> time zone is UTC.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions',
 					exampleResponseBody: '{\n  "transactions": [\n    {\n      "id": "String",\n      "this_account": {\n        "id": "String",\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "holders": [\n          {\n            "name": "OBP",\n            "is_alias": true\n          }\n        ]\n      },\n      "other_account": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "holder": {\n          "name": "OBP",\n          "is_alias": true\n        },\n        "bank_routing": {\n          "scheme": "Bank_ID",\n          "address": "gh.29.uk"\n        },\n        "account_routings": [\n          {\n            "scheme": "AccountNumber",\n            "address": "4930396"\n          }\n        ],\n        "metadata": {\n          "public_alias": "NONE",\n          "private_alias": "NONE",\n          "more_info": "www.openbankproject.com",\n          "URL": "www.openbankproject.com",\n          "image_URL": "www.openbankproject.com",\n          "open_corporates_URL": "www.openbankproject.com",\n          "corporate_location": {\n            "latitude": 1.231,\n            "longitude": 1.231,\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          },\n          "physical_location": {\n            "latitude": 1.231,\n            "longitude": 1.231,\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        }\n      },\n      "details": {\n        "type": "AC",\n        "description": "this is for family",\n        "posted": "2017-09-19T00:00:00Z",\n        "completed": "2017-09-19T00:00:00Z",\n        "new_balance": {\n          "currency": "EUR",\n          "amount": "10"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      },\n      "metadata": {\n        "narrative": "NONE",\n        "comments": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "value": "OBP",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "tags": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "value": "OBP",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "images": [\n          {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "label": "NONE",\n            "URL": "www.openbankproject.com",\n            "date": "2017-09-19T00:00:00Z",\n            "user": {\n              "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n              "provider": "http://127.0.0.1:8080",\n              "display_name": "OBP"\n            }\n          }\n        ],\n        "where": {\n          "latitude": 1.231,\n          "longitude": 1.231,\n          "date": "2017-09-19T00:00:00Z",\n          "user": {\n            "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n            "provider": "http://127.0.0.1:8080",\n            "display_name": "OBP"\n          }\n        }\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49294,7 +49294,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Posts a tag about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nAuthentication is required as the tag is linked with the user.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 					exampleRequestBody: '{\n  "value": "String"\n}',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 					typedBody: [{
@@ -49351,7 +49351,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Posts an image about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\nAuthentication is Mandatory\n\nThe image is linked with the user.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 					exampleRequestBody: '{\n  "label": "String",\n  "URL": "String"\n}',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "label": "NONE",\n  "URL": "www.openbankproject.com",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 					typedBody: [{
@@ -49413,7 +49413,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Posts a comment about a transaction TRANSACTION_ID on a [view](#1_2_1-getViewsForBankAccount) VIEW_ID.\n\n${authenticationRequiredMessage(false)}\n\nAuthentication is required since the comment is linked with the user.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 					exampleRequestBody: '{\n  "value": "String"\n}',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 					typedBody: [{
@@ -49470,7 +49470,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Creates a description of the transaction TRANSACTION_ID.\n\nNote: Unlike other items of metadata, there is only one "narrative" per transaction accross all views.\nIf you set narrative via a view e.g. view-x it will be seen via view-y (as long as view-y has permission to see the narrative).\n\nAuthentication is Optional\nAuthentication is required if the view is not public.\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					exampleRequestBody: '{\n  "narrative": "narative"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -49522,7 +49522,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Creates a "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					exampleRequestBody: '{\n  "where": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -49594,7 +49594,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the tag TAG_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\nAuthentication via OAuth is required. The user must either have owner privileges for this account, \nor must be the user that posted the tag.\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags/TAG_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -49636,7 +49636,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the image IMAGE_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the image.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images/IMAGE_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -49703,7 +49703,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Delete the comment COMMENT_ID about the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication via OAuth is required. The user must either have owner privileges for this account, or must be the user that posted the comment.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments/COMMENT_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -49755,7 +49755,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -49802,7 +49802,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the where tag of the transaction TRANSACTION_ID made on [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe user must either have owner privileges for this account, or must be the user that posted the geo tag.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -49869,7 +49869,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the transaction TRANSACTION_ID comments made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/comments',
 					exampleResponseBody: '{\n  "comments": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "value": "OBP",\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49910,7 +49910,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the transaction TRANSACTION_ID images made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/images',
 					exampleResponseBody: '{\n  "images": [\n    {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "label": "NONE",\n      "URL": "www.openbankproject.com",\n      "date": "2017-09-19T00:00:00Z",\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49951,7 +49951,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the account owner description of the transaction [moderated](#1_2_1-getViewsForBankAccount) by the view.\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					exampleResponseBody: '{\n  "narrative": "narative"\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -49987,7 +49987,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the transaction TRANSACTION_ID tags made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\n         Authentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/tags',
 					exampleResponseBody: '{\n  "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n  "value": "OBP",\n  "date": "2017-09-19T00:00:00Z",\n  "user": {\n    "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n    "provider": "http://127.0.0.1:8080",\n    "display_name": "OBP"\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -50023,7 +50023,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the "where" Geo tag added to the transaction TRANSACTION_ID made on a [view](#1_2_1-getViewsForBankAccount) (VIEW_ID).\nIt represents the location where the transaction has been initiated.\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					exampleResponseBody: '{\n  "where": {\n    "latitude": 1.231,\n    "longitude": 1.231,\n    "date": "2017-09-19T00:00:00Z",\n    "user": {\n      "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n      "provider": "http://127.0.0.1:8080",\n      "display_name": "OBP"\n    }\n  }\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -50059,7 +50059,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Updates the description of the transaction TRANSACTION_ID.\n\nAuthentication via OAuth is required if the view is not public.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/narrative',
 					exampleRequestBody: '{\n  "narrative": "narative"\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -50111,7 +50111,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Updates the "where" Geo tag on a transaction TRANSACTION_ID in a [view](#1_2_1-getViewsForBankAccount).\n\nAuthentication is Mandatory\n\nThe geo tag is linked with the user.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transactions/TRANSACTION_ID/metadata/where',
 					exampleRequestBody: '{\n  "where": {\n    "latitude": 1.532,\n    "longitude": 1.535\n  }\n}',
 					exampleResponseBody: '{\n  "success": "Success"\n}',
 					typedBody: [{
@@ -50183,7 +50183,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'In Sandbox mode, any string that can be converted to a positive integer will be accepted as an answer.\n\nThis endpoint totally depends on createTransactionRequest, it need get the following data from createTransactionRequest response body.\n\n1)`TRANSACTION_REQUEST_TYPE` : is the same as createTransactionRequest request URL .\n\n2)`TRANSACTION_REQUEST_ID` : is the `id` field in createTransactionRequest response body.\n\n3) `id` :  is `challenge.id` field in createTransactionRequest response body.\n\n4) `answer` : must be `123`. if it is in sandbox mode. If it kafka mode, the answer can be got by phone message or other security ways.\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/TRANSACTION_REQUEST_TYPE/transaction-requests/TRANSACTION_REQUEST_ID/challenge',
 					exampleRequestBody: '{\n  "id": "This is challenge.id, you can get it from `Create Transaction Request.` response, only is useful if status ==`INITIATED` there.",\n  "answer": "123"\n}',
 					exampleResponseBody: '{\n  "id": "82f92531-9c63-4246-abfc-96c20ec46188",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": "666666-9c63-4246-abfc-96c20ec46188",\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50275,7 +50275,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT_OTP/transaction-requests',
 					exampleRequestBody: '{\n  "to": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "this is for work"\n}',
 					exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50417,7 +50417,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'When using ACCOUNT, the payee is set in the request body.\n\nMoney goes into the BANK_ID and ACCOUNT_ID specified in the request body.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/ACCOUNT/transaction-requests',
 					exampleRequestBody: '{\n  "to": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "this is for work"\n}',
 					exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50559,7 +50559,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\nSpecial instructions for COUNTERPARTY:\n\nWhen using a COUNTERPARTY to create a Transaction Request, specificy the counterparty_id in the body of the request.\nThe routing details of the counterparty will be forwarded for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/COUNTERPARTY/transaction-requests',
 					exampleRequestBody: '{\n  "to": {\n    "counterparty_id": "123456"\n  },\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "A description for the transaction to the counterparty",\n  "charge_policy": "SHARED",\n  "future_date": "20881230"\n}',
 					exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50706,7 +50706,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Initiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/FREE_FORM/transaction-requests',
 					exampleRequestBody: '{\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "description": "This is a FREE_FORM Transaction Request"\n}',
 					exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50833,7 +50833,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: '\nSpecial instructions for SEPA:\n\nWhen using a SEPA Transaction Request, you specify the IBAN of a Counterparty in the body of the request.\nThe routing details (IBAN) of the counterparty will be forwarded to the core banking system for the transfer.\n\nInitiate a Payment via creating a Transaction Request.\n\nIn OBP, a `transaction request` may or may not result in a `transaction`. However, a `transaction` only has one possible state: completed.\n\nA `Transaction Request` can have one of several states.\n\n`Transactions` are modeled on items in a bank statement that represent the movement of money.\n\n`Transaction Requests` are requests to move money which may or may not succeeed and thus result in a `Transaction`.\n\nA `Transaction Request` might create a security challenge that needs to be answered before the `Transaction Request` proceeds.\n\nTransaction Requests contain charge information giving the client the opportunity to proceed or not (as long as the challenge level is appropriate).\n\nTransaction Requests can have one of several Transaction Request Types which expect different bodies. The escaped body is returned in the details key of the GET response.\nThis provides some commonality and one URL for many different payment or transfer types with enough flexibility to validate them differently.\n\nThe payer is set in the URL. Money comes out of the BANK_ID and ACCOUNT_ID specified in the URL.\n\nIn sandbox mode, TRANSACTION_REQUEST_TYPE is commonly set to ACCOUNT. See getTransactionRequestTypesSupportedByBank for all supported types.\n\nIn sandbox mode, if the amount is less than 1000 EUR (any currency, unless it is set differently on this server), the transaction request will create a transaction without a challenge, else the Transaction Request will be set to INITIALISED and a challenge will need to be answered.\n\nIf a challenge is created you must answer it using Answer Transaction Request Challenge before the Transaction is created.\n\nYou can transfer between different currency accounts. (new in 2.0.0). The currency in body must match the sending account.\n\nThe following static FX rates are available in sandbox mode:\n\nhttp://127.0.0.1:8082/more?version=OBPv4.0.0&list-all-banks=false&core=&psd2=&obwg=#OBPv2_2_0-getCurrentFxRate\n\n\nTransaction Requests satisfy PSD2 requirements thus:\n\n1) A transaction can be initiated by a third party application.\n\n2) The customer is informed of the charge that will incurred.\n\n3) The call supports delegated authentication (OAuth)\n\nSee [this python code](https://github.com/OpenBankProject/Hello-OBP-DirectLogin-Python/blob/master/hello_payments.py) for a complete example of this flow.\n\nThere is further documentation [here](https://github.com/OpenBankProject/OBP-API/wiki/Transaction-Requests)\n\nAuthentication is Mandatory\n\n\n\n       ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types/SEPA/transaction-requests',
 					exampleRequestBody: '{\n  "value": {\n    "currency": "EUR",\n    "amount": "10"\n  },\n  "to": {\n    "iban": "123"\n  },\n  "description": "This is a SEPA Transaction Request",\n  "charge_policy": "SHARED",\n  "future_date": "20881230"\n}',
 					exampleResponseBody: '{\n  "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n  "type": "SANDBOX_TAN",\n  "from": {\n    "bank_id": "GENODEM1GLS",\n    "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n  },\n  "details": {\n    "to_sandbox_tan": {\n      "bank_id": "String",\n      "account_id": "String"\n    },\n    "to_sepa": {\n      "iban": "String"\n    },\n    "to_counterparty": {\n      "counterparty_id": "String"\n    },\n    "to_transfer_to_phone": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "mobile_phone_number": "+44 07972 444 876"\n      }\n    },\n    "to_transfer_to_atm": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "message": "String",\n      "from": {\n        "mobile_phone_number": "+44 07972 444 876",\n        "nickname": "String"\n      },\n      "to": {\n        "legal_name": "Eveline Tripman",\n        "date_of_birth": "20181230",\n        "mobile_phone_number": "+44 07972 444 876",\n        "kyc_document": {\n          "type": "String",\n          "number": "String"\n        }\n      }\n    },\n    "to_transfer_to_account": {\n      "value": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "description": "String",\n      "transfer_type": "String",\n      "future_date": "20181230",\n      "to": {\n        "name": "String",\n        "bank_code": "String",\n        "branch_number": "String",\n        "account": {\n          "number": "String",\n          "iban": "String"\n        }\n      }\n    },\n    "to_sepa_credit_transfers": {\n      "debtorAccount": {\n        "iban": "12345"\n      },\n      "instructedAmount": {\n        "currency": "EUR",\n        "amount": "10"\n      },\n      "creditorAccount": {\n        "iban": "54321"\n      },\n      "creditorName": "John Miles"\n    },\n    "value": {\n      "currency": "EUR",\n      "amount": "100"\n    },\n    "description": "String"\n  },\n  "transaction_ids": [\n    "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n  ],\n  "status": "COMPLETED",\n  "start_date": "2017-09-19T00:00:00Z",\n  "end_date": "2017-09-19T00:00:00Z",\n  "challenge": {\n    "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n    "allowed_attempts": 3,\n    "challenge_type": "SANDBOX_TAN"\n  },\n  "charge": {\n    "summary": "Rent the flat",\n    "value": {\n      "currency": "EUR",\n      "amount": "10"\n    }\n  }\n}',
 					typedBody: [{
@@ -50980,7 +50980,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get the list of the Transaction Request Types supported by the bank.\n\nAuthentication is Optional\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/transaction-request-types',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/transaction-request-types',
 					exampleResponseBody: '{\n  "transaction_request_types": [\n    {\n      "transaction_request_type": "SandboxTan"\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51006,7 +51006,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the Transation Request Types that the account specified by ACCOUNT_ID and view specified by VIEW_ID has access to.\n\nThese are the ways this API Server can create a Transaction via a Transaction Request\n(as opposed to Transaction Types which include external types too e.g. for Transactions created by core banking etc.)\n\n A Transaction Request Type internally determines:\n\n * the required Transaction Request \'body\' i.e. fields that define the \'what\' and \'to\' of a Transaction Request,\n * the type of security challenge that may be be raised before the Transaction Request proceeds, and\n * the threshold of that challenge.\n\n For instance in a \'SANDBOX_TAN\' Transaction Request, for amounts over 1000 currency units, the user must supply a positive integer to complete the Transaction Request and create a Transaction.\n\n This approach aims to provide only one endpoint for initiating transactions, and one that handles challenges, whilst still allowing flexibility with the payload and internal logic.\n \n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-request-types',
 					exampleResponseBody: '{\n  "transaction_request_types": [\n    {\n      "value": "10",\n      "charge": {\n        "summary": "The bank fixed charge",\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51067,7 +51067,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns transaction requests for account specified by ACCOUNT_ID at bank specified by BANK_ID.\n\nThe VIEW_ID specified must be \'owner\' and the user must have access to this view.\n\nVersion 2.0.0 now returns charge information.\n\nTransaction Requests serve to initiate transactions that may or may not proceed. They contain information including:\n\n* Transaction Request Id\n* Type\n* Status (INITIATED, COMPLETED)\n* Challenge (in order to confirm the request)\n* From Bank / Account\n* Details including Currency, Value, Description and other initiation information specific to each type. (Could potentialy include a list of future transactions.)\n* Related Transactions\n\nPSD2 Context: PSD2 requires transparency of charges to the customer.\nThis endpoint provides the charge that would be applied if the Transaction Request proceeds - and a record of that charge there after.\nThe customer can proceed with the Transaction by answering the security challenge.\n\n      ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/VIEW_ID/transaction-requests',
 					exampleResponseBody: '{\n  "transaction_requests_with_charges": [\n    {\n      "id": "4050046c-63b3-4868-8a22-14b4181d33a6",\n      "type": "SANDBOX_TAN",\n      "from": {\n        "bank_id": "GENODEM1GLS",\n        "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0"\n      },\n      "details": {\n        "to_sandbox_tan": {\n          "bank_id": "String",\n          "account_id": "String"\n        },\n        "to_sepa": {\n          "iban": "String"\n        },\n        "to_counterparty": {\n          "counterparty_id": "String"\n        },\n        "to_transfer_to_phone": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "message": "String",\n          "from": {\n            "mobile_phone_number": "+44 07972 444 876",\n            "nickname": "String"\n          },\n          "to": {\n            "mobile_phone_number": "+44 07972 444 876"\n          }\n        },\n        "to_transfer_to_atm": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "message": "String",\n          "from": {\n            "mobile_phone_number": "+44 07972 444 876",\n            "nickname": "String"\n          },\n          "to": {\n            "legal_name": "Eveline Tripman",\n            "date_of_birth": "20181230",\n            "mobile_phone_number": "+44 07972 444 876",\n            "kyc_document": {\n              "type": "String",\n              "number": "String"\n            }\n          }\n        },\n        "to_transfer_to_account": {\n          "value": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "description": "String",\n          "transfer_type": "String",\n          "future_date": "20181230",\n          "to": {\n            "name": "String",\n            "bank_code": "String",\n            "branch_number": "String",\n            "account": {\n              "number": "String",\n              "iban": "String"\n            }\n          }\n        },\n        "to_sepa_credit_transfers": {\n          "debtorAccount": {\n            "iban": "12345"\n          },\n          "instructedAmount": {\n            "currency": "EUR",\n            "amount": "10"\n          },\n          "creditorAccount": {\n            "iban": "54321"\n          },\n          "creditorName": "John Miles"\n        },\n        "value": {\n          "currency": "EUR",\n          "amount": "100"\n        },\n        "description": "String"\n      },\n      "transaction_ids": [\n        "902ba3bb-dedd-45e7-9319-2fd3f2cd98a1"\n      ],\n      "status": "COMPLETED",\n      "start_date": "2017-09-19T00:00:00Z",\n      "end_date": "2017-09-19T00:00:00Z",\n      "challenge": {\n        "id": "be1a183d-b301-4b83-b855-5eeffdd3526f",\n        "allowed_attempts": 3,\n        "challenge_type": "SANDBOX_TAN"\n      },\n      "charge": {\n        "summary": "Rent the flat",\n        "value": {\n          "currency": "EUR",\n          "amount": "10"\n        }\n      }\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51364,7 +51364,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create User Auth Context Update.\nAuthentication is Mandatory\n\nA One Time Password (OTP) (AKA security challenge) is sent Out of Bounds (OOB) to the User via the transport defined in SCA_METHOD\nSCA_METHOD is typically "SMS" or "EMAIL". "EMAIL" is used for testing purposes.\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/users/current/auth-context-updates/SCA_METHOD',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/users/current/auth-context-updates/SCA_METHOD',
 					exampleRequestBody: '{\n  "key": "CUSTOMER_NUMBER",\n  "value": "78987432"\n}',
 					exampleResponseBody: '{\n  "user_auth_context_update_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "key": "CUSTOMER_NUMBER",\n  "value": "78987432",\n  "status": "INITIATED"\n}',
 					typedBody: [{
@@ -51759,7 +51759,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create a view on bank account\n\n Authentication is Mandatory and the user needs to have access to the owner view.\n The \'alias\' field in the JSON can take one of three values:\n\n * _public_: to use the public alias if there is one specified for the other account.\n * _private_: to use the public alias if there is one specified for the other account.\n\n * _\'\'(empty string)_: to use no alias; the view shows the real name of the other account.\n\n The \'hide_metadata_if_alias_used\' field in the JSON can take boolean values. If it is set to `true` and there is an alias on the other account then the other accounts\' metadata (like more_info, url, image_url, open_corporates_url, etc.) will be hidden. Otherwise the metadata will be shown.\n\n The \'allowed_actions\' field is a list containing the name of the actions allowed on this view, all the actions contained will be set to `true` on the view creation, the rest will be set to `false`.\n\n You MUST use a leading _ (underscore) in the view name because other view names are reserved for OBP system views.\n ',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 					exampleRequestBody: '{\n  "name": "_test",\n  "description": "This view is for family",\n  "metadata_view": "_test",\n  "is_public": true,\n  "which_alias_to_use": "family",\n  "hide_metadata_if_alias_used": false,\n  "allowed_actions": [\n    "can_see_transaction_this_bank_account",\n    "can_see_transaction_other_bank_account",\n    "can_see_transaction_metadata",\n    "can_see_transaction_label",\n    "can_see_transaction_amount",\n    "can_see_transaction_type",\n    "can_see_transaction_currency",\n    "can_see_transaction_start_date",\n    "can_see_transaction_finish_date",\n    "can_see_transaction_balance",\n    "can_see_comments",\n    "can_see_narrative",\n    "can_see_tags",\n    "can_see_images",\n    "can_see_bank_account_owners",\n    "can_see_bank_account_type",\n    "can_see_bank_account_balance",\n    "can_see_bank_account_currency",\n    "can_see_bank_account_label",\n    "can_see_bank_account_national_identifier",\n    "can_see_bank_account_swift_bic",\n    "can_see_bank_account_iban",\n    "can_see_bank_account_number",\n    "can_see_bank_account_bank_name",\n    "can_see_other_account_national_identifier",\n    "can_see_other_account_swift_bic",\n    "can_see_other_account_iban",\n    "can_see_other_account_bank_name",\n    "can_see_other_account_number",\n    "can_see_other_account_metadata",\n    "can_see_other_account_kind",\n    "can_see_more_info",\n    "can_see_url",\n    "can_see_image_url",\n    "can_see_open_corporates_url",\n    "can_see_corporate_location",\n    "can_see_physical_location",\n    "can_see_public_alias",\n    "can_see_private_alias",\n    "can_add_more_info",\n    "can_add_url",\n    "can_add_image_url",\n    "can_add_open_corporates_url",\n    "can_add_corporate_location",\n    "can_add_physical_location",\n    "can_add_public_alias",\n    "can_add_private_alias",\n    "can_delete_corporate_location",\n    "can_delete_physical_location",\n    "can_edit_narrative",\n    "can_add_comment",\n    "can_delete_comment",\n    "can_add_tag",\n    "can_delete_tag",\n    "can_add_image",\n    "can_delete_image",\n    "can_add_where_tag",\n    "can_see_where_tag",\n    "can_delete_where_tag",\n    "can_create_counterparty",\n    "can_see_bank_routing_scheme",\n    "can_see_bank_routing_address",\n    "can_see_bank_account_routing_scheme",\n    "can_see_bank_account_routing_address",\n    "can_see_other_bank_routing_scheme",\n    "can_see_other_bank_routing_address",\n    "can_see_other_account_routing_scheme",\n    "can_see_other_account_routing_address",\n    "can_query_available_funds"\n  ]\n}',
 					exampleResponseBody: '{\n  "id": "1234",\n  "short_name": "short_name",\n  "description": "description",\n  "metadata_view": "owner",\n  "is_public": true,\n  "alias": "No",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_add_counterparty": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_query_available_funds": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true,\n  "can_see_bank_routing_scheme": true,\n  "can_see_bank_routing_address": true,\n  "can_see_bank_account_routing_scheme": true,\n  "can_see_bank_account_routing_address": true,\n  "can_see_other_bank_routing_scheme": true,\n  "can_see_other_bank_routing_address": true,\n  "can_see_other_account_routing_scheme": true,\n  "can_see_other_account_routing_address": true,\n  "can_add_transaction_request_to_own_account": true,\n  "can_add_transaction_request_to_any_account": true,\n  "can_see_bank_account_credit_limit": true\n}',
 					typedBody: [{
@@ -51841,7 +51841,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Deletes the view specified by VIEW_ID on the bank account specified by ACCOUNT_ID at bank BANK_ID.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -51888,7 +51888,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the list of the permissions at BANK_ID for account ACCOUNT_ID, with each time a pair composed of the user and the views that he has access to.\n\nAuthentication is Mandatory\nand the user needs to have access to the owner view.\n\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions',
 					exampleResponseBody: '{\n  "permissions": [\n    {\n      "user": {\n        "id": "5995d6a2-01b3-423c-a173-5481df49bdaf",\n        "provider": "http://127.0.0.1:8080",\n        "display_name": "OBP"\n      },\n      "views": [\n        {\n          "id": "123",\n          "short_name": "short_name",\n          "description": "description",\n          "is_public": true,\n          "alias": "None",\n          "hide_metadata_if_alias_used": true,\n          "can_add_comment": true,\n          "can_add_corporate_location": true,\n          "can_add_image": true,\n          "can_add_image_url": true,\n          "can_add_more_info": true,\n          "can_add_open_corporates_url": true,\n          "can_add_physical_location": true,\n          "can_add_private_alias": true,\n          "can_add_public_alias": true,\n          "can_add_tag": true,\n          "can_add_url": true,\n          "can_add_where_tag": true,\n          "can_delete_comment": true,\n          "can_delete_corporate_location": true,\n          "can_delete_image": true,\n          "can_delete_physical_location": true,\n          "can_delete_tag": true,\n          "can_delete_where_tag": true,\n          "can_edit_owner_comment": true,\n          "can_see_bank_account_balance": true,\n          "can_see_bank_account_bank_name": true,\n          "can_see_bank_account_currency": true,\n          "can_see_bank_account_iban": true,\n          "can_see_bank_account_label": true,\n          "can_see_bank_account_national_identifier": true,\n          "can_see_bank_account_number": true,\n          "can_see_bank_account_owners": true,\n          "can_see_bank_account_swift_bic": true,\n          "can_see_bank_account_type": true,\n          "can_see_comments": true,\n          "can_see_corporate_location": true,\n          "can_see_image_url": true,\n          "can_see_images": true,\n          "can_see_more_info": true,\n          "can_see_open_corporates_url": true,\n          "can_see_other_account_bank_name": true,\n          "can_see_other_account_iban": true,\n          "can_see_other_account_kind": true,\n          "can_see_other_account_metadata": true,\n          "can_see_other_account_national_identifier": true,\n          "can_see_other_account_number": true,\n          "can_see_other_account_swift_bic": true,\n          "can_see_owner_comment": true,\n          "can_see_physical_location": true,\n          "can_see_private_alias": true,\n          "can_see_public_alias": true,\n          "can_see_tags": true,\n          "can_see_transaction_amount": true,\n          "can_see_transaction_balance": true,\n          "can_see_transaction_currency": true,\n          "can_see_transaction_description": true,\n          "can_see_transaction_finish_date": true,\n          "can_see_transaction_metadata": true,\n          "can_see_transaction_other_bank_account": true,\n          "can_see_transaction_start_date": true,\n          "can_see_transaction_this_bank_account": true,\n          "can_see_transaction_type": true,\n          "can_see_url": true,\n          "can_see_where_tag": true\n        }\n      ]\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51924,7 +51924,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Returns the list of the views at BANK_ID for account ACCOUNT_ID that a user identified by PROVIDER_ID at their provider PROVIDER has access to.\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for USER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe user needs to have access to the owner view.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID',
 					exampleResponseBody: '{\n  "views": [\n    {\n      "id": "1234",\n      "short_name": "short_name",\n      "description": "description",\n      "metadata_view": "owner",\n      "is_public": true,\n      "alias": "No",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_add_counterparty": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_query_available_funds": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true,\n      "can_see_bank_routing_scheme": true,\n      "can_see_bank_routing_address": true,\n      "can_see_bank_account_routing_scheme": true,\n      "can_see_bank_account_routing_address": true,\n      "can_see_other_bank_routing_scheme": true,\n      "can_see_other_bank_routing_address": true,\n      "can_see_other_account_routing_scheme": true,\n      "can_see_other_account_routing_address": true,\n      "can_add_transaction_request_to_own_account": true,\n      "can_add_transaction_request_to_any_account": true,\n      "can_see_bank_account_credit_limit": true\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51960,7 +51960,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: '#Views\n\n\nViews in Open Bank Project provide a mechanism for fine grained access control and delegation to Accounts and Transactions. Account holders use the \'owner\' view by default. Delegated access is made through other views for example \'accountants\', \'share-holders\' or \'tagging-application\'. Views can be created via the API and each view has a list of entitlements.\n\nViews on accounts and transactions filter the underlying data to redact certain fields for certain users. For instance the balance on an account may be hidden from the public. The way to know what is possible on a view is determined in the following JSON.\n\n**Data:** When a view moderates a set of data, some fields my contain the value `null` rather than the original value. This indicates either that the user is not allowed to see the original data or the field is empty.\n\nThere is currently one exception to this rule; the \'holder\' field in the JSON contains always a value which is either an alias or the real name - indicated by the \'is_alias\' field.\n\n**Action:** When a user performs an action like trying to post a comment (with POST API call), if he is not allowed, the body response will contain an error message.\n\n**Metadata:**\nTransaction metadata (like images, tags, comments, etc.) will appears *ONLY* on the view where they have been created e.g. comments posted to the public view only appear on the public view.\n\nThe other account metadata fields (like image_URL, more_info, etc.) are unique through all the views. Example, if a user edits the \'more_info\' field in the \'team\' view, then the view \'authorities\' will show the new value (if it is allowed to do it).\n\n# All\n*Optional*\n\nReturns the list of the views created for account ACCOUNT_ID at BANK_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views',
 					exampleResponseBody: '{\n  "views": [\n    {\n      "id": "1234",\n      "short_name": "short_name",\n      "description": "description",\n      "metadata_view": "owner",\n      "is_public": true,\n      "alias": "No",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_add_counterparty": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_query_available_funds": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true,\n      "can_see_bank_routing_scheme": true,\n      "can_see_bank_routing_address": true,\n      "can_see_bank_account_routing_scheme": true,\n      "can_see_bank_account_routing_address": true,\n      "can_see_other_bank_routing_scheme": true,\n      "can_see_other_bank_routing_address": true,\n      "can_see_other_account_routing_scheme": true,\n      "can_see_other_account_routing_address": true,\n      "can_add_transaction_request_to_own_account": true,\n      "can_add_transaction_request_to_any_account": true,\n      "can_see_bank_account_credit_limit": true\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
@@ -51991,7 +51991,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Grants the user identified by PROVIDER_ID at their provider PROVIDER access to a list of views at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER_ID and PROVIDER.\n\nAuthentication is Mandatory\n\nThe User needs to have access to the owner view.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 					exampleRequestBody: '{\n  "views": [\n    "_family",\n    "_work"\n  ]\n}',
 					exampleResponseBody: '{\n  "views": [\n    {\n      "id": "123",\n      "short_name": "short_name",\n      "description": "description",\n      "is_public": true,\n      "alias": "None",\n      "hide_metadata_if_alias_used": true,\n      "can_add_comment": true,\n      "can_add_corporate_location": true,\n      "can_add_image": true,\n      "can_add_image_url": true,\n      "can_add_more_info": true,\n      "can_add_open_corporates_url": true,\n      "can_add_physical_location": true,\n      "can_add_private_alias": true,\n      "can_add_public_alias": true,\n      "can_add_tag": true,\n      "can_add_url": true,\n      "can_add_where_tag": true,\n      "can_delete_comment": true,\n      "can_delete_corporate_location": true,\n      "can_delete_image": true,\n      "can_delete_physical_location": true,\n      "can_delete_tag": true,\n      "can_delete_where_tag": true,\n      "can_edit_owner_comment": true,\n      "can_see_bank_account_balance": true,\n      "can_see_bank_account_bank_name": true,\n      "can_see_bank_account_currency": true,\n      "can_see_bank_account_iban": true,\n      "can_see_bank_account_label": true,\n      "can_see_bank_account_national_identifier": true,\n      "can_see_bank_account_number": true,\n      "can_see_bank_account_owners": true,\n      "can_see_bank_account_swift_bic": true,\n      "can_see_bank_account_type": true,\n      "can_see_comments": true,\n      "can_see_corporate_location": true,\n      "can_see_image_url": true,\n      "can_see_images": true,\n      "can_see_more_info": true,\n      "can_see_open_corporates_url": true,\n      "can_see_other_account_bank_name": true,\n      "can_see_other_account_iban": true,\n      "can_see_other_account_kind": true,\n      "can_see_other_account_metadata": true,\n      "can_see_other_account_national_identifier": true,\n      "can_see_other_account_number": true,\n      "can_see_other_account_swift_bic": true,\n      "can_see_owner_comment": true,\n      "can_see_physical_location": true,\n      "can_see_private_alias": true,\n      "can_see_public_alias": true,\n      "can_see_tags": true,\n      "can_see_transaction_amount": true,\n      "can_see_transaction_balance": true,\n      "can_see_transaction_currency": true,\n      "can_see_transaction_description": true,\n      "can_see_transaction_finish_date": true,\n      "can_see_transaction_metadata": true,\n      "can_see_transaction_other_bank_account": true,\n      "can_see_transaction_start_date": true,\n      "can_see_transaction_this_bank_account": true,\n      "can_see_transaction_type": true,\n      "can_see_url": true,\n      "can_see_where_tag": true\n    }\n  ]\n}',
 					typedBody: [{
@@ -52053,7 +52053,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Grants the User identified by PROVIDER_ID at PROVIDER access to the view VIEW_ID at BANK_ID for account ACCOUNT_ID.\n\nAll url parameters must be [%-encoded](http://en.wikipedia.org/wiki/Percent-encoding), which is often especially relevant for PROVIDER and PROVIDER_ID.\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nGranting access to a public view will return an error message, as the user already has access.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "id": "123",\n  "short_name": "short_name",\n  "description": "description",\n  "is_public": true,\n  "alias": "None",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true\n}',
 					typedBody: [{
@@ -52105,7 +52105,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: '"Revokes access to all Views on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -52152,7 +52152,7 @@ module.exports = {
 						color: '#EF476F'
 					},
 					description: 'Revokes access to a View on an Account for a certain User.\n\n\nThe User is identified by PROVIDER_ID at their PROVIDER.\n\nThe Account is specified by BANK_ID and ACCOUNT_ID.\n\nThe View is specified by VIEW_ID.\n\n\nPROVIDER (may be a URL so) must be URL Encoded.\n\nPROVIDER_ID is normally equivalent to USERNAME. However, see Get User by ID or GET Current User for Provider information.\n\nAttempting to revoke access to a public view will return an error message.\n\nAn Account Owner cannot revoke access to an Owner View unless at least one other User has Owner View access.\n\n      \n\nAuthentication is Mandatory and the user needs to have access to the owner view.',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/permissions/PROVIDER/PROVIDER_ID/views/VIEW_ID',
 					exampleRequestBody: '{\n  "jsonString": "{}"\n}',
 					exampleResponseBody: '{\n  "jsonString": "{}"\n}',
 					typedBody: [{
@@ -52204,7 +52204,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Update an existing view on a bank account\n\nAuthentication is Mandatory and the user needs to have access to the owner view.\n\nThe json sent is the same as during view creation (above), with one difference: the \'name\' field\nof a view is not editable (it is only set when a view is created)',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/accounts/ACCOUNT_ID/views/VIEW_ID',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/accounts/ACCOUNT_ID/views/VIEW_ID',
 					exampleRequestBody: '{\n  "description": "this is for family",\n  "metadata_view": "owner",\n  "is_public": true,\n  "which_alias_to_use": "family",\n  "hide_metadata_if_alias_used": true,\n  "allowed_actions": [\n    "can_see_transaction_this_bank_account",\n    "can_see_transaction_other_bank_account",\n    "can_see_transaction_metadata",\n    "can_see_transaction_label",\n    "can_see_transaction_amount",\n    "can_see_transaction_type",\n    "can_see_transaction_currency",\n    "can_see_transaction_start_date",\n    "can_see_transaction_finish_date",\n    "can_see_transaction_balance",\n    "can_see_comments",\n    "can_see_narrative",\n    "can_see_tags",\n    "can_see_images",\n    "can_see_bank_account_owners",\n    "can_see_bank_account_type",\n    "can_see_bank_account_balance",\n    "can_see_bank_account_currency",\n    "can_see_bank_account_label",\n    "can_see_bank_account_national_identifier",\n    "can_see_bank_account_swift_bic",\n    "can_see_bank_account_iban",\n    "can_see_bank_account_number",\n    "can_see_bank_account_bank_name",\n    "can_see_other_account_national_identifier",\n    "can_see_other_account_swift_bic",\n    "can_see_other_account_iban",\n    "can_see_other_account_bank_name",\n    "can_see_other_account_number",\n    "can_see_other_account_metadata",\n    "can_see_other_account_kind",\n    "can_see_more_info",\n    "can_see_url",\n    "can_see_image_url",\n    "can_see_open_corporates_url",\n    "can_see_corporate_location",\n    "can_see_physical_location",\n    "can_see_public_alias",\n    "can_see_private_alias",\n    "can_add_more_info",\n    "can_add_url",\n    "can_add_image_url",\n    "can_add_open_corporates_url",\n    "can_add_corporate_location",\n    "can_add_physical_location",\n    "can_add_public_alias",\n    "can_add_private_alias",\n    "can_delete_corporate_location",\n    "can_delete_physical_location",\n    "can_edit_narrative",\n    "can_add_comment",\n    "can_delete_comment",\n    "can_add_tag",\n    "can_delete_tag",\n    "can_add_image",\n    "can_delete_image",\n    "can_add_where_tag",\n    "can_see_where_tag",\n    "can_delete_where_tag",\n    "can_create_counterparty",\n    "can_see_bank_routing_scheme",\n    "can_see_bank_routing_address",\n    "can_see_bank_account_routing_scheme",\n    "can_see_bank_account_routing_address",\n    "can_see_other_bank_routing_scheme",\n    "can_see_other_bank_routing_address",\n    "can_see_other_account_routing_scheme",\n    "can_see_other_account_routing_address",\n    "can_query_available_funds"\n  ]\n}',
 					exampleResponseBody: '{\n  "id": "1234",\n  "short_name": "short_name",\n  "description": "description",\n  "metadata_view": "owner",\n  "is_public": true,\n  "alias": "No",\n  "hide_metadata_if_alias_used": true,\n  "can_add_comment": true,\n  "can_add_corporate_location": true,\n  "can_add_image": true,\n  "can_add_image_url": true,\n  "can_add_more_info": true,\n  "can_add_open_corporates_url": true,\n  "can_add_physical_location": true,\n  "can_add_private_alias": true,\n  "can_add_public_alias": true,\n  "can_add_tag": true,\n  "can_add_url": true,\n  "can_add_where_tag": true,\n  "can_delete_comment": true,\n  "can_add_counterparty": true,\n  "can_delete_corporate_location": true,\n  "can_delete_image": true,\n  "can_delete_physical_location": true,\n  "can_delete_tag": true,\n  "can_delete_where_tag": true,\n  "can_edit_owner_comment": true,\n  "can_see_bank_account_balance": true,\n  "can_query_available_funds": true,\n  "can_see_bank_account_bank_name": true,\n  "can_see_bank_account_currency": true,\n  "can_see_bank_account_iban": true,\n  "can_see_bank_account_label": true,\n  "can_see_bank_account_national_identifier": true,\n  "can_see_bank_account_number": true,\n  "can_see_bank_account_owners": true,\n  "can_see_bank_account_swift_bic": true,\n  "can_see_bank_account_type": true,\n  "can_see_comments": true,\n  "can_see_corporate_location": true,\n  "can_see_image_url": true,\n  "can_see_images": true,\n  "can_see_more_info": true,\n  "can_see_open_corporates_url": true,\n  "can_see_other_account_bank_name": true,\n  "can_see_other_account_iban": true,\n  "can_see_other_account_kind": true,\n  "can_see_other_account_metadata": true,\n  "can_see_other_account_national_identifier": true,\n  "can_see_other_account_number": true,\n  "can_see_other_account_swift_bic": true,\n  "can_see_owner_comment": true,\n  "can_see_physical_location": true,\n  "can_see_private_alias": true,\n  "can_see_public_alias": true,\n  "can_see_tags": true,\n  "can_see_transaction_amount": true,\n  "can_see_transaction_balance": true,\n  "can_see_transaction_currency": true,\n  "can_see_transaction_description": true,\n  "can_see_transaction_finish_date": true,\n  "can_see_transaction_metadata": true,\n  "can_see_transaction_other_bank_account": true,\n  "can_see_transaction_start_date": true,\n  "can_see_transaction_this_bank_account": true,\n  "can_see_transaction_type": true,\n  "can_see_url": true,\n  "can_see_where_tag": true,\n  "can_see_bank_routing_scheme": true,\n  "can_see_bank_routing_address": true,\n  "can_see_bank_account_routing_scheme": true,\n  "can_see_bank_account_routing_address": true,\n  "can_see_other_bank_routing_scheme": true,\n  "can_see_other_bank_routing_address": true,\n  "can_see_other_account_routing_scheme": true,\n  "can_see_other_account_routing_address": true,\n  "can_add_transaction_request_to_own_account": true,\n  "can_add_transaction_request_to_any_account": true,\n  "can_see_bank_account_credit_limit": true\n}',
 					typedBody: [{
@@ -52281,7 +52281,7 @@ module.exports = {
 						color: '#005EB8'
 					},
 					description: 'Create an Account Webhook\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					exampleRequestBody: '{\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "is_active": "true"\n}',
 					exampleResponseBody: '{\n  "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "is_active": true\n}',
 					typedBody: [{
@@ -52337,7 +52337,7 @@ module.exports = {
 						color: '#FFD166'
 					},
 					description: 'Enable/Disable an Account Webhook\n\n\nWebhooks are used to call external URLs when certain events happen.\n\nAccount Webhooks focus on events around accounts.\n\nFor instance, a webhook could be used to notify an external service if a balance changes on an account.\n\nThis functionality is work in progress! Please note that only implemented trigger is: OnBalanceChange\n',
-					specificUrl: '/obp/v4.0.0/banks/BANK_ID/account-web-hooks',
+					specificUrl: '/obp/v4.0.0/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					exampleRequestBody: '{\n  "account_webhook_id": "fc23a7e2-7dd2-4bdf-a0b4-ae31232a4762",\n  "is_active": "true"\n}',
 					exampleResponseBody: '{\n  "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n  "bank_id": "GENODEM1GLS",\n  "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n  "trigger_name": "OnBalanceChange",\n  "url": "https://localhost.openbankproject.com",\n  "http_method": "POST",\n  "http_protocol": "HTTP/1.1",\n  "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n  "is_active": true\n}',
 					typedBody: [{
@@ -52373,7 +52373,7 @@ module.exports = {
 						color: '#06D6A0'
 					},
 					description: 'Get Account Webhooks.\n\nPossible custom URL parameters for pagination:\n\n* limit=NUMBER\n* offset=NUMBER\n* account_id=STRING\n* user_id=STRING\n\n\n',
-					specificUrl: '/obp/v4.0.0/management/banks/BANK_ID/account-web-hooks',
+					specificUrl: '/obp/v4.0.0/management/banks/d833731bfb92ee40d5b2da9aa66cef9/account-web-hooks',
 					exampleResponseBody: '{\n  "web_hooks": [\n    {\n      "account_webhook_id": "613c83ea-80f9-4560-8404-b9cd4ec42a7f",\n      "bank_id": "GENODEM1GLS",\n      "account_id": "8ca8a7e4-6d02-40e3-a129-0b2bf89de9f0",\n      "trigger_name": "OnBalanceChange",\n      "url": "https://localhost.openbankproject.com",\n      "http_method": "POST",\n      "http_protocol": "HTTP/1.1",\n      "created_by_user_id": "9ca9a7e4-6d02-40e3-a129-0b2bf89de9b1",\n      "is_active": true\n    }\n  ]\n}',
 					typedBody: [],
 					possibleErrors: [{
