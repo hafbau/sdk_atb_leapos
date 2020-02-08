@@ -1,3 +1,4 @@
+require('dotenv').config();
 const axios = require('./axios');
 const resource_docs = require('./docsData.js').docs.rawData.resource_docs;
 const generateFnsFromDocs = require('./generateFnsFromDocs');
